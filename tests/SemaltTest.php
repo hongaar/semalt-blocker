@@ -1,13 +1,6 @@
 <?php
 class SemaltTest extends PHPUnit_Framework_TestCase
 {
-    private $badReferrals = array(
-        'http://semalt.semalt.com/crawler.php?u=http://my.site.com',
-        'http://musicas.kambasoft.com',
-        'http://semalt.com/account/or_whatever?id=42789sdf',
-        'kambasoft.com'
-    );
-
     private $goodReferrals = array(
         'http://www.google.com/?q=query',
         'blog.nabble.nl',
@@ -35,9 +28,11 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         $this->mockReferer('NotAnUrl');
         $this->assertFalse(\Nabble\Semalt::willBeBlocked(), 'Should not block invalid referral');
 
-        foreach($this->badReferrals as $badReferral) {
-            $this->mockReferer($badReferral);
-            $this->assertTrue(\Nabble\Semalt::willBeBlocked(), 'Should block bad referral ' . $badReferral);
+        foreach($this->getBadReferrals() as $badReferral) {
+            if ($badReferral) {
+                $this->mockReferer($badReferral);
+                $this->assertTrue(\Nabble\Semalt::willBeBlocked(), 'Should block bad referral ' . $badReferral);
+            }
         }
 
         foreach($this->goodReferrals as $goodReferral) {
@@ -49,5 +44,10 @@ class SemaltTest extends PHPUnit_Framework_TestCase
     private function mockReferer($referer)
     {
         $_SERVER["HTTP_REFERER"] = $referer;
+    }
+
+    private function getBadReferrals()
+    {
+        return array_map('trim', array_filter(explode(PHP_EOL, file_get_contents(__DIR__ . '/referrals'))));
     }
 }
