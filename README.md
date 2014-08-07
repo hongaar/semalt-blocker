@@ -50,7 +50,9 @@ Make sure you add it at the beginning of your code, it will save you!
 ## options
 
 ```php
-\Nabble\Semalt::block('http://semalt.com'); // return them their own botnet traffic 
+\Nabble\Semalt::block(); // default, serve a 403 Forbidden response
+\Nabble\Semalt::block('http://semalt.com'); // return them their own botnet traffic
+\Nabble\Semalt::block(false, 'Referrer not allowed'); // serve the 403 Forbidden response with a nice message
 ```
 
 ## contribute

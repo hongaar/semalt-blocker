@@ -13,12 +13,19 @@ class Semalt
     /**
      *
      */
-    public static function block($redirect = false)
+    public static function block($redirect = false, $message = false)
     {
         if (static::isRefererOnBlocklist()) {
-            // redirect
+            // redirect or deny
             if ($redirect !== false) {
                 header("Location: " . $redirect);
+            } else {
+                $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
+                header($protocol . ' 403 Forbidden');
+            }
+            // tell them something
+            if ($message) {
+                echo $message;
             }
             // exit
             exit;
