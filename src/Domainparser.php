@@ -26,7 +26,11 @@ class Domainparser
 
         $return['topleveldomain'] = $return['subdomain'] = $return['toplevelname'] = '';
 
-        return empty($return['domain']) ? $return : static::getDomain($return);
+        $return = empty($return['domain']) ? $return : static::getDomain($return);
+        if (empty($return['topleveldomain'])) {
+            $return['topleveldomain'] = $return['domain'];
+        }
+        return $return;
     }
 
     private static function getDomain ($host)

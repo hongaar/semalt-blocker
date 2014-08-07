@@ -3,12 +3,15 @@ class SemaltTest extends PHPUnit_Framework_TestCase
 {
     private $badReferrals = array(
         'http://semalt.semalt.com/crawler.php?u=http://my.site.com',
-        'http://musicas.kambasoft.com'
+        'http://musicas.kambasoft.com',
+        'http://semalt.com/account/or_whatever?id=42789sdf',
+        'kambasoft.com'
     );
 
     private $goodReferrals = array(
         'http://www.google.com/?q=query',
-        'http://www.nabble.nl'
+        'blog.nabble.nl',
+        'https://facebook.com/473289473829/somepage'
     );
 
     public function testRetrieveDomainlist()
