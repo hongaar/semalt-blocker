@@ -9,7 +9,8 @@ Block the nasty Semalt botnet from visiting your site and ruining your stats
 
 ## composer setup
 
-This is the easiest method, but requires the use of [Composer](http://getcomposer.org). Add semalt-blocker to your project by running the following in your terminal:
+This is the easiest method, but requires the use of [Composer](http://getcomposer.org). Add semalt-blocker to your
+project by running the following in your terminal:
 
 ```shell
 composer require nabble/semalt-blocker:dev-master
@@ -23,7 +24,8 @@ require "vendor/autoload.php";
 
 ## legacy setup
 
-Not using composer? No problem, copy the files `domains` and `combined/semaltblocker.combined.php` to the same directory in your project and add this line:
+Not using composer? No problem, copy the files `domains` and `combined/semaltblocker.combined.php` to the same
+directory in your project and add this line:
 
 ```php
 require "/path/to/semaltblocker.combined.php";
@@ -51,9 +53,17 @@ Make sure you add it at the beginning of your code, it will save you!
 \Nabble\Semalt::block('http://semalt.com'); // return them their own botnet traffic 
 ```
 
-## blocked domains
+## contribute
 
-See [domains](https://github.com/nabble/semalt-blocker/blob/master/domains) file. To contribute, please prepare a pull-request or contribute on this public Google Sheets file [a.nabble.nl/semaltdoc](http://a.nabble.nl/semaltdoc).
+Yes, please!
+
+Contribute by adding your list of known referral URL's used by Semalt in the file
+[referrals](https://github.com/nabble/semalt-blocker/blob/master/tests/referrals) which is used in the unit tests.
+When new URL's get added, the [domains](https://github.com/nabble/semalt-blocker/blob/master/domains) file needs updating
+until all tests pass. This way we make sure new referrals are being blocked.
+
+To contribute, please prepare a pull-request or contribute on this public Google Sheets file
+[a.nabble.nl/semaltdoc](http://a.nabble.nl/semaltdoc).
 
 ## licence
 
