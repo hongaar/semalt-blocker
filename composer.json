@@ -1,0 +1,19 @@
+{
+    "name": "nabble/semalt-blocker",
+    "type": "library",
+    "description": "Block the Semalt botnet from visiting your site and ruining your stats",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joram van den Boezem",
+            "email": "hongaar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0"
+    },
+    "autoload": {
+        "psr-0": { "Nabble": "lib/Nabble" }
+    }
+}
