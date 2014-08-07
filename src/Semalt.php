@@ -13,7 +13,7 @@ class Semalt
     /**
      *
      */
-    public static function block($exit = true, $redirect = false)
+    public static function block($redirect = false)
     {
         if (static::isRefererOnBlocklist()) {
             // redirect
@@ -21,9 +21,7 @@ class Semalt
                 header("Location: " . $redirect);
             }
             // exit
-            if ($exit === true) {
-                exit;
-            }
+            exit;
         }
     }
 
