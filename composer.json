@@ -13,7 +13,12 @@
     "require": {
         "php": ">=5.0.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "4.1.*"
+    },
     "autoload": {
-        "psr-0": { "Nabble": "lib/Nabble" }
+        "psr-4": {
+            "Nabble\\": "src/"
+        }
     }
 }
