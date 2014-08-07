@@ -7,15 +7,28 @@ semalt-blocker
 Block the nasty Semalt botnet from visiting your site and ruining your stats
 
 
-## setup
+## composer setup
 
-Add semalt-blocker to your project by running the following in your terminal:
+This is the easiest method, but requires the use of [Composer](http://getcomposer.org). Add semalt-blocker to your project by running the following in your terminal:
 
 ```shell
 composer require nabble/semalt-blocker:dev-master
 ```
 
-This requires the use of [Composer](http://getcomposer.org).
+Then in your project add (but you probably already have this):
+
+```php
+require "vendor/autoload.php";
+```
+
+## legacy setup
+
+Not using composer? No problem, copy the files `domains` and `combined/semaltblocker.combined.php` to the same directory in your project and add this line:
+
+```php
+require "/path/to/semaltblocker.combined.php";
+```
+
 
 ## basic usage
 
@@ -24,12 +37,13 @@ It's as easy as:
 ```php
 <?php
 
-require "vendor/autoload.php";
 \Nabble\Semalt::block();
 
 // ... your app
 
 ```
+
+Make sure you add it at the beginning of your code, it will save you!
 
 ## options
 
