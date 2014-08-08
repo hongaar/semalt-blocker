@@ -5,7 +5,7 @@
 semalt-blocker
 ==============
 
-Block the nasty Semalt botnet from visiting your site and ruining your stats
+Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (their domains are included by default), but you can use it to block any number of spammy domains.
 
 
 ## composer setup
