@@ -28,6 +28,10 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         $this->mockReferer('NotAnUrl');
         $this->assertFalse(\Nabble\Semalt::willBeBlocked(), 'Should not block invalid referral');
 
+        if (empty($this->getBadReferrals())) {
+            $this->markTestIncomplete('Could not fetch bad referrals for testing');
+        }
+
         foreach($this->getBadReferrals() as $badReferral) {
             if ($badReferral) {
                 $this->mockReferer($badReferral);
@@ -48,6 +52,6 @@ class SemaltTest extends PHPUnit_Framework_TestCase
 
     private function getBadReferrals()
     {
-        return array_map('trim', array_filter(explode(PHP_EOL, file_get_contents(__DIR__ . '/referrals'))));
+        return array_map('trim', array_filter(explode(PHP_EOL, file_get_contents(__DIR__ . '/../domains/referrals'))));
     }
 }

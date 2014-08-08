@@ -7,27 +7,34 @@ namespace Nabble;
  */
 class Semalt
 {
-    private static $blocklist = './../domains';
+    public static $blocklist = './../domains/blocked';
     private static $debug = 'Not blocking, no reason given';
 
     /**
+     * Block a page if referer is found on list of blocked domains
      *
+     * @param string|bool $redirect Redirects to this URL, or sends 403 response if false
+     * @param string|bool $message If set, prints a plaintext message for the bots
      */
-    public static function block($redirect = false, $message = false)
+    public static function block($redirect = false, $message = null)
     {
-        if (static::isRefererOnBlocklist()) {
+        if (self::isRefererOnBlocklist()) {
+            // clear buffered output
+            self::cls();
+
             // redirect or deny
             if ($redirect !== false) {
-                header("Location: " . $redirect);
+                self::redirect($redirect);
             } else {
-                $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
-                header($protocol . ' 403 Forbidden');
+                self::forbidden();
             }
-            // tell them something
+
+            // tell them something nice
             if ($message) {
                 echo $message;
             }
-            // exit
+
+            // stop execution altogether, bye bye bots
             exit;
         }
     }
@@ -38,9 +45,9 @@ class Semalt
      */
     public static function willBeBlocked($verbose = false)
     {
-        $blocked = static::isRefererOnBlocklist();
+        $blocked = self::isRefererOnBlocklist();
         if ($verbose === true) {
-            return static::$debug;
+            return self::$debug;
         }
         return $blocked;
     }
@@ -50,7 +57,26 @@ class Semalt
      */
     public static function getBlocklist()
     {
-        return static::parseBlocklist(static::getBlocklistContents());
+        return self::parseBlocklist(self::getBlocklistContents());
+    }
+
+    private function cls()
+    {
+        while (ob_get_level()) ob_end_clean();
+    }
+
+    /**
+     * @param string $url
+     */
+    private static function redirect($url)
+    {
+        header("Location: " . $url);
+    }
+
+    private static function forbidden()
+    {
+        $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
+        header($protocol . ' 403 Forbidden');
     }
 
     /**
@@ -58,28 +84,28 @@ class Semalt
      */
     private static function isRefererOnBlocklist()
     {
-        $referer = static::getHttpReferer();
+        $referer = self::getHttpReferer();
         if ($referer === false) {
-            static::$debug = "Not blocking because referral header is not set or empty";
+            self::$debug = "Not blocking because referral header is not set or empty";
             return false;
         }
-        $rootDomain = static::getRootDomain($referer);
+        $rootDomain = self::getRootDomain($referer);
         if ($rootDomain === false) {
-            static::$debug = "Not blocking because we couldn't parse referral domain";
+            self::$debug = "Not blocking because we couldn't parse referral domain";
             return false;
         }
         if (!in_array($rootDomain, static::getBlocklist())) {
-            static::$debug = "Not blocking because referral domain (" . $rootDomain . ") is not found on blocklist";
+            self::$debug = "Not blocking because referral domain (" . $rootDomain . ") is not found on blocklist";
             return false;
         }
-        static::$debug = "Blocking because referral domain (" . $rootDomain . ") is found on blocklist";
+        self::$debug = "Blocking because referral domain (" . $rootDomain . ") is found on blocklist";
         return true;
     }
 
     /**
      * Extracts root domain from URL if it is available and not empty, returns false otherwise
      *
-     * @param $url
+     * @param string $url
      * @return string|bool
      */
     private static function getRootDomain($url)
@@ -114,12 +140,12 @@ class Semalt
      */
     private static function getBlocklistContents()
     {
-        $blocklistContent = file_get_contents(static::getBlocklistFilename());
+        $blocklistContent = file_get_contents(self::getBlocklistFilename());
         return $blocklistContent;
     }
 
     /**
-     * @param $blocklistContent
+     * @param string $blocklistContent
      * @return array
      */
     private static function parseBlocklist($blocklistContent)
