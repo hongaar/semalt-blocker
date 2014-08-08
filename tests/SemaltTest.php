@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * Class SemaltTest
+ *
+ * @todo: test Semalt::block() method by using php-test-helpers/php-test-helpers
+ */
 class SemaltTest extends PHPUnit_Framework_TestCase
 {
     private $goodReferrals = array(

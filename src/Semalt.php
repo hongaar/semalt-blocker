@@ -13,25 +13,20 @@ class Semalt
     /**
      * Block a page if referer is found on list of blocked domains
      *
-     * @param string|bool $redirect Redirects to this URL, or sends 403 response if false
-     * @param string|bool $message If set, prints a plaintext message for the bots
+     * @param string|bool $action If false, send 403 response; if URL, redirect here; if string, print message
      */
-    public static function block($redirect = false, $message = null)
+    public static function block($action = false)
     {
         if (self::isRefererOnBlocklist()) {
             // clear buffered output
             self::cls();
 
-            // redirect or deny
-            if ($redirect !== false) {
-                self::redirect($redirect);
+            // redirect or 403
+            if (filter_var($action, FILTER_VALIDATE_URL)) {
+                self::redirect($action);
             } else {
                 self::forbidden();
-            }
-
-            // tell them something nice
-            if ($message) {
-                echo $message;
+                if (!empty($action)) echo $action; // tell them something nice
             }
 
             // stop execution altogether, bye bye bots
