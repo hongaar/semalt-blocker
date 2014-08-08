@@ -34,11 +34,12 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         $this->mockReferer('NotAnUrl');
         $this->assertFalse(\Nabble\Semalt::willBeBlocked(), 'Should not block invalid referral');
 
-        if (empty($this->getBadReferrals())) {
+        $badReferrals = $this->getBadReferrals();
+        if (empty($badReferrals)) {
             $this->markTestIncomplete('Could not fetch bad referrals for testing');
         }
 
-        foreach($this->getBadReferrals() as $badReferral) {
+        foreach($badReferrals as $badReferral) {
             if ($badReferral) {
                 $this->mockReferer($badReferral);
                 $this->assertTrue(\Nabble\Semalt::willBeBlocked(), 'Should block bad referral ' . $badReferral);
