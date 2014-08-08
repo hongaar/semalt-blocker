@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/nabble/semalt-blocker.svg?branch=master)](https://travis-ci.org/nabble/semalt-blocker)
+[![Coverage Status](https://coveralls.io/repos/nabble/semalt-blocker/badge.png)](https://coveralls.io/r/nabble/semalt-blocker)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nabble/semalt-blocker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nabble/semalt-blocker/?branch=master)
 
 semalt-blocker
