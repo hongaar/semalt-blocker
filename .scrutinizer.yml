@@ -5,4 +5,5 @@ tools:
 filter:
     excluded_paths:
         - 'tests/*'
-        - 'combined/*'
+        - 'compact/*'
+        - 'scripts/*'
