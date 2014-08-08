@@ -24,11 +24,11 @@ require "vendor/autoload.php";
 
 ## legacy setup
 
-Not using composer? No problem, copy the files `domains` and `combined/semaltblocker.combined.php` to the same
+Not using composer? No problem, copy the files `domains/blocked` and `compact/semaltblocker.php` to the same
 directory in your project and add this line:
 
 ```php
-require "/path/to/semaltblocker.combined.php";
+require "/path/to/semaltblocker.php";
 ```
 
 
@@ -52,7 +52,7 @@ Make sure you add it at the beginning of your code, it will save you!
 ```php
 \Nabble\Semalt::block(); // default, serve a 403 Forbidden response
 \Nabble\Semalt::block('http://semalt.com'); // return them their own botnet traffic
-\Nabble\Semalt::block(false, 'Referrer not allowed'); // serve the 403 Forbidden response with a nice message
+\Nabble\Semalt::block('Hi, nasty bot'); // displays a nice message when blocked
 ```
 
 ## contribute
