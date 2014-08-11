@@ -56,6 +56,12 @@ Make sure you add it at the beginning of your code, it will save you!
 \Nabble\Semalt::block('Hi, nasty bot'); // displays a nice message when blocked
 ```
 
+If you want to stay in control even more, use this:
+
+```php
+$blocked = \Nabble\Semalt::blocked(); // returns true when a blocked referrer is detected
+```
+
 ## contribute
 
 Yes, please!

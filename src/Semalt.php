@@ -38,7 +38,7 @@ class Semalt
      * @param bool $verbose
      * @return bool|string
      */
-    public static function willBeBlocked($verbose = false)
+    public static function blocked($verbose = false)
     {
         $blocked = self::isRefererOnBlocklist();
         if ($verbose === true) {

@@ -26,13 +26,13 @@ class SemaltTest extends PHPUnit_Framework_TestCase
     public function testBlock()
     {
         $this->mockReferer(null);
-        $this->assertFalse(\Nabble\Semalt::willBeBlocked(), 'Should not block unset referral');
+        $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block unset referral');
 
         $this->mockReferer('');
-        $this->assertFalse(\Nabble\Semalt::willBeBlocked(), 'Should not block empty referral');
+        $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block empty referral');
 
         $this->mockReferer('NotAnUrl');
-        $this->assertFalse(\Nabble\Semalt::willBeBlocked(), 'Should not block invalid referral');
+        $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block invalid referral');
 
         $badReferrals = $this->getBadReferrals();
         if (empty($badReferrals)) {
@@ -42,13 +42,13 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         foreach($badReferrals as $badReferral) {
             if ($badReferral) {
                 $this->mockReferer($badReferral);
-                $this->assertTrue(\Nabble\Semalt::willBeBlocked(), 'Should block bad referral ' . $badReferral);
+                $this->assertTrue(\Nabble\Semalt::blocked(), 'Should block bad referral ' . $badReferral);
             }
         }
 
         foreach($this->goodReferrals as $goodReferral) {
             $this->mockReferer($goodReferral);
-            $this->assertFalse(\Nabble\Semalt::willBeBlocked(), 'Should not block good referral ' . $goodReferral);
+            $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block good referral ' . $goodReferral);
         }
     }
 
