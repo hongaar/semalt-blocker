@@ -40,7 +40,7 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         }
 
         foreach($badReferrals as $badReferral) {
-            if ($badReferral) {
+            if ($badReferral && substr($badReferral, 0, 1) !== '#') {
                 $this->mockReferer($badReferral);
                 $this->assertTrue(\Nabble\Semalt::blocked(), 'Should block bad referral ' . $badReferral);
             }
