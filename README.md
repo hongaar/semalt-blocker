@@ -14,7 +14,7 @@ This is the easiest method, but requires the use of [Composer](http://getcompose
 project by running the following in your terminal:
 
 ```shell
-composer require nabble/semalt-blocker:dev-master
+composer require nabble/semalt-blocker:~1
 ```
 
 Then in your project add (but you probably already have this):
