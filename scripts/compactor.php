@@ -13,7 +13,7 @@ $compactor->setFilter(function ($in)
 {
     $in = preg_replace('/require "\.\/\.\.\/src\/Domainparser\.php";/','',$in);
     $in = preg_replace('/require "\.\/\.\.\/src\/Semalt\.php";/','',$in);
-    $in = preg_replace('/\'\.\/\.\.\/domains\'/','"domains"',$in);
+    $in = str_replace("'./../domains/blocked'", "'blocked'", $in);
     return $in;
 });
 $compactor->compactAll($source);
