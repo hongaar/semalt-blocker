@@ -7,6 +7,9 @@ semalt-blocker
 
 Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (their domains are included by default), but you can use it to block any number of spammy domains.
 
+## debug console
+
+We've added a tool to check whether your site blocks spammy bots. You can find it in the repository and online at: [nabble.nl/semalt](http://nabble.nl/semalt)
 
 ## composer setup
 
