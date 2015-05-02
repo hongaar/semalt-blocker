@@ -84,7 +84,7 @@ class Semalt
             self::$debug = "Not blocking because referral header is not set or empty";
             return false;
         }
-        $rootDomain = self::getRootDomain($referer);
+        $rootDomain = strtolower(self::getRootDomain($referer));
         if ($rootDomain === false) {
             self::$debug = "Not blocking because we couldn't parse referral domain";
             return false;
@@ -145,6 +145,6 @@ class Semalt
      */
     private static function parseBlocklist($blocklistContent)
     {
-        return array_map('trim', array_filter(explode(PHP_EOL, $blocklistContent)));
+        return array_map('trim', array_filter(explode(PHP_EOL, strtolower($blocklistContent))));
     }
 }
