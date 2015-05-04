@@ -18,18 +18,22 @@ class Semalt
     public static function block($action = false)
     {
         if (self::isRefererOnBlocklist()) {
-            // clear buffered output
+            // Clear buffered output
             self::cls();
 
-            // redirect or 403
+            // Redirect or 403
             if (filter_var($action, FILTER_VALIDATE_URL)) {
                 self::redirect($action);
             } else {
                 self::forbidden();
-                if (!empty($action)) echo $action; // tell them something nice
+                if (!empty($action)) echo $action . '<br/>'; // tell them something nice
             }
 
-            // stop execution altogether, bye bye bots
+            // If a human comes by, don't just serve a blank page
+            echo "This website has been blocked because your referral is set to " . self::getHttpReferer() . ". " .
+                "<a href='https://www.google.com/#q=" . htmlspecialchars(preg_replace('/http:\/\//', '', self::getHttpReferer())) . " spam'>Read why</a>";
+
+            // Stop execution altogether, bye bye bots
             exit;
         }
     }
