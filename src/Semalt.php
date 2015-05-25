@@ -59,7 +59,7 @@ class Semalt
         return self::parseBlocklist(self::getBlocklistContents());
     }
 
-    private function cls()
+    private static function cls()
     {
         while (ob_get_level()) ob_end_clean();
     }

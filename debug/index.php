@@ -18,7 +18,7 @@ require '../vendor/autoload.php';
                 font-size: 18px;
                 max-width: 100%;
             }
-            input[type=url] {
+            input[name=url] {
                 width: 30em;
             }
             .table {
@@ -48,8 +48,11 @@ require '../vendor/autoload.php';
                         $_GET['url'] :
                         '';
 //                        "http://" . $_SERVER['HTTP_HOST'] . str_replace('index.php', '', $_SERVER['REQUEST_URI']) . 'target.php';
+
+                    $url = filter_var($url, FILTER_VALIDATE_URL);
+
                     ?>
-                    <input type="url" name="url" placeholder="your website url" value="<?php echo $url; ?>" />
+                    <input type="text" name="url" placeholder="your website url" value="<?php echo htmlspecialchars($url); ?>" />
                     <button type="submit">debug url</button>
                 </form>
 
@@ -70,7 +73,6 @@ require '../vendor/autoload.php';
                     ob_end_flush();
 
                     $list = [];
-                    $url = filter_var($_GET['url'], FILTER_VALIDATE_URL);
 
                     if ($url) {
 
@@ -124,6 +126,19 @@ require '../vendor/autoload.php';
             }
         </style>
 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            $(function() {
+                var addhttp = function(e) {
+                    var $input = $('input[name=url]');
+                    if ($input.val() && !$input.val().match(/^https?:/)) {
+                        $input.val('http://' + $input.val());
+                    }
+                };
+                $('input[name=url]').on('blur', addhttp);
+                $('form').on('submit', addhttp);
+            });
+        </script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
