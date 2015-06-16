@@ -37,6 +37,16 @@ class Domainparser
     }
 
     /**
+     * @param string $url
+     * @return string
+     */
+    public static function getToplevelDomain($url)
+    {
+        $parsed = self::parseUrl($url);
+        return $parsed['topleveldomain'];
+    }
+
+    /**
      * @param array $host
      * @return array
      */

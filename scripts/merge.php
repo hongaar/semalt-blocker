@@ -14,6 +14,11 @@ while($line = fgets($handle)) {
         echo "Done, got " . count($newDomains) . " sources, new domains is ";
 
         $newList = array_merge($semaltBlockerSources, $newDomains);
+
+        foreach($newList as &$source) {
+            $source = \Nabble\Domainparser::getToplevelDomain($source);
+        }
+
         $newList = array_unique($newList);
         sort($newList);
 
