@@ -1,0 +1,42 @@
+<?php
+require_once('./../vendor/autoload.php');
+
+function mockReferer($referer)
+{
+    $_SERVER["HTTP_REFERER"] = $referer;
+}
+
+$c = 1000;
+
+echo "Testing empty referer   : ";
+mockReferer('');
+$time_pre = microtime(true);
+$i=$c;while($i--) {
+    \Nabble\Semalt::blocked();
+}
+echo number_format( (microtime(true) - $time_pre) / $c * 1000, 8) . "ms\n";
+
+echo "Testing invalid referer : ";
+mockReferer('NotAnUrl');
+$time_pre = microtime(true);
+$i=$c;while($i--) {
+    \Nabble\Semalt::blocked();
+}
+echo number_format( (microtime(true) - $time_pre) / $c * 1000, 8) . "ms\n";
+
+echo "Testing good referer    : ";
+mockReferer('http://www.google.com/?q=query');
+$time_pre = microtime(true);
+$i=$c;while($i--) {
+    \Nabble\Semalt::blocked();
+}
+echo number_format( (microtime(true) - $time_pre) / $c * 1000, 8) . "ms\n";
+
+echo "Testing bad referer     : ";
+$domainlist = \Nabble\Semalt::getBlocklist();
+mockReferer($domainlist[array_rand($domainlist)]);
+$time_pre = microtime(true);
+$i=$c;while($i--) {
+    \Nabble\Semalt::blocked();
+}
+echo number_format( (microtime(true) - $time_pre) / $c * 1000, 8) . "ms\n";
