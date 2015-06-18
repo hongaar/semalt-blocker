@@ -9,7 +9,7 @@ semalt-blocker
 
 Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (their domains are included by default), but you can use it to block any number of spammy domains.
 
-## Blocklist
+## blocklist
 
 Looking for the blocklist only? [Here's the latest raw text file](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked)
 
