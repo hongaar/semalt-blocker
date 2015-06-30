@@ -10,6 +10,10 @@ class Semalt
     public static $blocklist = './../domains/blocked';
     private static $debug = 'Not blocking, no reason given';
 
+    //////////////////////////////////////////
+    // PUBLIC API                           //
+    //////////////////////////////////////////
+
     /**
      * Block a page if referer is found on list of blocked domains
      *
@@ -17,25 +21,20 @@ class Semalt
      */
     public static function block($action = false)
     {
-        if (self::isRefererOnBlocklist()) {
-            // Clear buffered output
-            self::cls();
+        if (!self::isRefererOnBlocklist()) return;
 
-            // Redirect or 403
-            if (filter_var($action, FILTER_VALIDATE_URL)) {
-                self::redirect($action);
-            } else {
-                self::forbidden();
-                if (!empty($action)) echo $action . '<br/>'; // tell them something nice
-            }
+        // Clear buffered output
+        self::cls();
 
-            // If a human comes by, don't just serve a blank page
-            echo "This website has been blocked because your referral is set to " . self::getHttpReferer() . ". " .
-                "<a href='https://www.google.com/#q=" . htmlspecialchars(preg_replace('/http:\/\//', '', self::getHttpReferer())) . " spam'>Read why</a>";
+        // Take action
+        self::blockAction($action);
 
-            // Stop execution altogether, bye bye bots
-            exit;
-        }
+        // If a human comes by, don't just serve a blank page
+        echo "This website has been blocked because your referral is set to " . self::getHttpReferer() . ". " .
+            "<a href='https://www.google.com/#q=" . htmlspecialchars(preg_replace('/http:\/\//', '', self::getHttpReferer())) . " spam'>Read why</a>";
+
+        // Stop execution altogether, bye bye bots
+        exit;
     }
 
     /**
@@ -57,6 +56,26 @@ class Semalt
     public static function getBlocklist()
     {
         return self::parseBlocklist(self::getBlocklistContents());
+    }
+
+    //////////////////////////////////////////
+    // PRIVATE FUNCTIONS                    //
+    //////////////////////////////////////////
+
+    /**
+     * Execute desired action
+     *
+     * @param string|bool $action If false, send 403 response; if URL, redirect here; if string, print message
+     */
+    private static function blockAction($action = false)
+    {
+        // Redirect or 403
+        if (filter_var($action, FILTER_VALIDATE_URL)) {
+            self::redirect($action);
+        } else {
+            self::forbidden();
+            if (!empty($action)) echo $action . '<br/>'; // tell them something nice
+        }
     }
 
     private static function cls()
@@ -88,15 +107,18 @@ class Semalt
             self::$debug = "Not blocking because referral header is not set or empty";
             return false;
         }
+
         $rootDomain = strtolower(self::getRootDomain($referer));
         if ($rootDomain === false) {
             self::$debug = "Not blocking because we couldn't parse referral domain";
             return false;
         }
+
         if (!in_array($rootDomain, static::getBlocklist())) {
             self::$debug = "Not blocking because referral domain (" . $rootDomain . ") is not found on blocklist";
             return false;
         }
+
         self::$debug = "Blocking because referral domain (" . $rootDomain . ") is found on blocklist";
         return true;
     }
