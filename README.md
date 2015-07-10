@@ -7,7 +7,7 @@
 semalt-blocker
 ==============
 
-Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (their domains are included by default), but you can use it to block any number of spammy domains. The script will try to self-update every week, so you don't have to worry about `composer update`'s. 
+Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (of course their domains are still included), but the blocklist now contains hundreds of spammy domains. The script will try to self-update every week, so you don't have to worry about `composer update`'s. 
 
 ## sources
 
