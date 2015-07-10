@@ -46,7 +46,17 @@ class SemaltUpdater
 
     private static function getNewDomainList()
     {
-        $domains = @file_get_contents(self::$updateUrl);
+        if (function_exists('curl_init')) {
+            $curl = curl_init();
+            curl_setopt_array($curl, array(
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_URL => self::$updateUrl
+            ));
+            $domains = curl_exec($curl);
+            curl_close($curl);
+        } else {
+            $domains = @file_get_contents(self::$updateUrl);
+        }
         return $domains;
     }
 }
