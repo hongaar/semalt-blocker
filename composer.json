@@ -1,7 +1,7 @@
 {
     "name": "nabble/semalt-blocker",
     "type": "library",
-    "description": "Block the Semalt botnet from visiting your site and ruining your stats",
+    "description": "Block referral spammers from visiting your site and ruining your stats",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
