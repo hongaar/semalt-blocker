@@ -18,6 +18,9 @@
         "satooshi/php-coveralls": "dev-master",
         "technosophos/PHPCompressor": "dev-master"
     },
+    "suggest": {
+        "jeremykendall/php-domain-parser": "[PLANNED] Allows for more accurate parsing of URLs, use version ~2.0"
+    },
     "autoload": {
         "psr-4": {
             "Nabble\\": "src/"

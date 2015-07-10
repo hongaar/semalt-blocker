@@ -1,4 +1,8 @@
 <?php
+/**
+ * Compact semalt-blocker for non-composer installs
+ */
+
 require_once('./../vendor/technosophos/PHPCompressor/src/lib/compactor.php');
 
 $source = "./sources.php";

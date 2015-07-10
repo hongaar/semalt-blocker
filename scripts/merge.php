@@ -1,4 +1,8 @@
 <?php
+/**
+ * Merge a list with the blocked domains
+ */
+
 require_once('./../vendor/autoload.php');
 
 $semaltBlockerSources = \Nabble\Semalt::getBlocklist();
