@@ -40,16 +40,16 @@ foreach($spammers as &$spammer) {
 
 // merge & cleanup spammers
 $spammers = array_merge(\Nabble\Semalt::getBlocklist(), $spammers);
+$spammers = array_map('strtolower', $spammers);
 $spammers = array_unique($spammers);
 $spammers = array_filter($spammers);
-$spammers = array_map('strtolower', $spammers);
 sort($spammers);
 
 // echo some info
 echo "New list: " . count($spammers) . " sources\n";
 
 // write
-if (count($spammers) > count($semaltBlockerSources))
+if (count($spammers))
     file_put_contents('../domains/blocked', implode("\n", $spammers));
 
 echo "Done\n";
