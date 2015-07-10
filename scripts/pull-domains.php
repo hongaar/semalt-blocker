@@ -10,7 +10,8 @@ $semaltBlockerSources = \Nabble\Semalt::getBlocklist();
 $sources = [
     'https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt' => '',
     'http://lonegoatuk.tumblr.com/post/107307494431/google-analytics-referral-spambot-list' => '/<li>(.*?)<\/li>/',
-    'https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess' => '/Referer (.*) spambot=yes/'
+    'https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess' => '/Referer (.*) spambot=yes/',
+    'https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt' => ''
 ];
 $spammers = [];
 
@@ -41,6 +42,7 @@ foreach($spammers as &$spammer) {
 // merge & cleanup spammers
 $spammers = array_merge(\Nabble\Semalt::getBlocklist(), $spammers);
 $spammers = array_map('strtolower', $spammers);
+$spammers = array_map('trim', $spammers);
 $spammers = array_unique($spammers);
 $spammers = array_filter($spammers);
 sort($spammers);
