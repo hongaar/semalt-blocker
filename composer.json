@@ -19,6 +19,7 @@
         "technosophos/PHPCompressor": "dev-master"
     },
     "suggest": {
+        "guzzle/guzzle": "Required by the debugger, use version ~3",
         "jeremykendall/php-domain-parser": "[PLANNED] Allows for more accurate parsing of URLs, use version ~2.0"
     },
     "autoload": {
