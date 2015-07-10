@@ -9,6 +9,14 @@ semalt-blocker
 
 Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (their domains are included by default), but you can use it to block any number of spammy domains. The script will try to self-update every week, so you don't have to worry about `composer update`'s. 
 
+## sources
+
+The blocklist is compiled from several sources. Currently:
+
+ - [piwik/referrer-spam-blacklist](https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt)
+ - [lonegoatuk.tumblr.com](http://lonegoatuk.tumblr.com/post/107307494431/google-analytics-referral-spambot-list)
+ - [Stevie-Ray/htaccess-referral-spam-blacklist-block](https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess)
+ 
 ## blocklist
 
 Looking for the blocklist only? [Here's the latest raw text file](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked)
