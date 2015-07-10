@@ -4,4 +4,5 @@
  */
 
 require "./../src/Domainparser.php";
+require "./../src/SemaltUpdater.php";
 require "./../src/Semalt.php";

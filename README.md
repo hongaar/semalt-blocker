@@ -7,7 +7,7 @@
 semalt-blocker
 ==============
 
-Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (their domains are included by default), but you can use it to block any number of spammy domains.
+Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (their domains are included by default), but you can use it to block any number of spammy domains. The script will try to self-update every week, so you don't have to worry about `composer update`'s. 
 
 ## blocklist
 
@@ -41,7 +41,6 @@ directory in your project and add this line:
 require "/path/to/semaltblocker.php";
 ```
 
-
 ## basic usage
 
 It's as easy as:
@@ -56,6 +55,14 @@ It's as easy as:
 ```
 
 Make sure you add it at the beginning of your code, it will save you!
+
+## self-update
+
+In order for the self-update mechanism to work, make sure the `domains/blocked` file is writable by the webserver:
+
+```
+chmod 777 domains/blocked
+```
 
 ## options
 

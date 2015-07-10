@@ -21,6 +21,10 @@ class Semalt
      */
     public static function block($action = false)
     {
+        // Try to update the list
+        SemaltUpdater::update();
+
+        // Simply stop here if referer is not on the list
         if (!self::isRefererOnBlocklist()) return;
 
         // Clear buffered output

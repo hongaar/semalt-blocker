@@ -1,3 +1,3 @@
 #!/bin/sh
 
-php ./compactor.php
+php ./compact.php
