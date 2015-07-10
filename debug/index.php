@@ -4,7 +4,7 @@ require '../vendor/autoload.php';
 ?>
 <html>
     <head>
-        <title>semalt blocker debug console</title>
+        <title>semalt-blocker debug console</title>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <style>
             section {
@@ -21,9 +21,22 @@ require '../vendor/autoload.php';
             input[name=url] {
                 width: 30em;
             }
+            .progress {
+                width: 50%;
+                display: inline-block;
+            }
             .table {
                 width: auto;
                 margin: 0 auto;
+            }
+            .table span.success {
+                color: green;
+            }
+            .table span.warning {
+                color: orange;
+            }
+            .table span.danger {
+                color: red;
             }
             span {
                 font-weight: bold;
@@ -31,16 +44,38 @@ require '../vendor/autoload.php';
             footer > div {
                 padding-top: 50px;
                 margin-bottom: 50px;
-                border-top: 1px solid silver;
             }
         </style>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            $(function() {
+                var addhttp = function(e) {
+                    var $input = $('input[name=url]');
+                    if ($input.val() && !$input.val().match(/^https?:/)) {
+                        $input.val('http://' + $input.val());
+                    }
+                };
+                $('input[name=url]').on('blur', addhttp);
+                $('form').on('submit', addhttp);
+            });
+            var progress = function() {
+                var total = $('table').data('total');
+                var list = ['warning', 'danger', 'success'];
+                for(var i in list) {
+                    var cat = list[i];
+                    var count = $('table span.' + cat).length;
+                    var perc = parseInt(count / total * 100);
+                    $('.progress-bar-' + cat).css('width', perc + '%').text(perc + '%');
+                }
+            };
+        </script>
     </head>
 
     <body>
         <section class="container">
-            <div class="col-md-12 text-center">
+            <div class="col-md-8 col-md-offset-2 text-center">
 
-                <h1>Semalt blocker debug console</h1>
+                <h1><a href="https://github.com/nabble/semalt-blocker">semalt-blocker</a> debug console</h1>
 
                 <form method="get">
                     <?php
@@ -56,6 +91,9 @@ require '../vendor/autoload.php';
                     <button type="submit">debug url</button>
                 </form>
 
+            </div>
+            <div class="col-md-12 text-center">
+
                 <?php if (isset($_GET['url']) && empty($_GET['url'])) {
 
                     echo 'No URL provided';
@@ -64,9 +102,9 @@ require '../vendor/autoload.php';
 
                     function status($code, $redirect = false)
                     {
-                        if (substr($code, 0, 1) == '2') return '<span style="color: red;">Not blocked</span>';
-                        if (substr($code, 0, 1) == '3') return '<span style="color: orange;">Redirect </span> &rarr; ' . $redirect;
-                        return '<span style="color: green;">Blocked</span>';
+                        if (substr($code, 0, 1) == '2') return '<span class="danger">Not blocked</span>';
+                        if (substr($code, 0, 1) == '3') return '<span class="warning">Redirect </span> &rarr; ' . $redirect;
+                        return '<span class="success">Blocked</span>';
                     }
 
                     ob_implicit_flush(true);
@@ -81,10 +119,17 @@ require '../vendor/autoload.php';
 
                     }
 
-                    echo "<p class='status'><em>Working...</em></p>";
-                    echo "<table class='table table-bordered table-condensed table-hover'>";
+                    ?>
 
-                    foreach($list as $referral) {
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 0%"></div>
+                        <div class="progress-bar progress-bar-warning" style="width: 0%"></div>
+                        <div class="progress-bar progress-bar-danger" style="width: 0%"></div>
+                    </div>
+                    <table class='table table-bordered table-condensed table-hover' data-total='<?php echo count($list); ?>'>
+
+                    <?php
+                    foreach($list as $k => $referral) {
 
                         $request = $client->get($url, [
                             'Referer' => 'http://' . $referral
@@ -104,6 +149,7 @@ require '../vendor/autoload.php';
 
                         if ($response) echo "<tr><th>" . $referral . '</th><td>' . status($response->getStatusCode(), $redirect) . '</td></tr>';
 
+                        echo "<script>progress();</script>";
                     }
 
                     echo "</table>";
@@ -114,31 +160,13 @@ require '../vendor/autoload.php';
         </section>
 
         <footer class="container text-center">
+            <hr/>
             <div class="col-sm-6 col-sm-offset-3">
                 a service by <a href="http://nabble.nl">Nabble</a><br/>
                 source available on <a href="https://github.com/nabble/semalt-blocker">GitHub</a>
             </div>
         </footer>
-    
-        <style>
-            .status {
-                display: none;
-            }
-        </style>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>
-            $(function() {
-                var addhttp = function(e) {
-                    var $input = $('input[name=url]');
-                    if ($input.val() && !$input.val().match(/^https?:/)) {
-                        $input.val('http://' + $input.val());
-                    }
-                };
-                $('input[name=url]').on('blur', addhttp);
-                $('form').on('submit', addhttp);
-            });
-        </script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
