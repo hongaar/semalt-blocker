@@ -1,4 +1,8 @@
 <?php
+/**
+ * Compact semalt-blocker for non-composer installs
+ */
+
 require_once('./../vendor/technosophos/PHPCompressor/src/lib/compactor.php');
 
 $source = "./sources.php";
@@ -12,6 +16,7 @@ $compactor = new Compactor($target);
 $compactor->setFilter(function ($in)
 {
     $in = preg_replace('/require "\.\/\.\.\/src\/Domainparser\.php";/','',$in);
+    $in = preg_replace('/require "\.\/\.\.\/src\/SemaltUpdater\.php";/','',$in);
     $in = preg_replace('/require "\.\/\.\.\/src\/Semalt\.php";/','',$in);
     $in = str_replace("'./../domains/blocked'", "'blocked'", $in);
     return $in;

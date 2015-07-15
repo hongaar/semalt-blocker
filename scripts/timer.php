@@ -1,4 +1,8 @@
 <?php
+/**
+ * Test semalt-blocker run time
+ */
+
 require_once('./../vendor/autoload.php');
 
 function mockReferer($referer)

@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Class SemaltTest
- *
  * @todo: test Semalt::block() method by using php-test-helpers/php-test-helpers
  */
 class SemaltTest extends PHPUnit_Framework_TestCase
@@ -23,7 +21,7 @@ class SemaltTest extends PHPUnit_Framework_TestCase
     /**
      * @depends testRetrieveDomainlist
      */
-    public function testBlock()
+    public function testBlocked()
     {
         $this->mockReferer(null);
         $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block unset referral');
@@ -52,9 +50,54 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         }
     }
 
+    /**
+     * @depends testBlocked
+     */
+    public function testBlock()
+    {
+        $this->mockGoodReferer();
+
+        ob_start();
+        $goodReferer = \Nabble\Semalt::block();
+        $output = ob_get_clean();
+        $this->assertNull($goodReferer, 'Shouldn\'t return anything');
+        $this->assertEmpty($output, 'Shouldn\'t output anything');
+
+        $this->mockBadReferer();
+
+        ob_start();
+        $withoutAction = \Nabble\Semalt::block();
+        $output = ob_get_clean();
+        $explodedExplanation = explode('%s', \Nabble\Semalt::$explanation);
+        $this->assertNull($withoutAction, 'Shouldn\'t return anything');
+        $this->assertNotNull($output, 'Output shouldn\'t be null');
+        $this->assertContains($explodedExplanation[0], $output, 'Should contain explanation');
+
+        ob_start();
+        $withMessage = \Nabble\Semalt::block('TEST_MESSAGE');
+        $output = ob_get_clean();
+        $this->assertNull($withMessage, 'Shouldn\'t return anything');
+        $this->assertNotNull($output, 'Output shouldn\'t be null');
+        $this->assertContains('TEST_MESSAGE', $output, 'Should contain test message');
+
+        // @todo test headers
+    }
+
     private function mockReferer($referer)
     {
         $_SERVER["HTTP_REFERER"] = $referer;
+    }
+
+    private function mockGoodReferer()
+    {
+        $this->mockReferer(current($this->goodReferrals));
+    }
+
+    private function mockBadReferer()
+    {
+        $badReferrals = $this->getBadReferrals();
+        // Assuming first bad referral is not a comment
+        $this->mockReferer(current($badReferrals));
     }
 
     private function getBadReferrals()

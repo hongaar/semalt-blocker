@@ -1,7 +1,7 @@
 {
     "name": "nabble/semalt-blocker",
     "type": "library",
-    "description": "Block the Semalt botnet from visiting your site and ruining your stats",
+    "description": "Block referral spammers from visiting your site and ruining your stats",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
@@ -17,6 +17,10 @@
         "phpunit/phpunit": "~4",
         "satooshi/php-coveralls": "dev-master",
         "technosophos/PHPCompressor": "dev-master"
+    },
+    "suggest": {
+        "guzzle/guzzle": "Required by the debugger, use version ~3",
+        "jeremykendall/php-domain-parser": "[PLANNED] Allows for more accurate parsing of URLs, use version ~2.0"
     },
     "autoload": {
         "psr-4": {
