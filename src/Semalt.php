@@ -29,14 +29,7 @@ class Semalt
         // Simply stop here if referer is not on the list
         if (!self::isRefererOnBlocklist()) return;
 
-        // Clear buffered output
-        if (!defined('SEMALT_UNIT_TESTING')) self::cls();
-
-        // Take action
-        self::blockAction($action);
-
-        // If a human comes by, don't just serve a blank page
-        echo sprintf(self::$explanation, self::getHttpReferer(), "https://www.google.com/#q=" . urlencode(preg_replace('/https?:\/\//', '', self::getHttpReferer()) . " referral spam"));
+        self::doBlock($action);
 
         // Stop execution altogether, bye bye bots
         if (!defined('SEMALT_UNIT_TESTING')) exit;
@@ -66,6 +59,18 @@ class Semalt
     //////////////////////////////////////////
     // PRIVATE FUNCTIONS                    //
     //////////////////////////////////////////
+
+    private static function doBlock($action = false)
+    {
+        // Clear buffered output
+        if (!defined('SEMALT_UNIT_TESTING')) self::cls();
+
+        // Take user defined action
+        self::blockAction($action);
+
+        // If a human comes by, don't just serve a blank page
+        echo sprintf(self::$explanation, self::getHttpReferer(), "https://www.google.com/#q=" . urlencode(preg_replace('/https?:\/\//', '', self::getHttpReferer()) . " referral spam"));
+    }
 
     /**
      * Execute desired action

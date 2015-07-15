@@ -24,10 +24,7 @@ class SemaltUpdater
 
         if (!self::isOutdated()) return;
 
-        $domains = self::getNewDomainList();
-
-        if (trim($domains) != false)
-            @file_put_contents(self::$blocklist, $domains);
+        self::doUpdate();
     }
 
     public static function getNewDomainList()
@@ -49,6 +46,14 @@ class SemaltUpdater
     //////////////////////////////////////////
     // PRIVATE FUNCTIONS                    //
     //////////////////////////////////////////
+
+    private static function doUpdate()
+    {
+        $domains = self::getNewDomainList();
+
+        if (trim($domains) != false)
+            @file_put_contents(self::$blocklist, $domains);
+    }
 
     private static function isWritable()
     {
