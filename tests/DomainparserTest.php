@@ -1,8 +1,5 @@
 <?php
 
-/**
- * Class DomainparserTest
- */
 class DomainparserTest extends PHPUnit_Framework_TestCase
 {
     private $rootDomains = array(

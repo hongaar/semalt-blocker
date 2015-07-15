@@ -8,6 +8,8 @@ namespace Nabble;
 class Semalt
 {
     public static $blocklist = './../domains/blocked';
+    public static $explanation = "Access to this website has been blocked because your referral is set to %s. <a href='%s'>Read why</a>";
+
     private static $debug = 'Not blocking, no reason given';
 
     //////////////////////////////////////////
@@ -22,23 +24,22 @@ class Semalt
     public static function block($action = false)
     {
         // Try to update the list
-        SemaltUpdater::update();
+        if (!defined('SEMALT_UNIT_TESTING')) SemaltUpdater::update();
 
         // Simply stop here if referer is not on the list
         if (!self::isRefererOnBlocklist()) return;
 
         // Clear buffered output
-        self::cls();
+        if (!defined('SEMALT_UNIT_TESTING')) self::cls();
 
         // Take action
         self::blockAction($action);
 
         // If a human comes by, don't just serve a blank page
-        echo "This website has been blocked because your referral is set to " . self::getHttpReferer() . ". " .
-            "<a href='https://www.google.com/#q=" . htmlspecialchars(preg_replace('/http:\/\//', '', self::getHttpReferer())) . " spam'>Read why</a>";
+        echo sprintf(self::$explanation, self::getHttpReferer(), "https://www.google.com/#q=" . urlencode(preg_replace('/https?:\/\//', '', self::getHttpReferer()) . " referral spam"));
 
         // Stop execution altogether, bye bye bots
-        exit;
+        if (!defined('SEMALT_UNIT_TESTING')) exit;
     }
 
     /**
