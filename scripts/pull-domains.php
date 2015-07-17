@@ -36,13 +36,17 @@ foreach($sources as $source => $regex) {
 
 // only top-level domains
 foreach($spammers as &$spammer) {
-    $spammer = \Nabble\Domainparser::getToplevelDomain($spammer);
+    $spammer = \Nabble\Domainparser::getRootDomain($spammer);
 }
 
 // merge & cleanup spammers
 $spammers = array_merge(\Nabble\Semalt::getBlocklist(), $spammers);
 $spammers = array_map('strtolower', $spammers);
 $spammers = array_map('trim', $spammers);
+$punicode = new \TrueBV\Punycode();
+foreach($spammers as &$spammer) {
+    $spammer = iconv("UTF-8", "ISO-8859-1", $punicode->encode($spammer));
+}
 $spammers = array_unique($spammers);
 $spammers = array_filter($spammers);
 sort($spammers);

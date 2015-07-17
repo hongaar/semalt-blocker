@@ -15,9 +15,10 @@ $compactor = new Compactor($target);
 // Use filters like this (Useable for things like stripping debug-only logging):
 $compactor->setFilter(function ($in)
 {
-    $in = preg_replace('/require "\.\/\.\.\/src\/Domainparser\.php";/','',$in);
-    $in = preg_replace('/require "\.\/\.\.\/src\/SemaltUpdater\.php";/','',$in);
-    $in = preg_replace('/require "\.\/\.\.\/src\/Semalt\.php";/','',$in);
+    $in = str_replace('require "./../vendor/true/punycode/src/Punycode.php";', '', $in);
+    $in = str_replace('require "./../src/Domainparser.php";', '', $in);
+    $in = str_replace('require "./../src/SemaltUpdater.php";', '', $in);
+    $in = str_replace('require "./../src/Semalt.php";', '', $in);
     $in = str_replace("'./../domains/blocked'", "'blocked'", $in);
     return $in;
 });
@@ -25,3 +26,6 @@ $compactor->compactAll($source);
 
 $compactor->report();
 $compactor->close();
+
+print "Testing test.php output:" . PHP_EOL;
+passthru('php ./../compact/test.php');

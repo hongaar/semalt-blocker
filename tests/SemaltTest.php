@@ -5,6 +5,8 @@
  */
 class SemaltTest extends PHPUnit_Framework_TestCase
 {
+    const INVALID_DOMAIN = '.NotAnUrl?/';
+
     private $goodReferrals = array(
         'http://www.google.com/?q=query',
         'blog.nabble.nl',
@@ -29,7 +31,7 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         $this->mockReferer('');
         $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block empty referral');
 
-        $this->mockReferer('NotAnUrl');
+        $this->mockReferer(self::INVALID_DOMAIN);
         $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block invalid referral');
 
         $badReferrals = $this->getBadReferrals();
@@ -50,6 +52,24 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         }
     }
 
+    public function testBlockedVerbose()
+    {
+        $this->mockReferer(null);
+        $this->assertEquals('Not blocking because referral header is not set or empty', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+
+        $this->mockReferer('');
+        $this->assertEquals('Not blocking because referral header is not set or empty', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+
+        $this->mockReferer(self::INVALID_DOMAIN);
+        $this->assertEquals('Not blocking because we couldn\'t parse referral domain', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+
+        $this->mockGoodReferer();
+        $this->assertContains('Not blocking because referral domain (', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+
+        $this->mockBadReferer();
+        $this->assertContains('Blocking because referral domain (', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+    }
+
     /**
      * @depends testBlocked
      */
@@ -58,28 +78,29 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         $this->mockGoodReferer();
 
         ob_start();
-        $goodReferer = \Nabble\Semalt::block();
+        \Nabble\Semalt::block();
         $output = ob_get_clean();
-        $this->assertNull($goodReferer, 'Shouldn\'t return anything');
         $this->assertEmpty($output, 'Shouldn\'t output anything');
 
         $this->mockBadReferer();
 
         ob_start();
-        $withoutAction = \Nabble\Semalt::block();
+        \Nabble\Semalt::block();
         $output = ob_get_clean();
         $explodedExplanation = explode('%s', \Nabble\Semalt::$explanation);
-        $this->assertNull($withoutAction, 'Shouldn\'t return anything');
         $this->assertNotNull($output, 'Output shouldn\'t be null');
         $this->assertContains($explodedExplanation[0], $output, 'Should contain explanation');
 
         ob_start();
-        $withMessage = \Nabble\Semalt::block('TEST_MESSAGE');
+        \Nabble\Semalt::block('TEST_MESSAGE');
         $output = ob_get_clean();
-        $this->assertNull($withMessage, 'Shouldn\'t return anything');
         $this->assertNotNull($output, 'Output shouldn\'t be null');
         $this->assertContains('TEST_MESSAGE', $output, 'Should contain test message');
 
+        ob_start();
+        \Nabble\Semalt::block('http://www.google.com');
+        $output = ob_get_clean();
+        $this->assertNotNull($output, 'Output shouldn\'t be null');
         // @todo test headers
     }
 

@@ -20,7 +20,7 @@ while($line = fgets($handle)) {
         $newList = array_merge($semaltBlockerSources, $newDomains);
 
         foreach($newList as &$source) {
-            $source = \Nabble\Domainparser::getToplevelDomain($source);
+            $source = \Nabble\Domainparser::getRootDomain($source);
         }
 
         $newList = array_unique($newList);

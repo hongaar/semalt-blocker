@@ -118,7 +118,7 @@ class Semalt
             return false;
         }
 
-        $rootDomain = strtolower(self::getRootDomain($referer));
+        $rootDomain = Domainparser::getRootDomain($referer);
         if ($rootDomain === false) {
             self::$debug = "Not blocking because we couldn't parse referral domain";
             return false;
@@ -131,18 +131,6 @@ class Semalt
 
         self::$debug = "Blocking because referral domain (" . $rootDomain . ") is found on blocklist";
         return true;
-    }
-
-    /**
-     * Extracts root domain from URL if it is available and not empty, returns false otherwise
-     *
-     * @param string $url
-     * @return string|bool
-     */
-    private static function getRootDomain($url)
-    {
-        $urlParts = Domainparser::parseUrl($url);
-        return (isset($urlParts['topleveldomain']) && !empty($urlParts['topleveldomain'])) ? $urlParts['topleveldomain'] : false;
     }
 
     /**
