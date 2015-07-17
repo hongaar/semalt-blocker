@@ -1,8 +1,8 @@
-[![Latest Stable Version](https://poser.pugx.org/nabble/semalt-blocker/v/stable)](https://packagist.org/packages/nabble/semalt-blocker)
-[![Build Status](https://travis-ci.org/nabble/semalt-blocker.svg?branch=master)](https://travis-ci.org/nabble/semalt-blocker)
-[![Coverage Status](https://coveralls.io/repos/nabble/semalt-blocker/badge.svg?branch=master)](https://coveralls.io/r/nabble/semalt-blocker?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nabble/semalt-blocker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nabble/semalt-blocker/?branch=master)
-[![License](https://poser.pugx.org/nabble/semalt-blocker/license)](https://packagist.org/packages/nabble/semalt-blocker)
+[![Latest Stable Version](https://img.shields.io/packagist/v/nabble/semalt-blocker.svg)](https://packagist.org/packages/nabble/semalt-blocker)
+[![Build Status](https://img.shields.io/travis/nabble/semalt-blocker.svg)](https://travis-ci.org/nabble/semalt-blocker)
+[![Coverage Status](https://img.shields.io/coveralls/nabble/semalt-blocker.svg)](https://coveralls.io/r/nabble/semalt-blocker?branch=master)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/nabble/semalt-blocker.svg)](https://scrutinizer-ci.com/g/nabble/semalt-blocker/?branch=master)
+[![License](https://img.shields.io/github/license/nabble/semalt-blocker.svg)](https://packagist.org/packages/nabble/semalt-blocker)
 
 semalt-blocker
 ==============
