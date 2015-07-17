@@ -7,6 +7,8 @@ namespace Nabble;
  */
 class Semalt
 {
+    const SEPERATOR = ':';
+
     public static $blocklist = './../domains/blocked';
     public static $explanation = "Access to this website has been blocked because your referral is set to %s. <a href='%s'>Read why</a>";
 
@@ -124,7 +126,7 @@ class Semalt
             return false;
         }
 
-        if (!in_array($rootDomain, static::getBlocklist())) {
+        if (substr_count(self::getConcatenateBlocklist(), self::SEPERATOR . $rootDomain . self::SEPERATOR) === 0) {
             self::$debug = "Not blocking because referral domain (" . $rootDomain . ") is not found on blocklist";
             return false;
         }
@@ -164,11 +166,28 @@ class Semalt
     }
 
     /**
+     * @return string
+     */
+    private static function getConcatenateBlocklist()
+    {
+        return self::concatenateBlocklist(self::getBlocklistContents());
+    }
+
+    /**
      * @param string $blocklistContent
      * @return array
      */
     private static function parseBlocklist($blocklistContent)
     {
         return array_map('trim', array_filter(explode(PHP_EOL, strtolower($blocklistContent))));
+    }
+
+    /**
+     * @param string $blocklistContent
+     * @return string
+     */
+    public static function concatenateBlocklist($blocklistContent)
+    {
+        return self::SEPERATOR . str_replace(PHP_EOL, self::SEPERATOR, strtolower($blocklistContent)) . self::SEPERATOR;
     }
 }
