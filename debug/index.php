@@ -100,7 +100,7 @@ require '../vendor/autoload.php';
 
                 } else if (isset($_GET['url']) && $_GET['url']) {
 
-                    function status($code, $redirect = '')
+                    function status($code, $redirect = null)
                     {
                         if (substr($code, 0, 1) == '2') return '<span class="danger">Not blocked</span>';
                         if (substr($code, 0, 1) == '3') return '<span class="warning">Redirect </span> &rarr; ' . $redirect;
