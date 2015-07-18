@@ -1,6 +1,6 @@
 <?php
 require '../vendor/autoload.php';
-\Nabble\Semalt::block();
+\Nabble\SemaltBlocker\Blocker::protect();
 ?>
 <html>
     <head>
@@ -114,7 +114,7 @@ require '../vendor/autoload.php';
 
                     if ($url) {
 
-                        $list = \Nabble\Semalt::getBlocklist();
+                        $list = \Nabble\SemaltBlocker\Blocker::getBlocklist();
                         $client = new \Guzzle\Http\Client(null, array('redirect.disable' => true));
 
                     }

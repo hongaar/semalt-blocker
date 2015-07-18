@@ -8,7 +8,7 @@ require_once('./../vendor/autoload.php');
 $includeOldList = false;
 
 // initialize vars
-$semaltBlockerSources = \Nabble\Semalt::getBlocklist();
+$semaltBlockerSources = \Nabble\SemaltBlocker\Blocker::getBlocklist();
 $sources = [
     'https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt' => '',
     'http://lonegoatuk.tumblr.com/post/107307494431/google-analytics-referral-spambot-list' => '/<li>(.*?)<\/li>/',
@@ -38,12 +38,12 @@ foreach($sources as $source => $regex) {
 
 // only top-level domains
 foreach($spammers as &$spammer) {
-    $spammer = \Nabble\Domainparser::getRootDomain($spammer);
+    $spammer = \Nabble\SemaltBlocker\Domainparser::getRootDomain($spammer);
 }
 
 // merge & cleanup spammers
 if ($includeOldList) {
-    $spammers = array_merge(\Nabble\Semalt::getBlocklist(), $spammers);
+    $spammers = array_merge(\Nabble\SemaltBlocker\Blocker::getBlocklist(), $spammers);
 }
 $spammers = array_map('strtolower', $spammers);
 $spammers = array_map('trim', $spammers);

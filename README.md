@@ -61,7 +61,7 @@ It's as easy as:
 ```php
 <?php
 
-\Nabble\Semalt::block();
+\Nabble\SemaltBlocker\Blocker::protect();
 
 // ... your app
 
@@ -80,15 +80,15 @@ In order for the self-update mechanism to work, make sure the `domains/blocked` 
 ## options
 
 ```php
-\Nabble\Semalt::block(); // default, serve a 403 Forbidden response
-\Nabble\Semalt::block('http://semalt.com'); // return them their own botnet traffic
-\Nabble\Semalt::block('Hi, nasty bot'); // displays a nice message when blocked
+\Nabble\SemaltBlocker\Blocker::protect(); // default, serve a 403 Forbidden response
+\Nabble\SemaltBlocker\Blocker::protect('http://semalt.com'); // return them their own botnet traffic
+\Nabble\SemaltBlocker\Blocker::protect('Hi, bot'); // displays a nice message when blocked
 ```
 
 If you want to stay in control even more, use this:
 
 ```php
-$blocked = \Nabble\Semalt::blocked(); // returns true when a blocked referrer is detected
+$blocked = \Nabble\SemaltBlocker\Blocker::blocked(); // returns true when a blocked referrer is detected
 ```
 
 ## contribute

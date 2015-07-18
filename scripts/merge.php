@@ -5,7 +5,7 @@
 
 require_once('./../vendor/autoload.php');
 
-$semaltBlockerSources = \Nabble\Semalt::getBlocklist();
+$semaltBlockerSources = \Nabble\SemaltBlocker\Blocker::getBlocklist();
 
 echo "Old list: " . count($semaltBlockerSources) . " sources\n";
 echo "Paste domains (one on each line), then press ENTER twice:\n\n";
@@ -20,7 +20,7 @@ while($line = fgets($handle)) {
         $newList = array_merge($semaltBlockerSources, $newDomains);
 
         foreach($newList as &$source) {
-            $source = \Nabble\Domainparser::getRootDomain($source);
+            $source = \Nabble\SemaltBlocker\Domainparser::getRootDomain($source);
         }
 
         $newList = array_unique($newList);

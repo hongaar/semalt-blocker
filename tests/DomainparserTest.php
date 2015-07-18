@@ -43,7 +43,7 @@ class DomainparserTest extends PHPUnit_Framework_TestCase
     {
         foreach($this->rootDomains as $expectedRoot => $samples) {
             foreach($samples as $url) {
-                $parsedRootDomain = \Nabble\Domainparser::getRootDomain($url);
+                $parsedRootDomain = \Nabble\SemaltBlocker\Domainparser::getRootDomain($url);
                 $this->assertNotFalse($parsedRootDomain, 'Parsed root domains should not be false');
                 $this->assertEquals($expectedRoot, $parsedRootDomain, 'Expected root (' . $expectedRoot . ') not matched against ' . $parsedRootDomain);
             }
@@ -53,7 +53,7 @@ class DomainparserTest extends PHPUnit_Framework_TestCase
     public function testInvalidDomains()
     {
         foreach($this->invalidDomains as $url) {
-            $parsedRootDomain = \Nabble\Domainparser::getRootDomain($url);
+            $parsedRootDomain = \Nabble\SemaltBlocker\Domainparser::getRootDomain($url);
             $this->assertEquals(false, $parsedRootDomain);
         }
     }

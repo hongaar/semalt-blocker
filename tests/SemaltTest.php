@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @todo: test Semalt::block() method by using php-test-helpers/php-test-helpers
+ * @todo: test Blocker::protect() method by using php-test-helpers/php-test-helpers
  */
 class SemaltTest extends PHPUnit_Framework_TestCase
 {
@@ -15,7 +15,7 @@ class SemaltTest extends PHPUnit_Framework_TestCase
 
     public function testRetrieveDomainlist()
     {
-        $domainlist = \Nabble\Semalt::getBlocklist();
+        $domainlist = \Nabble\SemaltBlocker\Blocker::getBlocklist();
         $this->assertTrue(is_array($domainlist), 'Domain list should be an array');
         $this->assertFalse(empty($domainlist), 'Domain list should not be an empty array');
     }
@@ -26,13 +26,13 @@ class SemaltTest extends PHPUnit_Framework_TestCase
     public function testBlocked()
     {
         $this->mockReferer(null);
-        $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block unset referral');
+        $this->assertFalse(\Nabble\SemaltBlocker\Blocker::blocked(), 'Should not block unset referral');
 
         $this->mockReferer('');
-        $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block empty referral');
+        $this->assertFalse(\Nabble\SemaltBlocker\Blocker::blocked(), 'Should not block empty referral');
 
         $this->mockReferer(self::INVALID_DOMAIN);
-        $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block invalid referral');
+        $this->assertFalse(\Nabble\SemaltBlocker\Blocker::blocked(), 'Should not block invalid referral');
 
         $badReferrals = $this->getBadReferrals();
         if (empty($badReferrals)) {
@@ -42,32 +42,32 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         foreach($badReferrals as $badReferral) {
             if ($badReferral && substr($badReferral, 0, 1) !== '#') {
                 $this->mockReferer($badReferral);
-                $this->assertTrue(\Nabble\Semalt::blocked(), 'Should block bad referral ' . $badReferral);
+                $this->assertTrue(\Nabble\SemaltBlocker\Blocker::blocked(), 'Should block bad referral ' . $badReferral);
             }
         }
 
         foreach($this->goodReferrals as $goodReferral) {
             $this->mockReferer($goodReferral);
-            $this->assertFalse(\Nabble\Semalt::blocked(), 'Should not block good referral ' . $goodReferral);
+            $this->assertFalse(\Nabble\SemaltBlocker\Blocker::blocked(), 'Should not block good referral ' . $goodReferral);
         }
     }
 
     public function testBlockedVerbose()
     {
         $this->mockReferer(null);
-        $this->assertEquals('Not blocking because referral header is not set or empty', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+        $this->assertEquals('Not blocking because referral header is not set or empty', \Nabble\SemaltBlocker\Blocker::blocked(true), 'Should contain verbose output');
 
         $this->mockReferer('');
-        $this->assertEquals('Not blocking because referral header is not set or empty', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+        $this->assertEquals('Not blocking because referral header is not set or empty', \Nabble\SemaltBlocker\Blocker::blocked(true), 'Should contain verbose output');
 
         $this->mockReferer(self::INVALID_DOMAIN);
-        $this->assertEquals('Not blocking because we couldn\'t parse referral domain', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+        $this->assertEquals('Not blocking because we couldn\'t parse referral domain', \Nabble\SemaltBlocker\Blocker::blocked(true), 'Should contain verbose output');
 
         $this->mockGoodReferer();
-        $this->assertContains('Not blocking because referral domain (', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+        $this->assertContains('Not blocking because referral domain (', \Nabble\SemaltBlocker\Blocker::blocked(true), 'Should contain verbose output');
 
         $this->mockBadReferer();
-        $this->assertContains('Blocking because referral domain (', \Nabble\Semalt::blocked(true), 'Should contain verbose output');
+        $this->assertContains('Blocking because referral domain (', \Nabble\SemaltBlocker\Blocker::blocked(true), 'Should contain verbose output');
     }
 
     /**
@@ -78,27 +78,27 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         $this->mockGoodReferer();
 
         ob_start();
-        \Nabble\Semalt::block();
+        \Nabble\SemaltBlocker\Blocker::protect();
         $output = ob_get_clean();
         $this->assertEmpty($output, 'Shouldn\'t output anything');
 
         $this->mockBadReferer();
 
         ob_start();
-        \Nabble\Semalt::block();
+        \Nabble\SemaltBlocker\Blocker::protect();
         $output = ob_get_clean();
-        $explodedExplanation = explode('%s', \Nabble\Semalt::$explanation);
+        $explodedExplanation = explode('%s', \Nabble\SemaltBlocker\Blocker::$explanation);
         $this->assertNotNull($output, 'Output shouldn\'t be null');
         $this->assertContains($explodedExplanation[0], $output, 'Should contain explanation');
 
         ob_start();
-        \Nabble\Semalt::block('TEST_MESSAGE');
+        \Nabble\SemaltBlocker\Blocker::protect('TEST_MESSAGE');
         $output = ob_get_clean();
         $this->assertNotNull($output, 'Output shouldn\'t be null');
         $this->assertContains('TEST_MESSAGE', $output, 'Should contain test message');
 
         ob_start();
-        \Nabble\Semalt::block('http://www.google.com');
+        \Nabble\SemaltBlocker\Blocker::protect('http://www.google.com');
         $output = ob_get_clean();
         $this->assertNotNull($output, 'Output shouldn\'t be null');
         // @todo test headers

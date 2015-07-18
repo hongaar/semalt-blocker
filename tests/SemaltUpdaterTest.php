@@ -7,13 +7,13 @@ class SemaltUpdaterTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->blockFile = (\Nabble\SemaltUpdater::$blocklist = './domains/blocked');
-        $this->domainUrl = \Nabble\SemaltUpdater::$updateUrl;
+        $this->blockFile = (\Nabble\SemaltBlocker\Updater::$blocklist = './domains/blocked');
+        $this->domainUrl = \Nabble\SemaltBlocker\Updater::$updateUrl;
     }
 
     public function testDomainsRetrieval()
     {
-        $domainList = \Nabble\SemaltUpdater::getNewDomainList();
+        $domainList = \Nabble\SemaltBlocker\Updater::getNewDomainList();
         $this->assertNotEmpty(trim($domainList), 'Domain list shouldn\'t be empty');
     }
 
@@ -22,17 +22,17 @@ class SemaltUpdaterTest extends PHPUnit_Framework_TestCase
      */
     public function testDomainsUpdate()
     {
-        $domainList = \Nabble\SemaltUpdater::getNewDomainList();
-        $ttl = \Nabble\SemaltUpdater::$ttl;
+        $domainList = \Nabble\SemaltBlocker\Updater::getNewDomainList();
+        $ttl = \Nabble\SemaltBlocker\Updater::$ttl;
 
         file_put_contents($this->blockFile, '');
-        \Nabble\SemaltUpdater::$ttl = -60;
-        \Nabble\SemaltUpdater::update();
+        \Nabble\SemaltBlocker\Updater::$ttl = -60;
+        \Nabble\SemaltBlocker\Updater::update();
         $this->assertStringEqualsFile($this->blockFile, $domainList, 'Blocked file should match online domain list');
 
         file_put_contents($this->blockFile, '');
-        \Nabble\SemaltUpdater::$ttl = $ttl;
-        \Nabble\SemaltUpdater::update();
+        \Nabble\SemaltBlocker\Updater::$ttl = $ttl;
+        \Nabble\SemaltBlocker\Updater::update();
         $this->assertStringEqualsFile($this->blockFile, '', 'Blocked file should not be updated');
 
         file_put_contents($this->blockFile, $domainList);

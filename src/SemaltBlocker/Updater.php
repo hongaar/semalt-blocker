@@ -1,13 +1,13 @@
 <?php
-namespace Nabble;
+namespace Nabble\SemaltBlocker;
 
 /**
- * Class SemaltUpdater
+ * Class Updater
  * @package Nabble
  */
-class SemaltUpdater
+class Updater
 {
-    public static $blocklist = './../domains/blocked';
+    public static $blocklist = './../../domains/blocked';
     public static $ttl = 604800; // = 60 * 60 * 24 * 7 = 7 days
     public static $updateUrl = 'https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked';
 

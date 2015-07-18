@@ -4,6 +4,6 @@
  */
 
 require "./../vendor/true/punycode/src/Punycode.php";
-require "./../src/Domainparser.php";
-require "./../src/SemaltUpdater.php";
-require "./../src/Semalt.php";
+require "./../src/SemaltBlocker/Domainparser.php";
+require "./../src/SemaltBlocker/Updater.php";
+require "./../src/SemaltBlocker/Blocker.php";

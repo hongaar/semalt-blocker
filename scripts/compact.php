@@ -16,10 +16,10 @@ $compactor = new Compactor($target);
 $compactor->setFilter(function ($in)
 {
     $in = str_replace('require "./../vendor/true/punycode/src/Punycode.php";', '', $in);
-    $in = str_replace('require "./../src/Domainparser.php";', '', $in);
-    $in = str_replace('require "./../src/SemaltUpdater.php";', '', $in);
-    $in = str_replace('require "./../src/Semalt.php";', '', $in);
-    $in = str_replace("'./../domains/blocked'", "'blocked'", $in);
+    $in = str_replace('require "./../src/SemaltBlocker/Domainparser.php";', '', $in);
+    $in = str_replace('require "./../src/SemaltBlocker/Updater.php";', '', $in);
+    $in = str_replace('require "./../src/SemaltBlocker/Blocker.php";', '', $in);
+    $in = str_replace("'./../../domains/blocked'", "'blocked'", $in);
     return $in;
 });
 $compactor->compactAll($source);

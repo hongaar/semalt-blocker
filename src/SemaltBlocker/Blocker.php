@@ -1,15 +1,15 @@
 <?php
-namespace Nabble;
+namespace Nabble\SemaltBlocker;
 
 /**
- * Class Semalt
+ * Class Blocker
  * @package Nabble
  */
-class Semalt
+class Blocker
 {
     const SEPERATOR = ':';
 
-    public static $blocklist = './../domains/blocked';
+    public static $blocklist = './../../domains/blocked';
     public static $explanation = "Access to this website has been blocked because your referral is set to %s. <a href='%s'>Read why</a>";
 
     private static $debug = 'Not blocking, no reason given';
@@ -23,10 +23,10 @@ class Semalt
      *
      * @param string|bool $action If false, send 403 response; if URL, redirect here; if string, print message
      */
-    public static function block($action = false)
+    public static function protect($action = false)
     {
         // Try to update the list
-        if (!defined('SEMALT_UNIT_TESTING')) SemaltUpdater::update();
+        if (!defined('SEMALT_UNIT_TESTING')) Updater::update();
 
         // Simply stop here if referer is not on the list
         if (!self::isRefererOnBlocklist()) return;
