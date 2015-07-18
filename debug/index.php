@@ -100,7 +100,7 @@ require '../vendor/autoload.php';
 
                 } else if (isset($_GET['url']) && $_GET['url']) {
 
-                    function status($code, $redirect = false)
+                    function status($code, $redirect = '')
                     {
                         if (substr($code, 0, 1) == '2') return '<span class="danger">Not blocked</span>';
                         if (substr($code, 0, 1) == '3') return '<span class="warning">Redirect </span> &rarr; ' . $redirect;
@@ -147,7 +147,8 @@ require '../vendor/autoload.php';
                             $response = false;
                         }
 
-                        if ($response) echo "<tr><th>" . $referral . '</th><td>' . status($response->getStatusCode(), $redirect) . '</td></tr>';
+                        if ($response)
+                            echo "<tr><th>" . $referral . '</th><td>' . status($response->getStatusCode(), $redirect) . '</td></tr>';
 
                         echo "<script>progress();</script>";
                     }

@@ -21,9 +21,9 @@ class Blocker
     /**
      * Block a page if referer is found on list of blocked domains
      *
-     * @param string|bool $action If false, send 403 response; if URL, redirect here; if string, print message
+     * @param string $action If empty, send 403 response; if URL, redirect here; if non-empty string, print message
      */
-    public static function protect($action = false)
+    public static function protect($action = '')
     {
         // Try to update the list
         if (!defined('SEMALT_UNIT_TESTING')) Updater::update();
@@ -62,7 +62,7 @@ class Blocker
     // PRIVATE FUNCTIONS                    //
     //////////////////////////////////////////
 
-    private static function doBlock($action = false)
+    private static function doBlock($action = '')
     {
         // Clear buffered output
         if (!defined('SEMALT_UNIT_TESTING')) self::cls();
@@ -77,9 +77,9 @@ class Blocker
     /**
      * Execute desired action
      *
-     * @param string|bool $action If false, send 403 response; if URL, redirect here; if string, print message
+     * @param string $action
      */
-    private static function blockAction($action = false)
+    private static function blockAction($action = '')
     {
         // Redirect or 403
         if (filter_var($action, FILTER_VALIDATE_URL)) {
@@ -115,7 +115,7 @@ class Blocker
     private static function isRefererOnBlocklist()
     {
         $referer = self::getHttpReferer();
-        if ($referer === false) {
+        if ($referer === null) {
             self::$debug = "Not blocking because referral header is not set or empty";
             return false;
         }
@@ -136,16 +136,16 @@ class Blocker
     }
 
     /**
-     * Returns HTTP Referer if it is available and not empty, false otherwise
+     * Returns HTTP Referer if it is available and not empty, null otherwise
      *
-     * @return string|bool
+     * @return string|null
      */
     private static function getHttpReferer()
     {
         if (isset($_SERVER['HTTP_REFERER']) && !empty($_SERVER['HTTP_REFERER'])) {
             return $_SERVER['HTTP_REFERER'];
         }
-        return false;
+        return null;
     }
 
     /**

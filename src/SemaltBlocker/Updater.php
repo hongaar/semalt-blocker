@@ -51,7 +51,8 @@ class Updater
     {
         $domains = self::getNewDomainList();
 
-        if (trim($domains) != false)
+        // Don't panic if updating the file throws an error of some kind
+        if (trim($domains) !== '')
             @file_put_contents(self::$blocklist, $domains);
     }
 
