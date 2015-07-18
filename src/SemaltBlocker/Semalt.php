@@ -1,5 +1,8 @@
 <?php
-namespace Nabble;
+namespace Nabble\SemaltBlocker;
+
+use Nabble\SemaltBlocker\Domainparser;
+use Nabble\SemaltUpdater;
 
 /**
  * Class Semalt

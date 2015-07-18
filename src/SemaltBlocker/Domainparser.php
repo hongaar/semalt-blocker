@@ -1,5 +1,5 @@
 <?php
-namespace Nabble;
+namespace Nabble\SemaltBlocker;
 
 use TrueBV\Punycode;
 

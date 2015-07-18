@@ -5,6 +5,8 @@
 
 require_once('./../vendor/autoload.php');
 
+$includeOldList = false;
+
 // initialize vars
 $semaltBlockerSources = \Nabble\Semalt::getBlocklist();
 $sources = [
@@ -40,7 +42,9 @@ foreach($spammers as &$spammer) {
 }
 
 // merge & cleanup spammers
-$spammers = array_merge(\Nabble\Semalt::getBlocklist(), $spammers);
+if ($includeOldList) {
+    $spammers = array_merge(\Nabble\Semalt::getBlocklist(), $spammers);
+}
 $spammers = array_map('strtolower', $spammers);
 $spammers = array_map('trim', $spammers);
 $punicode = new \TrueBV\Punycode();
