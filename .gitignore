@@ -5,3 +5,4 @@ composer.phar
 vendor/
 build/
 gh-md-toc
+debug/stats/
