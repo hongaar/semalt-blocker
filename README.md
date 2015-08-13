@@ -100,16 +100,7 @@ The self-updater runs every 7 days by default. To force updating the domain list
 
 ## contribute
 
-Yes, please!
-
-Contribute by adding your list of known referral URL's used by Semalt in the file
-[referrals](https://github.com/nabble/semalt-blocker/blob/master/domains/referrals) which is used in the unit tests.
-
-As new referral URL's get added, the [blocked](https://github.com/nabble/semalt-blocker/blob/master/domains/blocked) file needs updating
-until all tests pass. This way we make sure new referrals are being blocked.
-
-If you want to help, please prepare a pull-request or contribute on this public Google Sheets file
-[a.nabble.nl/semaltdoc](http://a.nabble.nl/semaltdoc).
+Yes, please! Feel free to open issues or pull-requests.
 
 ## licence
 
