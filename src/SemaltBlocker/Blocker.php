@@ -186,7 +186,7 @@ class Blocker
      * @param string $blocklistContent
      * @return string
      */
-    public static function concatenateBlocklist($blocklistContent)
+    private static function concatenateBlocklist($blocklistContent)
     {
         return self::SEPERATOR . str_replace(PHP_EOL, self::SEPERATOR, strtolower($blocklistContent)) . self::SEPERATOR;
     }
