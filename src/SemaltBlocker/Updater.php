@@ -17,12 +17,13 @@ class Updater
 
     /**
      * Try to update the blocked domains list
+     * @param bool $force
      */
-    public static function update()
+    public static function update($force = false)
     {
         if (!defined('SEMALT_UNIT_TESTING') && !self::isWritable()) return;
 
-        if (!self::isOutdated()) return;
+        if (!$force && !self::isOutdated()) return;
 
         self::doUpdate();
     }

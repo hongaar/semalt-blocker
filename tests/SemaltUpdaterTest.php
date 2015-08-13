@@ -37,4 +37,17 @@ class SemaltUpdaterTest extends PHPUnit_Framework_TestCase
 
         file_put_contents($this->blockFile, $domainList);
     }
+
+    /**
+     * @depends testDomainsRetrieval
+     */
+    public function testForcedDomainsUpdate()
+    {
+        $domainList = \Nabble\SemaltBlocker\Updater::getNewDomainList();
+
+        file_put_contents($this->blockFile, '');
+        \Nabble\SemaltBlocker\Updater::$ttl = 60 * 60 * 24 * 9999; // = 9999 days;
+        \Nabble\SemaltBlocker\Updater::update(true);
+        $this->assertStringEqualsFile($this->blockFile, $domainList, 'Blocked file should match online domain list');
+    }
 }

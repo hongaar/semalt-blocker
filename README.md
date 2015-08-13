@@ -92,6 +92,12 @@ If you want to stay in control even more, use this:
 $blocked = \Nabble\SemaltBlocker\Blocker::blocked(); // returns true when a blocked referrer is detected
 ```
 
+The self-updater is run every 7 days by default. To force updating the domain list, use this:
+
+```php
+\Nabble\SemaltBlocker\Updater::update(true);
+```
+
 ## contribute
 
 Yes, please!
