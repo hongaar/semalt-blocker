@@ -105,7 +105,7 @@ if (count($spammers))
 
 // readme
 $readme = file_get_contents('../README.md');
-$readme = preg_replace('/#### Bad domains counter.*/', '#### Bad domains counter: _' . count($spammers) . '_', $readme);
+$readme = preg_replace('/#### Bad domains counter.*/', '#### Bad domains counter: `' . count($spammers) . '` _updated ' . date('F jS, Y') . '_ ', $readme);
 file_put_contents('../README.md', $readme);
 
 echo "Done\n";
