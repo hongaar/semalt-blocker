@@ -7,7 +7,11 @@
 semalt-blocker
 ==============
 
-### Self-updating PHP library which blocks hundreds of spammy domains from ruining your website statistics
+## Self-updating PHP library which blocks hundreds of spammy domains from ruining your website statistics
+
+---
+
+#### Bad domains counter: _444_
 
 ---
 

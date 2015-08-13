@@ -103,5 +103,10 @@ echo "New list: " . count($spammers) . " sources\n";
 if (count($spammers))
     file_put_contents('../domains/blocked', implode("\n", $spammers));
 
+// readme
+$readme = file_get_contents('../README.md');
+$readme = preg_replace('/#### Bad domains counter.*/', '#### Bad domains counter: _' . count($spammers) . '_', $readme);
+file_put_contents('../README.md', $readme);
+
 echo "Done\n";
 exit;
