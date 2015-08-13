@@ -123,6 +123,6 @@ class SemaltTest extends PHPUnit_Framework_TestCase
 
     private function getBadReferrals()
     {
-        return array_map('trim', array_filter(explode(PHP_EOL, file_get_contents(__DIR__ . '/../domains/referrals'))));
+        return array_map('trim', array_filter(explode(PHP_EOL, file_get_contents(__DIR__ . '/../domains/blocked'))));
     }
 }
