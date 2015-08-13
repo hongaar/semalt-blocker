@@ -18,9 +18,10 @@ Block referral spam with a single line of code. Originally started to stop the n
 The blocklist is compiled from several sources. Currently:
 
  - [piwik/referrer-spam-blacklist](https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt)
- - [lonegoatuk.tumblr.com](http://lonegoatuk.tumblr.com/post/107307494431/google-analytics-referral-spambot-list)
+ - ~~[lonegoatuk.tumblr.com](http://lonegoatuk.tumblr.com/post/107307494431/google-analytics-referral-spambot-list)~~
  - [Stevie-Ray/htaccess-referral-spam-blacklist-block](https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess)
  - [antispam/false-referrals](https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt)
+ - [sahava/spam-filter-tool](https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js)
  
 ## blocklist
 
