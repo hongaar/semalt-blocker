@@ -2,8 +2,12 @@
 namespace Nabble\SemaltBlocker;
 
 /**
- * Class Blocker
- * @package Nabble
+ * The most important class for this package. Basic usage:
+ * ```
+ * Blocker::protect();
+ * ```
+ *
+ * @package Nabble\SemaltBlocker
  */
 class Blocker
 {

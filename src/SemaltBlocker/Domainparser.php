@@ -4,9 +4,9 @@ namespace Nabble\SemaltBlocker;
 use TrueBV\Punycode;
 
 /**
- * Class Domainparser
  * Adapted from http://forums.devshed.com/php-development-5/root-domain-url-551863.html
- * @package Nabble
+ *
+ * @package Nabble\SemaltBlocker
  */
 class Domainparser
 {

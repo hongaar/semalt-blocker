@@ -2,8 +2,9 @@
 namespace Nabble\SemaltBlocker;
 
 /**
- * Class Updater
- * @package Nabble
+ * The `update` method is called from the Blocker class every week to grab latest domain list from GitHub
+ *
+ * @package Nabble\SemaltBlocker
  */
 class Updater
 {

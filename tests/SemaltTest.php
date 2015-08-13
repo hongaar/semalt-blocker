@@ -104,6 +104,17 @@ class SemaltTest extends PHPUnit_Framework_TestCase
         // @todo test headers
     }
 
+    public function testDeprecatedBlock()
+    {
+        $this->mockBadReferer();
+
+        ob_start();
+        \Nabble\Semalt::block('TEST_MESSAGE');
+        $output = ob_get_clean();
+        $this->assertNotNull($output, 'Output shouldn\'t be null');
+        $this->assertContains('TEST_MESSAGE', $output, 'Should contain test message');
+    }
+
     private function mockReferer($referer)
     {
         $_SERVER["HTTP_REFERER"] = $referer;
