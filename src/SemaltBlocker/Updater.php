@@ -18,6 +18,7 @@ class Updater
 
     /**
      * Try to update the blocked domains list
+     *
      * @param bool $force
      */
     public static function update($force = false)
@@ -29,6 +30,9 @@ class Updater
         self::doUpdate();
     }
 
+    /**
+     * @return string
+     */
     public static function getNewDomainList()
     {
         if (function_exists('curl_init')) {
@@ -55,16 +59,30 @@ class Updater
 
         // Don't panic if updating the file throws an error of some kind
         if (trim($domains) !== '')
-            @file_put_contents(self::$blocklist, $domains);
+            @file_put_contents(self::getBlocklistFilename(), $domains);
     }
 
+    /**
+     * @return bool
+     */
     private static function isWritable()
     {
-        return is_writable(self::$blocklist);
+        return is_writable(self::getBlocklistFilename());
     }
 
+    /**
+     * @return bool
+     */
     private static function isOutdated()
     {
-        return filemtime(self::$blocklist) < (time() - self::$ttl);
+        return filemtime(self::getBlocklistFilename()) < (time() - self::$ttl);
+    }
+
+    /**
+     * @return string
+     */
+    private static function getBlocklistFilename()
+    {
+        return __DIR__ . DIRECTORY_SEPARATOR . static::$blocklist;
     }
 }
