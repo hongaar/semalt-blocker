@@ -1,6 +1,6 @@
 <?php
 
-class DomainparserTest extends PHPUnit_Framework_TestCase
+class DomainparserTest extends AbstractSemaltBlockerTest
 {
     private $rootDomains = array(
         'google.com' => array(

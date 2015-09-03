@@ -29,7 +29,12 @@ The blocklist is compiled from several sources. Currently:
  
 ## blocklist
 
-Looking for the blocklist only? [Here's the latest raw text file](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked)
+Looking for the blocklist only? No problem:
+
+ - [txt](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked)
+ - [json](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.json)
+ - [csv](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.csv)
+ - [xml](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.xml)
 
 ## debug console
 

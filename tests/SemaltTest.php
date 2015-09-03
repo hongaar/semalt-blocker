@@ -3,7 +3,7 @@
 /**
  * @todo: test Blocker::protect() method by using php-test-helpers/php-test-helpers
  */
-class SemaltTest extends PHPUnit_Framework_TestCase
+class SemaltTest extends AbstractSemaltBlockerTest
 {
     const INVALID_DOMAIN = '.NotAnUrl?/';
 

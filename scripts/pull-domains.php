@@ -101,7 +101,7 @@ echo "New list: " . count($spammers) . " sources\n";
 
 // write
 if (count($spammers))
-    file_put_contents('../domains/blocked', implode("\n", $spammers));
+    file_put_contents('../domains/blocked', implode("\n", $spammers) . PHP_EOL);
 echo "Updated blocklist\n";
 
 // readme

@@ -1,12 +1,14 @@
 <?php
 
-class SemaltUpdaterTest extends PHPUnit_Framework_TestCase
+class SemaltUpdaterTest extends AbstractSemaltBlockerTest
 {
     private $blockFile;
     private $domainUrl;
 
     public function setUp()
     {
+        parent::setUp();
+
         $this->blockFile = \Nabble\SemaltBlocker\Updater::getBlocklistFilename();
         $this->domainUrl = \Nabble\SemaltBlocker\Updater::$updateUrl;
     }
