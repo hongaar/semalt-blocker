@@ -8,9 +8,10 @@ namespace Nabble\SemaltBlocker;
  */
 class Updater
 {
-    public static $blocklist = './../../domains/blocked';
     public static $ttl = 604800; // = 60 * 60 * 24 * 7 = 7 days
     public static $updateUrl = 'https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked';
+
+    private static $blocklist = './../../domains/blocked';
 
     //////////////////////////////////////////
     // PUBLIC API                           //
@@ -49,6 +50,14 @@ class Updater
         return $domains;
     }
 
+    /**
+     * @return string
+     */
+    public static function getBlocklistFilename()
+    {
+        return __DIR__ . DIRECTORY_SEPARATOR . static::$blocklist;
+    }
+
     //////////////////////////////////////////
     // PRIVATE FUNCTIONS                    //
     //////////////////////////////////////////
@@ -76,13 +85,5 @@ class Updater
     private static function isOutdated()
     {
         return filemtime(self::getBlocklistFilename()) < (time() - self::$ttl);
-    }
-
-    /**
-     * @return string
-     */
-    private static function getBlocklistFilename()
-    {
-        return __DIR__ . DIRECTORY_SEPARATOR . static::$blocklist;
     }
 }

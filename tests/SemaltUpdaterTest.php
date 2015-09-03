@@ -7,7 +7,7 @@ class SemaltUpdaterTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->blockFile = (\Nabble\SemaltBlocker\Updater::$blocklist = './domains/blocked');
+        $this->blockFile = \Nabble\SemaltBlocker\Updater::getBlocklistFilename();
         $this->domainUrl = \Nabble\SemaltBlocker\Updater::$updateUrl;
     }
 

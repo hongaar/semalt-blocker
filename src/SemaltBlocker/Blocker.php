@@ -13,9 +13,9 @@ class Blocker
 {
     const SEPERATOR = ':';
 
-    public static $blocklist = './../../domains/blocked';
     public static $explanation = "Access to this website has been blocked because your referral is set to %s. <a href='%s'>Read why</a>";
 
+    private static $blocklist = './../../domains/blocked';
     private static $debug = 'Not blocking, no reason given';
 
     //////////////////////////////////////////
@@ -60,6 +60,14 @@ class Blocker
     public static function getBlocklist()
     {
         return self::parseBlocklist(self::getBlocklistContents());
+    }
+
+    /**
+     * @return string
+     */
+    public static function getBlocklistFilename()
+    {
+        return __DIR__ . DIRECTORY_SEPARATOR . static::$blocklist;
     }
 
     //////////////////////////////////////////
@@ -150,14 +158,6 @@ class Blocker
             return $_SERVER['HTTP_REFERER'];
         }
         return null;
-    }
-
-    /**
-     * @return string
-     */
-    private static function getBlocklistFilename()
-    {
-        return __DIR__ . DIRECTORY_SEPARATOR . static::$blocklist;
     }
 
     /**
