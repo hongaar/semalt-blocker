@@ -11,7 +11,7 @@ semalt-blocker
 
 ---
 
-#### Bad domains counter: `450` _updated September 14th, 2015_ 
+#### Bad domains counter: `452` _updated September 17th, 2015_ 
 
 ---
 
