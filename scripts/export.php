@@ -9,7 +9,7 @@ $domainsDir = __DIR__ . DIRECTORY_SEPARATOR . './../domains/';
 
 $domains = \Nabble\SemaltBlocker\Blocker::getBlocklist();
 
-file_put_contents($domainsDir . 'blocked.json', json_encode($domains) . PHP_EOL);
+file_put_contents($domainsDir . 'blocked.json', json_encode($domains, JSON_PRETTY_PRINT) . PHP_EOL);
 echo "Written json file\n";
 
 file_put_contents($domainsDir . 'blocked.csv', implode(PHP_EOL, array_map(function($item) {
