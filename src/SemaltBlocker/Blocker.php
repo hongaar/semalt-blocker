@@ -69,7 +69,7 @@ class Blocker
         return self::$debug;
     }
 
-    static function forbidden()
+    public static function forbidden()
     {
         $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
         header($protocol . ' 403 Forbidden');
@@ -78,7 +78,7 @@ class Blocker
     /**
      * @return bool
      */
-    static function isRefererOnBlocklist()
+    public static function isRefererOnBlocklist()
     {
         $referer = self::getHttpReferer();
         if ($referer === null) {
