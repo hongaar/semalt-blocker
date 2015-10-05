@@ -70,6 +70,22 @@ class SemaltTest extends AbstractSemaltBlockerTest
         $this->assertContains('Blocking because referral domain (', \Nabble\SemaltBlocker\Blocker::blocked(true), 'Should contain verbose output');
     }
 
+    public function testGetReason()
+    {
+        // Can't test that reason is a default, as previous tests have already set it
+
+        // Set the reason to something else
+        $this->mockReferer('');
+        $this->assertFalse(\Nabble\SemaltBlocker\Blocker::isRefererOnBlocklist());
+        $this->assertEquals('Not blocking because referral header is not set or empty', \Nabble\SemaltBlocker\Blocker::getReason(), 'Should be empty reason');
+        $this->assertNotContains('Blocking because referral domain (', \Nabble\SemaltBlocker\Blocker::getReason());
+
+        // Now prove it changes with a bad referrer
+        $this->mockBadReferer();
+        $this->assertTrue(\Nabble\SemaltBlocker\Blocker::isRefererOnBlocklist());
+        $this->assertContains('Blocking because referral domain (', \Nabble\SemaltBlocker\Blocker::getReason(), 'reason should have a value');
+    }
+
     /**
      * @depends testBlocked
      */

@@ -101,6 +101,16 @@ If you want to stay in control even more, use this:
 $blocked = \Nabble\SemaltBlocker\Blocker::blocked(); // returns true when a blocked referrer is detected
 ```
 
+Another control-flow alternative - without running the self-updater - but also collecting the reason to log, is:
+
+```php
+if (Blocker::isRefererOnBlocklist()) {
+    error_log(Blocker::getReason());
+    Blocker::forbidden();
+    die;
+}
+```
+
 The self-updater runs every 7 days by default. To force updating the domain list, use this:
 
 ```php
