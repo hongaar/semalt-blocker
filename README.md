@@ -11,7 +11,7 @@ semalt-blocker
 
 ---
 
-#### Bad domains counter: `452` _updated October 12th, 2015_ 
+#### Bad domains counter: `452` _updated October 13th, 2015_ 
 
 ---
 
@@ -35,6 +35,7 @@ Looking for the blocklist only? No problem:
  - [json](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.json)
  - [csv](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.csv)
  - [xml](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.xml)
+ - [apache](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/apache.conf)
 
 ## debug console
 
