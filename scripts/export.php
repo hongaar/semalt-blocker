@@ -25,14 +25,10 @@ $xml .= "</domains>" . PHP_EOL;
 file_put_contents($domainsDir . 'blocked.xml', $xml);
 echo "Written xml file\n";
 
-$htaccess = "<IfModule mod_rewrite.c>" . PHP_EOL;
+$htaccess = "<IfModule mod_setenvif.c>" . PHP_EOL;
 foreach($domains as $domain) {
     $htaccess .= "\tSetEnvIfNoCase Referer " . $domain . " spambot=yes" . PHP_EOL;
 }
-$htaccess .= "\t" . PHP_EOL;
-$htaccess .= "\tOrder allow,deny" . PHP_EOL;
-$htaccess .= "\tAllow from all" . PHP_EOL;
-$htaccess .= "\tDeny from env=spambot" . PHP_EOL;
 $htaccess .= "</IfModule>";
 file_put_contents($domainsDir . 'apache.conf', $htaccess);
 echo "Written apache conf file\n";
