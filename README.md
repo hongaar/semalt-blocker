@@ -2,7 +2,9 @@
 [![Build Status](https://img.shields.io/travis/nabble/semalt-blocker.svg)](https://travis-ci.org/nabble/semalt-blocker)
 [![Coverage Status](https://img.shields.io/coveralls/nabble/semalt-blocker.svg)](https://coveralls.io/r/nabble/semalt-blocker?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/nabble/semalt-blocker.svg)](https://scrutinizer-ci.com/g/nabble/semalt-blocker/?branch=master)
-[![License](https://img.shields.io/github/license/nabble/semalt-blocker.svg)](https://packagist.org/packages/nabble/semalt-blocker)
+[![VersionEye Dependencies](https://img.shields.io/versioneye/d/nabble/semalt-blocker.svg)](https://www.versioneye.com/php/nabble:semalt-blocker/)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/nabble/semalt-blocker.svg)](https://packagist.org/packages/nabble/semalt-blocker)
+[![License](https://img.shields.io/packagist/l/nabble/semalt-blocker.svg)](https://packagist.org/packages/nabble/semalt-blocker)
 
 semalt-blocker
 ==============
@@ -11,7 +13,7 @@ semalt-blocker
 
 ---
 
-#### Bad domains counter: `452` _updated October 16th, 2015_ 
+#### Bad domains counter: `452` _updated October 19th, 2015_ 
 
 ---
 
@@ -71,14 +73,15 @@ It's as easy as:
 
 ```php
 <?php
+use Nabble\SemaltBlocker\Blocker;
 
-\Nabble\SemaltBlocker\Blocker::protect();
+Blocker::protect();
 
 // ... your app
 
 ```
 
-Make sure you add it at the beginning of your code, it will save you!
+Make sure you add it somewhere at the beginning of your code, it will save you!
 
 ## self-update
 
@@ -91,31 +94,33 @@ $ chmod a+w domains/blocked
 ## options
 
 ```php
-\Nabble\SemaltBlocker\Blocker::protect(); // default, serve a 403 Forbidden response
-\Nabble\SemaltBlocker\Blocker::protect('http://semalt.com'); // return them their own botnet traffic
-\Nabble\SemaltBlocker\Blocker::protect('Hi, bot'); // displays a nice message when blocked
+Blocker::protect(); // default, serve a 403 Forbidden response
+Blocker::protect('http://semalt.com'); // return them their own botnet traffic
+Blocker::protect('Hi, bot'); // displays a nice message when blocked
 ```
 
 If you want to stay in control even more, use this:
 
 ```php
-$blocked = \Nabble\SemaltBlocker\Blocker::blocked(); // returns true when a blocked referrer is detected
+$blocked = Blocker::blocked(); // returns true when a blocked referrer is detected
 ```
 
-Another control-flow alternative - without running the self-updater - but also collecting the reason to log, is:
+Another control-flow alternative without running the self-updater, but collecting the reason to log, is:
 
 ```php
 if (Blocker::isRefererOnBlocklist()) {
     error_log(Blocker::getReason());
     Blocker::forbidden();
-    die;
+    exit;
 }
 ```
 
 The self-updater runs every 7 days by default. To force updating the domain list, use this:
 
 ```php
-\Nabble\SemaltBlocker\Updater::update(true);
+use Nabble\SemaltBlocker\Updater;
+
+Updater::update(true);
 ```
 
 ## contribute
