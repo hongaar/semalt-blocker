@@ -21,7 +21,7 @@ $spammers = [];
 function processor_sahava($raw) {
     $lines = explode(PHP_EOL, $raw);
     $match = false;
-    $splitter = '/\|(?![a-z.]+\))/';
+    $splitter = '/\|(?![a-z|.]+\))/';
     $domains = [];
     foreach($lines as $line) {
         if (trim($line) == 'var filters = [') {
