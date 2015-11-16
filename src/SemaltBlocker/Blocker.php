@@ -168,15 +168,17 @@ class Blocker
         }
 
         $path = Domainparser::getPath($referer);
-        if (substr_count($blocklist, self::SEPERATOR . $rootDomain . $path . self::SEPERATOR)) {
-            self::$reason = "Blocking because referer root domain/path (" . $rootDomain . $path . ") is found on blocklist";
+        if (trim($path, '/')) {
+            if (substr_count($blocklist, self::SEPERATOR . $rootDomain . $path . self::SEPERATOR)) {
+                self::$reason = "Blocking because referer root domain/path (" . $rootDomain . $path . ") is found on blocklist";
 
-            return true;
-        }
-        if (substr_count($blocklist, self::SEPERATOR . $hostname . $path . self::SEPERATOR)) {
-            self::$reason = "Blocking because referer hostname/path (" . $hostname . $path . ") is found on blocklist";
+                return true;
+            }
+            if (substr_count($blocklist, self::SEPERATOR . $hostname . $path . self::SEPERATOR)) {
+                self::$reason = "Blocking because referer hostname/path (" . $hostname . $path . ") is found on blocklist";
 
-            return true;
+                return true;
+            }
         }
 
         self::$reason = "Not blocking because referer (" . $referer . ") is not matched against blocklist";

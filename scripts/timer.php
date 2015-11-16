@@ -10,7 +10,7 @@ function mockReferer($referer)
     $_SERVER["HTTP_REFERER"] = $referer;
 }
 
-$c = 10;
+$c = 100;
 
 echo "Testing empty referer   : ";
 mockReferer('');

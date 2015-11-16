@@ -53,7 +53,7 @@ class SemaltTest extends AbstractSemaltBlockerTest
                 $this->assertTrue(Blocker::blocked(), 'Should block bad referer http://' . $badReferral);
 
                 // Referer is a subdomain of blocked domain (only on root domains with no path)
-                if (($root = Domainparser::getRootDomain($badReferral)) === $badReferral && !Domainparser::getPath($badReferral)) {
+                if (($root = Domainparser::getRootDomain($badReferral)) === $badReferral && !trim(Domainparser::getPath($badReferral), '/')) {
                     $this->mockReferer('http://test.' . $badReferral);
                     $this->assertTrue(Blocker::blocked(), 'Should block bad referer http://test.' . $badReferral);
                 }
