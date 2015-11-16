@@ -19,7 +19,7 @@ class Domainparser
      * Extracts lower-case ASCII root domain from URL if it is available and valid, returns false otherwise
      *
      * @param string $url
-     * @return string|bool
+     * @return false|string
      */
     public static function getRootDomain($url)
     {
@@ -105,6 +105,9 @@ class Domainparser
         return parse_url(strtolower(self::$cache[$url]['url']), $component);
     }
 
+    /**
+     * @param false|string $host
+     */
     private static function isHostInSuffixList($host)
     {
         return !!substr_count(self::$suffixList, $host);
