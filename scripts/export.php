@@ -30,7 +30,7 @@ foreach($domains as $domain) {
     $htaccess .= "\tSetEnvIfNoCase Referer " . $domain . " spambot=yes" . PHP_EOL;
 }
 $htaccess .= "</IfModule>";
-file_put_contents($domainsDir . 'apache.conf', $htaccess);
+file_put_contents($domainsDir . 'blocked.conf', $htaccess);
 echo "Written apache conf file\n";
 
 echo "Done\n";
