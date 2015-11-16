@@ -6,17 +6,7 @@ namespace Nabble\SemaltBlocker;
  * ```
  * Blocker::protect();
  * ```
- * 
- * Alternate flow, with logging, but without trying to auto-update the blocklist:
- * ```
- * use Nabble\SemaltBlocker\Blocker;
- * if (Blocker::isRefererOnBlocklist()) {
- *     error_log(Blocker::getReason());
- *     Blocker::forbidden();
- *     die;
- * }
- * ```
- * 
+ *
  * @package Nabble\SemaltBlocker
  */
 class Blocker
@@ -26,7 +16,7 @@ class Blocker
     public static $explanation = "Access to this website has been blocked because your referral is set to %s. <a href='%s'>Read why</a>";
 
     private static $blocklist = './../../domains/blocked';
-    private static $debug = 'Not blocking, no reason given';
+    private static $reason    = 'Not blocking, no reason given';
 
     //////////////////////////////////////////
     // PUBLIC API                           //
@@ -52,53 +42,33 @@ class Blocker
     }
 
     /**
-     * @param bool $verbose
+     * @param bool $verbose Deprecated. Please use the explain() method instead.
      * @return bool|string
      */
     public static function blocked($verbose = false)
     {
         $blocked = self::isRefererOnBlocklist();
         if ($verbose === true) {
-            return self::$debug;
+            return self::$reason;
         }
         return $blocked;
     }
 
-    public function getReason()
+    /**
+     * @return string
+     */
+    public static function explain()
     {
-        return self::$debug;
+        return self::$reason;
     }
 
+    /**
+     * Send a 403 Forbidden header
+     */
     public static function forbidden()
     {
         $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
         header($protocol . ' 403 Forbidden');
-    }
-
-    /**
-     * @return bool
-     */
-    public static function isRefererOnBlocklist()
-    {
-        $referer = self::getHttpReferer();
-        if ($referer === null) {
-            self::$debug = "Not blocking because referral header is not set or empty";
-            return false;
-        }
-
-        $rootDomain = Domainparser::getRootDomain($referer);
-        if ($rootDomain === false) {
-            self::$debug = "Not blocking because we couldn't parse referral domain";
-            return false;
-        }
-
-        if (substr_count(self::getConcatenateBlocklist(), self::SEPERATOR . $rootDomain . self::SEPERATOR) === 0) {
-            self::$debug = "Not blocking because referral domain (" . $rootDomain . ") is not found on blocklist";
-            return false;
-        }
-
-        self::$debug = "Blocking because referral domain (" . $rootDomain . ") is found on blocklist";
-        return true;
     }
 
     /**
@@ -160,6 +130,34 @@ class Blocker
     private static function redirect($url)
     {
         header("Location: " . $url);
+    }
+
+    /**
+     * The public use of this function is deprecated. Please use the blocked() method instead.
+     *
+     * @return bool
+     */
+    public static function isRefererOnBlocklist()
+    {
+        $referer = self::getHttpReferer();
+        if ($referer === null) {
+            self::$reason = "Not blocking because referral header is not set or empty";
+            return false;
+        }
+
+        $rootDomain = Domainparser::getRootDomain($referer);
+        if ($rootDomain === false) {
+            self::$reason = "Not blocking because we couldn't parse referral domain";
+            return false;
+        }
+
+        if (substr_count(self::getConcatenateBlocklist(), self::SEPERATOR . $rootDomain . self::SEPERATOR) === 0) {
+            self::$reason = "Not blocking because referral domain (" . $rootDomain . ") is not found on blocklist";
+            return false;
+        }
+
+        self::$reason = "Blocking because referral domain (" . $rootDomain . ") is found on blocklist";
+        return true;
     }
 
     /**

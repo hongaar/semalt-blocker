@@ -37,7 +37,7 @@ Looking for the blocklist only? No problem:
  - [json](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.json)
  - [csv](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.csv)
  - [xml](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.xml)
- - [apache](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/apache.conf)
+ - [apache](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.conf)
 
 ## debug console
 
@@ -105,14 +105,10 @@ If you want to stay in control even more, use this:
 $blocked = Blocker::blocked(); // returns true when a blocked referrer is detected
 ```
 
-Another control-flow alternative without running the self-updater, but collecting the reason to log, is:
+If you want an explanation for why a referer is blocked, use: 
 
 ```php
-if (Blocker::isRefererOnBlocklist()) {
-    error_log(Blocker::getReason());
-    Blocker::forbidden();
-    exit;
-}
+echo Blocker::reason();
 ```
 
 The self-updater runs every 7 days by default. To force updating the domain list, use this:
