@@ -3,12 +3,15 @@
  * Pull domains from external sources
  */
 
+use Nabble\SemaltBlocker\Blocker;
+use Nabble\SemaltBlocker\Domainparser;
+
 require_once('./../vendor/autoload.php');
 
 $includeOldList = false;
 
 // initialize vars
-$semaltBlockerSources = \Nabble\SemaltBlocker\Blocker::getBlocklist();
+$semaltBlockerSources = Blocker::getBlocklist();
 $sources = [
     'https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js' => 'processor_sahava',
     'https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt' => '',
@@ -82,15 +85,24 @@ foreach($sources as $source => $regex) {
 //    $spammer = \Nabble\SemaltBlocker\Domainparser::getRootDomain($spammer);
 //}
 
-// only hostnames
+// only hostnames & path
 foreach($spammers as &$spammer) {
-    $spammer = \Nabble\SemaltBlocker\Domainparser::getHostname($spammer);
+    $spammer = Domainparser::getHostname($spammer) . Domainparser::getPath($spammer);
 }
 
 // merge & cleanup spammers
 if ($includeOldList) {
-    $spammers = array_merge(\Nabble\SemaltBlocker\Blocker::getBlocklist(), $spammers);
+    $spammers = array_merge(Blocker::getBlocklist(), $spammers);
 }
+
+// delete redundant subdomains
+foreach($spammers as &$spammer) {
+    $root = Domainparser::getRootDomain($spammer);
+    if ($root !== Domainparser::getHostname($spammer) && in_array($root, $spammers)) {
+        $spammer = '';
+    }
+}
+
 $spammers = array_map('strtolower', $spammers);
 $spammers = array_map('trim', $spammers);
 $punicode = new \TrueBV\Punycode();

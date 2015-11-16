@@ -141,23 +141,46 @@ class Blocker
     {
         $referer = self::getHttpReferer();
         if ($referer === null) {
-            self::$reason = "Not blocking because referral header is not set or empty";
+            self::$reason = "Not blocking because referer header is not set or empty";
+
             return false;
         }
 
         $rootDomain = Domainparser::getRootDomain($referer);
         if ($rootDomain === false) {
-            self::$reason = "Not blocking because we couldn't parse referral domain";
+            self::$reason = "Not blocking because we couldn't parse root domain";
+
             return false;
         }
 
-        if (substr_count(self::getConcatenateBlocklist(), self::SEPERATOR . $rootDomain . self::SEPERATOR) === 0) {
-            self::$reason = "Not blocking because referral domain (" . $rootDomain . ") is not found on blocklist";
-            return false;
+        $blocklist = self::getConcatenateBlocklist();
+        if (substr_count($blocklist, self::SEPERATOR . $rootDomain . self::SEPERATOR)) {
+            self::$reason = "Blocking because referer root domain (" . $rootDomain . ") is found on blocklist";
+
+            return true;
         }
 
-        self::$reason = "Blocking because referral domain (" . $rootDomain . ") is found on blocklist";
-        return true;
+        $hostname = Domainparser::getHostname($referer);
+        if (substr_count($blocklist, self::SEPERATOR . $hostname . self::SEPERATOR)) {
+            self::$reason = "Blocking because referer hostname (" . $hostname . ") is found on blocklist";
+
+            return true;
+        }
+
+        $path = Domainparser::getPath($referer);
+        if (substr_count($blocklist, self::SEPERATOR . $rootDomain . $path . self::SEPERATOR)) {
+            self::$reason = "Blocking because referer root domain/path (" . $rootDomain . $path . ") is found on blocklist";
+
+            return true;
+        }
+        if (substr_count($blocklist, self::SEPERATOR . $hostname . $path . self::SEPERATOR)) {
+            self::$reason = "Blocking because referer hostname/path (" . $hostname . $path . ") is found on blocklist";
+
+            return true;
+        }
+
+        self::$reason = "Not blocking because referer (" . $referer . ") is not matched against blocklist";
+        return false;
     }
 
     /**

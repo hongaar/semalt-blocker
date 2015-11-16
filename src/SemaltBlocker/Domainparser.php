@@ -42,16 +42,45 @@ class Domainparser
 
     public static function getHostname($url)
     {
-        if (!substr_count($url, "://") && substr($url, 0, 1) != '/') {
-            $url = 'http://' . $url;
-        }
-        $hostname = parse_url(strtolower($url), PHP_URL_HOST);
+        return self::parseUrl($url, PHP_URL_HOST);
+    }
 
+    public static function getPath($url)
+    {
+        return self::parseUrl($url, PHP_URL_PATH);
+    }
+
+    /**
+     * Checks an URL for validity, and punycode encode the returned component
+     *
+     * @param $url
+     * @param $component
+     * @return bool|string
+     */
+    private static function parseUrl($url, $component)
+    {
+        // Strip protocol
+        $scheme = parse_url($url, PHP_URL_SCHEME);
+        $url = str_replace($scheme . '://', '', $url);
+        $url = str_replace($scheme . ':', '', $url);
+
+        // Punycode encode domain
+        $host = parse_url('http://' . $url, PHP_URL_HOST);
         $punycode = new Punycode();
-        $hostname = $punycode->encode($hostname);
+        $url = str_replace($host, $punycode->encode($host), $url);
 
-        return filter_var('http://' . $hostname, FILTER_VALIDATE_URL) ?
-            strtolower($hostname) : false;
+        // Add back normalized protocol
+        $url = 'http://' . $url;
+
+        // Remove all illegal characters from a url
+        $url = filter_var($url, FILTER_SANITIZE_URL);
+
+        // Sanity check
+        if (($check = filter_var($url, FILTER_VALIDATE_URL)) === false) {
+            return false;
+        }
+
+        return parse_url(strtolower($url), $component);
     }
 
     private static function isHostInSuffixList($host)
