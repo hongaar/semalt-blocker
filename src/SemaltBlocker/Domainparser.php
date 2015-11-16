@@ -42,6 +42,9 @@ class Domainparser
         return $root;
     }
 
+    /**
+     * @param string $url
+     */
     public static function getHostname($url)
     {
         if (!isset(self::$cache[$url]['hostname'])) {
@@ -51,6 +54,11 @@ class Domainparser
         return self::$cache[$url]['hostname'];
     }
 
+    /**
+     * @param string $url
+     *
+     * @return string
+     */
     public static function getPath($url)
     {
         if (!isset(self::$cache[$url]['path'])) {
@@ -64,8 +72,8 @@ class Domainparser
      * Checks an URL for validity, and punycode encode the returned component
      *
      * @param $url
-     * @param $component
-     * @return bool|string
+     * @param integer $component
+     * @return string|false
      */
     private static function parseUrl($url, $component)
     {
