@@ -12,16 +12,16 @@
     ],
     "require": {
         "php": ">=5.0.0",
-        "true/punycode": "~2.0"
+        "true/punycode": "~2.0",
+        "jeremykendall/php-domain-parser": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4",
         "satooshi/php-coveralls": "dev-master",
-        "technosophos/PHPCompressor": "dev-master"
+        "technosophos/PHPCompressor": "dev-master",
+        "guzzle/guzzle": "~3"
     },
     "suggest": {
-        "guzzle/guzzle": "Required by the debugger, use version ~3",
-        "jeremykendall/php-domain-parser": "[PLANNED] Allows for more accurate parsing of URLs, use version ~2.0"
     },
     "autoload": {
         "psr-4": {
