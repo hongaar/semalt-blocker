@@ -21,6 +21,9 @@ class DomainparserTest extends AbstractSemaltBlockerTest
         'google.co.uk' => array(
             'http://google.co.uk',
         ),
+        'co.uk' => array(
+            'http://co.uk'
+        ),
         'semalt.com' => array(
             'http://semalt.semalt.com/crawler.php?u=http://my.site.com'
         ),
@@ -36,7 +39,9 @@ class DomainparserTest extends AbstractSemaltBlockerTest
     );
 
     private $invalidDomains = array(
-        '.hallo?/'
+        '.hallo?/',
+        'http://uk',
+        'com'
     );
 
     public function testRootDomains()
@@ -44,8 +49,8 @@ class DomainparserTest extends AbstractSemaltBlockerTest
         foreach($this->rootDomains as $expectedRoot => $samples) {
             foreach($samples as $url) {
                 $parsedRootDomain = \Nabble\SemaltBlocker\Domainparser::getRootDomain($url);
-                $this->assertNotFalse($parsedRootDomain, 'Parsed root domains should not be false');
-                $this->assertEquals($expectedRoot, $parsedRootDomain, 'Expected root (' . $expectedRoot . ') not matched against ' . $parsedRootDomain);
+                $this->assertNotFalse($parsedRootDomain, 'Parsed root domain for ' . $url . ' should not be false');
+                $this->assertEquals($expectedRoot, $parsedRootDomain, 'Expected root ' . $expectedRoot . ', got ' . $parsedRootDomain . ' instead.');
             }
         }
     }

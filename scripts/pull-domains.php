@@ -78,8 +78,13 @@ foreach($sources as $source => $regex) {
 }
 
 // only top-level domains
+//foreach($spammers as &$spammer) {
+//    $spammer = \Nabble\SemaltBlocker\Domainparser::getRootDomain($spammer);
+//}
+
+// only hostnames
 foreach($spammers as &$spammer) {
-    $spammer = \Nabble\SemaltBlocker\Domainparser::getRootDomain($spammer);
+    $spammer = \Nabble\SemaltBlocker\Domainparser::getHostname($spammer);
 }
 
 // merge & cleanup spammers
