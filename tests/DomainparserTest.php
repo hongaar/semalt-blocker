@@ -23,7 +23,7 @@ class DomainparserTest extends AbstractSemaltBlockerTest
             'http://test.google.com/?fooled.net',
         ),
         'google.co.uk' => array(
-            'http://google.co.uk',
+            'http://google.CO.uk',
         ),
         'co.uk' => array(
             'http://co.uk'
