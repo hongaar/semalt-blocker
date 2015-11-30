@@ -107,6 +107,7 @@ class Domainparser
 
     /**
      * @param false|string $host
+     * @return bool
      */
     private static function isHostInSuffixList($host)
     {
