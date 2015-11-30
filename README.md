@@ -19,16 +19,6 @@ semalt-blocker
 
 Block referral spam with a single line of code. Originally started to stop the nasty Semalt botnet from visiting your site and ruining your stats (of course their domains are still included), the blocklist now contains hundreds of spammy domains. The library will try to self-update every week, so you don't have to worry about `composer update`'s. 
 
-## sources
-
-The blocklist is compiled from several sources. Currently:
-
- - [piwik/referrer-spam-blacklist](https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt)
- - ~~[lonegoatuk.tumblr.com](http://lonegoatuk.tumblr.com/post/107307494431/google-analytics-referral-spambot-list)~~
- - [Stevie-Ray/htaccess-referral-spam-blacklist-block](https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess)
- - [antispam/false-referrals](https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt)
- - [sahava/spam-filter-tool](https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js)
- 
 ## blocklist
 
 Looking for the blocklist only? No problem:
@@ -38,6 +28,16 @@ Looking for the blocklist only? No problem:
  - [csv](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.csv)
  - [xml](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.xml)
  - [apache](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/blocked.conf)
+ - [annotated](https://raw.githubusercontent.com/nabble/semalt-blocker/master/domains/annotated.json)
+ 
+## sources
+
+The blocklist is compiled from several sources. Currently:
+
+ - [piwik/referrer-spam-blacklist](https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt)
+ - [Stevie-Ray/htaccess-referral-spam-blacklist-block](https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess)
+ - [antispam/false-referrals](https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt)
+ - [sahava/spam-filter-tool](https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js)
 
 ## debug console
 

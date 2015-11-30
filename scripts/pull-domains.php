@@ -13,13 +13,23 @@ $includeOldList = false;
 // initialize vars
 $semaltBlockerSources = Blocker::getBlocklist();
 $sources = [
-    'https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js' => 'processor_sahava',
-    'https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt' => '',
-//    'http://lonegoatuk.tumblr.com/post/107307494431/google-analytics-referral-spambot-list' => '/<li>(.*?)<\/li>/',
-    'https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess' => '/Referer (.*) spambot=yes/',
-    'https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt' => '',
+    'sahava' => [
+        'url' => 'https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js',
+        'method' => 'processor_sahava'
+    ],
+    'piwik' => [
+        'url' => 'https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt'
+    ],
+    'stevie-ray' => [
+        'url' => 'https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess',
+        'regex' => '/Referer (.*) spambot=yes/'
+    ],
+    'antispam' => [
+        'url' => 'https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt'
+    ]
 ];
 $spammers = [];
+$annotated = (array) json_decode(file_get_contents('../domains/annotated.json'));
 
 function processor_sahava($raw) {
     $lines = explode(PHP_EOL, $raw);
@@ -63,13 +73,34 @@ function processor_sahava($raw) {
 echo "Old list: " . count($semaltBlockerSources) . " sources\n";
 echo "Pulling domains from the following sources:\n";
 
+// Clean function
+function clean($url, $list = [])
+{
+    // only hostnames & path
+    $url = Domainparser::getHostname($url) . Domainparser::getPath($url);
+
+    // delete redundant subdomains
+    $root = Domainparser::getRootDomain($url);
+    if (!empty($list) && $root !== Domainparser::getHostname($url) && in_array($root, $list)) {
+        $url = '';
+    }
+
+    // lower case
+    $url = strtolower($url);
+    $url = trim($url);
+    $punicode = new \TrueBV\Punycode();
+    $url = iconv("UTF-8", "ISO-8859-1", $punicode->encode($url));
+
+    return $url;
+}
+
 // iterate all sources
-foreach($sources as $source => $regex) {
-    $raw = file_get_contents($source);
-    if (substr_count($regex, 'processor_') && function_exists($regex)) {
-        $list = call_user_func($regex, $raw);
-    } else if (!empty($regex)) {
-        preg_match_all($regex, $raw, $list);
+foreach($sources as $source => $data) {
+    $raw = file_get_contents($data['url']);
+    if (isset($data['method']) && function_exists($data['method'])) {
+        $list = call_user_func($data['method'], $raw);
+    } else if (isset($data['regex'])) {
+        preg_match_all($data['regex'], $raw, $list);
         $list = array_filter($list[1], function ($v) {
             return filter_var($v, FILTER_VALIDATE_URL) || filter_var('http://' . $v, FILTER_VALIDATE_URL);
         });
@@ -78,37 +109,46 @@ foreach($sources as $source => $regex) {
     }
     echo $source . " contains " . count($list) . " source(s)\n";
     $spammers = array_merge($spammers, $list);
+
+    foreach($list as $url) {
+        if (($cleaned = clean($url)) && !isset($annotated['d'.crc32($cleaned . '-' . $source)])) {
+            if ($cleaned !== $url) {
+                $annotated['d'.crc32($cleaned . '-' . $source)] = (object) [
+                    'url'     => $url,
+                    'blocked' => $cleaned,
+                    'source'  => $source,
+                    'added'   => date('c')
+                ];
+            } else {
+                $annotated['d'.crc32($cleaned . '-' . $source)] = (object) [
+                    'url'     => $url,
+                    'source'  => $source,
+                    'added'   => date('c')
+                ];
+            }
+        }
+    }
 }
 
-// only top-level domains
-//foreach($spammers as &$spammer) {
-//    $spammer = \Nabble\SemaltBlocker\Domainparser::getRootDomain($spammer);
-//}
-
-// only hostnames & path
-foreach($spammers as &$spammer) {
-    $spammer = Domainparser::getHostname($spammer) . Domainparser::getPath($spammer);
-}
+uasort($annotated, function($a, $b) {
+    if ($a->url.$a->source == $b->url.$b->source) {
+        return 0;
+    }
+    return ($a->url.$a->source < $b->url.$b->source) ? -1 : 1;
+});
+file_put_contents('../domains/annotated.json', json_encode((object) $annotated, JSON_PRETTY_PRINT));
+echo "Updated annotated.json\n";
 
 // merge & cleanup spammers
 if ($includeOldList) {
     $spammers = array_merge(Blocker::getBlocklist(), $spammers);
 }
 
-// delete redundant subdomains
+// cleanup
 foreach($spammers as &$spammer) {
-    $root = Domainparser::getRootDomain($spammer);
-    if ($root !== Domainparser::getHostname($spammer) && in_array($root, $spammers)) {
-        $spammer = '';
-    }
+    $spammer = clean($spammer, $spammers);
 }
 
-$spammers = array_map('strtolower', $spammers);
-$spammers = array_map('trim', $spammers);
-$punicode = new \TrueBV\Punycode();
-foreach($spammers as &$spammer) {
-    $spammer = iconv("UTF-8", "ISO-8859-1", $punicode->encode($spammer));
-}
 $spammers = array_unique($spammers);
 $spammers = array_filter($spammers);
 sort($spammers);
