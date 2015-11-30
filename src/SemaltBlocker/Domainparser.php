@@ -44,6 +44,7 @@ class Domainparser
 
     /**
      * @param string $url
+     * @return string|false
      */
     public static function getHostname($url)
     {
@@ -71,7 +72,7 @@ class Domainparser
     /**
      * Checks an URL for validity, and punycode encode the returned component
      *
-     * @param $url
+     * @param string $url
      * @param integer $component
      * @return string|false
      */
