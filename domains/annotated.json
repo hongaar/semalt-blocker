@@ -1,4 +1,9 @@
 {
+    "d3320499707": {
+        "url": "0n-line.tv",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d168847258": {
         "url": "0n-line.tv",
         "source": "piwik",
@@ -19,6 +24,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d660535259": {
+        "url": "100dollars-seo.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2327591169": {
         "url": "100dollars-seo.com",
         "source": "piwik",
@@ -33,6 +43,11 @@
         "url": "100dollars-seo.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d3717195935": {
+        "url": "12masterov.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d959396335": {
         "url": "12masterov.com",
@@ -49,6 +64,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d3348571749": {
+        "url": "1pamm.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1879161868": {
         "url": "1pamm.ru",
         "source": "piwik",
@@ -64,10 +84,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d2592206121": {
+        "url": "4webmasters.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2346506294": {
         "url": "4webmasters.org",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2248693272": {
+        "url": "4webmasters.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4055259258": {
         "url": "4webmasters.org",
@@ -83,6 +113,11 @@
         "url": "4webmasters.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d1457807521": {
+        "url": "5forex.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1480220449": {
         "url": "5forex.ru",
@@ -119,6 +154,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d391597798": {
+        "url": "7makemoneyonline.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1350846032": {
         "url": "7makemoneyonline.com",
         "source": "piwik",
@@ -144,6 +184,17 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d1935535804": {
+        "url": "Semaltmedia.com",
+        "blocked": "semaltmedia.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d1611124254": {
+        "url": "a-hau.mk",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1242079489": {
         "url": "abovetherivernc.com",
         "source": "sahava",
@@ -153,6 +204,11 @@
         "url": "abovetherivernc.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d1359802046": {
+        "url": "acads.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1030569143": {
         "url": "acads.net",
@@ -178,6 +234,11 @@
         "url": "acunetix-referrer.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2502336186": {
+        "url": "adcash.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3308631014": {
         "url": "adcash.com",
@@ -210,6 +271,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2384495657": {
+        "url": "adspart.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2491603924": {
         "url": "adspart.com",
         "source": "piwik",
@@ -224,6 +290,11 @@
         "url": "adspart.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d270495607": {
+        "url": "adventureparkcostarica.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2443686770": {
         "url": "adventureparkcostarica.com",
@@ -244,6 +315,11 @@
         "url": "adviceforum.info",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1762720872": {
+        "url": "adviceforum.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2743454886": {
         "url": "adviceforum.info",
@@ -280,6 +356,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3452397712": {
+        "url": "affordablewebsitesandmobileapps.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3778109727": {
         "url": "affordablewebsitesandmobileapps.com",
         "source": "piwik",
@@ -295,6 +376,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1785976796": {
+        "url": "afora.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2380991755": {
         "url": "afora.ru",
         "source": "piwik",
@@ -309,6 +395,11 @@
         "url": "afora.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d192537729": {
+        "url": "akuhni.by",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3540278663": {
         "url": "akuhni.by",
@@ -365,6 +456,11 @@
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d1181360609": {
+        "url": "allknow.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2284687968": {
         "url": "allknow.info",
         "source": "piwik",
@@ -379,6 +475,11 @@
         "url": "allknow.info",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1509921193": {
+        "url": "allnews.md",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d301583797": {
         "url": "allnews.md",
@@ -395,6 +496,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3415680339": {
+        "url": "allwomen.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2616501533": {
         "url": "allwomen.info",
         "source": "piwik",
@@ -409,6 +515,11 @@
         "url": "allwomen.info",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4228203655": {
+        "url": "alpharma.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1229282471": {
         "url": "alpharma.net",
@@ -425,6 +536,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1199817034": {
+        "url": "altermix.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1034845469": {
         "url": "altermix.ua",
         "source": "piwik",
@@ -440,6 +556,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d978852018": {
+        "url": "amanda-porn.ga",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2316620207": {
         "url": "amanda-porn.ga",
         "source": "sahava",
@@ -449,6 +570,11 @@
         "url": "amanda-porn.ga",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1665577959": {
+        "url": "amt-k.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3956032113": {
         "url": "amt-k.ru",
@@ -465,6 +591,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3591642985": {
+        "url": "anal-acrobats.hol.es",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2071322954": {
         "url": "anal-acrobats.hol.es",
         "source": "piwik",
@@ -474,6 +605,11 @@
         "url": "anal-acrobats.hol.es",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d1341049447": {
+        "url": "anapa-inns.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1142830110": {
         "url": "anapa-inns.ru",
@@ -489,6 +625,11 @@
         "url": "anapa-inns.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4022459129": {
+        "url": "android-style.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d61303377": {
         "url": "android-style.com",
@@ -509,6 +650,11 @@
         "url": "anticrawler.org",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4218132436": {
+        "url": "anticrawler.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3259541003": {
         "url": "anticrawler.org",
@@ -535,6 +681,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1865415832": {
+        "url": "arendakvartir.kz",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d338447028": {
         "url": "arendakvartir.kz",
         "source": "piwik",
@@ -549,6 +700,11 @@
         "url": "arendakvartir.kz",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1935192588": {
+        "url": "arkkivoltti.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1158170401": {
         "url": "arkkivoltti.net",
@@ -565,6 +721,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d903160412": {
+        "url": "artparquet.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3059203054": {
         "url": "artparquet.ru",
         "source": "piwik",
@@ -579,6 +740,11 @@
         "url": "artparquet.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d48521087": {
+        "url": "aruplighting.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d602354338": {
         "url": "aruplighting.com",
@@ -605,6 +771,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3238755236": {
+        "url": "autovideobroadcast.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1958648154": {
         "url": "autovideobroadcast.com",
         "source": "piwik",
@@ -619,6 +790,11 @@
         "url": "autovideobroadcast.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d884604153": {
+        "url": "aviva-limoux.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2305995599": {
         "url": "aviva-limoux.com",
@@ -650,6 +826,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d74143033": {
+        "url": "azartclub.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d76539563": {
         "url": "azartclub.org",
         "source": "piwik",
@@ -665,6 +846,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d813412429": {
+        "url": "b-buyeasy.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1933976135": {
         "url": "bablonow.ru",
         "source": "sahava",
@@ -674,6 +860,11 @@
         "url": "bablonow.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3589741697": {
+        "url": "backgroundpictures.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2841198764": {
         "url": "backgroundpictures.net",
@@ -685,6 +876,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2432623015": {
+        "url": "baixar-musicas-gratis.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3075697744": {
         "url": "baixar-musicas-gratis.com",
         "source": "piwik",
@@ -695,10 +891,20 @@
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d3407141271": {
+        "url": "baixar-musicas-gratis.comsavetubevideo.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d520559930": {
         "url": "baixar-musicas-gratis.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1465380167": {
+        "url": "baladur.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2876699667": {
         "url": "baladur.ru",
@@ -715,6 +921,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1134205418": {
+        "url": "balitouroffice.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3424562851": {
         "url": "balitouroffice.com",
         "source": "piwik",
@@ -729,6 +940,11 @@
         "url": "balitouroffice.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3466584084": {
+        "url": "bard-real.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4130319386": {
         "url": "bard-real.com.ua",
@@ -760,6 +976,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3846613743": {
+        "url": "best-seo-offer.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1064505144": {
         "url": "best-seo-offer.com",
         "source": "piwik",
@@ -780,6 +1001,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2068762985": {
+        "url": "best-seo-software.xyz",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d262685216": {
         "url": "best-seo-software.xyz",
         "source": "piwik",
@@ -794,6 +1020,11 @@
         "url": "best-seo-solution.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3738336157": {
+        "url": "best-seo-solution.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3811375172": {
         "url": "best-seo-solution.com",
@@ -810,6 +1041,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1019982053": {
+        "url": "bestmobilityscooterstoday.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3004975483": {
         "url": "bestmobilityscooterstoday.com",
         "source": "piwik",
@@ -825,10 +1061,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d40308065": {
+        "url": "bestwebsiteawards.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d503112400": {
         "url": "bestwebsitesawards.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3752537358": {
+        "url": "bestwebsitesawards.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1420846687": {
         "url": "bestwebsitesawards.com",
@@ -845,6 +1091,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3092194579": {
+        "url": "bif-ru.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3422228412": {
         "url": "bif-ru.info",
         "source": "piwik",
@@ -860,6 +1111,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3819512593": {
+        "url": "biglistofwebsites.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d851505885": {
         "url": "biglistofwebsites.com",
         "source": "piwik",
@@ -874,6 +1130,11 @@
         "url": "biglistofwebsites.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d448917089": {
+        "url": "billiard-classic.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3991410844": {
         "url": "billiard-classic.com.ua",
@@ -899,6 +1160,11 @@
         "url": "bioca.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4233641910": {
+        "url": "bizru.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d98827232": {
         "url": "bizru.info",
@@ -934,6 +1200,11 @@
         "url": "blackhatworth.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d645535827": {
+        "url": "blackhatworth.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d832116699": {
         "url": "blackhatworth.com",
@@ -975,6 +1246,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1235578174": {
+        "url": "blue-square.biz",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3245571654": {
         "url": "blue-square.biz",
         "source": "piwik",
@@ -990,6 +1266,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1968701992": {
+        "url": "bluerobot.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3680709410": {
         "url": "bluerobot.info",
         "source": "piwik",
@@ -1004,6 +1285,11 @@
         "url": "bluerobot.info",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4160968777": {
+        "url": "bmw.afora.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4280713673": {
         "url": "bmw.afora.ru",
@@ -1045,6 +1331,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2209567152": {
+        "url": "brakehawk.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1289079232": {
         "url": "brakehawk.com",
         "source": "piwik",
@@ -1059,6 +1350,11 @@
         "url": "brakehawk.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1945698426": {
+        "url": "break-the-chains.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4037387315": {
         "url": "break-the-chains.com",
@@ -1095,6 +1391,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1929794810": {
+        "url": "brk-rti.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1098280566": {
         "url": "brk-rti.ru",
         "source": "piwik",
@@ -1110,6 +1411,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3163937007": {
+        "url": "brothers-smaller.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2313144714": {
         "url": "brothers-smaller.ru",
         "source": "piwik",
@@ -1124,6 +1430,11 @@
         "url": "brothers-smaller.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2704016246": {
+        "url": "budmavtomatika.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3907946310": {
         "url": "budmavtomatika.com.ua",
@@ -1160,6 +1471,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3496782016": {
+        "url": "buttons-for-website.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3842560841": {
         "url": "buttons-for-website.com",
         "source": "piwik",
@@ -1179,6 +1495,11 @@
         "url": "buttons-for-your-website.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1262655234": {
+        "url": "buttons-for-your-website.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d821822239": {
         "url": "buttons-for-your-website.com",
@@ -1200,6 +1521,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1461359864": {
+        "url": "buy-cheap-online.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3815699983": {
         "url": "buy-cheap-online.info",
         "source": "piwik",
@@ -1214,6 +1540,11 @@
         "url": "buy-cheap-online.info",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3972871745": {
+        "url": "buy-forum.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2087744207": {
         "url": "buy-forum.ru",
@@ -1260,6 +1591,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2279384058": {
+        "url": "cardiosport.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d274735138": {
         "url": "cardiosport.com.ua",
         "source": "piwik",
@@ -1274,6 +1610,11 @@
         "url": "cardiosport.com.ua",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1338703979": {
+        "url": "cartechnic.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2238878213": {
         "url": "cartechnic.ru",
@@ -1300,6 +1641,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2103031531": {
+        "url": "cenokos.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1172676860": {
         "url": "cenokos.ru",
         "source": "piwik",
@@ -1320,6 +1666,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2684513613": {
+        "url": "cenoval.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1401011597": {
         "url": "cenoval.ru",
         "source": "piwik",
@@ -1335,6 +1686,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2935791325": {
+        "url": "cezartabac.ro",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3545926208": {
         "url": "cezartabac.ro",
         "source": "piwik",
@@ -1349,6 +1705,11 @@
         "url": "cezartabac.ro",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3220817434": {
+        "url": "cfsrating.sonicwall.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d721325492": {
         "url": "cherrypointplace.ca",
@@ -1375,6 +1736,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1558897925": {
+        "url": "chinese-amezon.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2373078779": {
         "url": "chinese-amezon.com",
         "source": "piwik",
@@ -1389,6 +1755,11 @@
         "url": "chinese-amezon.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2026262729": {
+        "url": "ci.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d925808574": {
         "url": "ci.ua",
@@ -1405,6 +1776,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1242378341": {
+        "url": "cityadspix.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2466337421": {
         "url": "cityadspix.com",
         "source": "piwik",
@@ -1419,6 +1795,11 @@
         "url": "cityadspix.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4254417245": {
+        "url": "civilwartheater.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3973094939": {
         "url": "civilwartheater.com",
@@ -1460,6 +1841,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d202741059": {
+        "url": "coderstate.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1228037842": {
         "url": "coderstate.com",
         "source": "piwik",
@@ -1474,6 +1860,11 @@
         "url": "coderstate.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d990989837": {
+        "url": "codysbbq.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2918481213": {
         "url": "codysbbq.com",
@@ -1490,6 +1881,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1237658177": {
+        "url": "conciergegroup.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1840273249": {
         "url": "conciergegroup.org",
         "source": "piwik",
@@ -1504,6 +1900,11 @@
         "url": "conciergegroup.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1210250765": {
+        "url": "connectikastudio.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d612033692": {
         "url": "connectikastudio.com",
@@ -1560,6 +1961,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3192387964": {
+        "url": "cubook.supernew.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2700112265": {
         "url": "cubook.supernew.org",
         "source": "piwik",
@@ -1574,6 +1980,11 @@
         "url": "cubook.supernew.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4105964254": {
+        "url": "customsua.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1827123847": {
         "url": "customsua.com.ua",
@@ -1590,10 +2001,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d533153360": {
+        "url": "cxpromote.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3902187484": {
         "url": "dailyrank.net",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d846956946": {
+        "url": "dailyrank.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3098530289": {
         "url": "dailyrank.net",
@@ -1614,6 +2035,11 @@
         "url": "darodar.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1620467340": {
+        "url": "darodar.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d498401120": {
         "url": "darodar.com",
@@ -1645,6 +2071,16 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d367443889": {
+        "url": "de.zapmeta.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2881010298": {
+        "url": "delfin-aqua.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3523672259": {
         "url": "delfin-aqua.com.ua",
         "source": "piwik",
@@ -1659,6 +2095,11 @@
         "url": "delfin-aqua.com.ua",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d477838032": {
+        "url": "demenageur.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1183045206": {
         "url": "demenageur.com",
@@ -1690,10 +2131,20 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d406690065": {
+        "url": "depositfiles-porn.ga",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3255778287": {
         "url": "depositfiles-porn.ga",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d642344880": {
+        "url": "descargar-musica-gratis.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2434024248": {
         "url": "descargar-musica-gratis.net",
@@ -1710,6 +2161,16 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2472861318": {
+        "url": "descargar-musicas-gratis.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d333219655": {
+        "url": "detskie-konstruktory.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1267418399": {
         "url": "detskie-konstruktory.ru",
         "source": "piwik",
@@ -1724,6 +2185,11 @@
         "url": "detskie-konstruktory.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d558955683": {
+        "url": "dipstar.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2610647685": {
         "url": "dipstar.org",
@@ -1740,6 +2206,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3059012896": {
+        "url": "djekxa.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1352295283": {
         "url": "djekxa.ru",
         "source": "piwik",
@@ -1754,6 +2225,11 @@
         "url": "djekxa.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d660629683": {
+        "url": "dojki-hd.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2605878701": {
         "url": "dojki-hd.com",
@@ -1770,6 +2246,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2299861052": {
+        "url": "domination.ml",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3354849852": {
         "url": "domination.ml",
         "source": "piwik",
@@ -1784,6 +2265,11 @@
         "url": "domination.ml",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4178567160": {
+        "url": "doska-vsem.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4057053758": {
         "url": "doska-vsem.ru",
@@ -1800,6 +2286,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3554848260": {
+        "url": "dostavka-v-krym.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2291228051": {
         "url": "dostavka-v-krym.com",
         "source": "piwik",
@@ -1814,6 +2305,11 @@
         "url": "dostavka-v-krym.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2020094653": {
+        "url": "drupa.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3936623201": {
         "url": "drupa.com",
@@ -1830,6 +2326,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1411305883": {
+        "url": "dvr.biz.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3506577932": {
         "url": "dvr.biz.ua",
         "source": "piwik",
@@ -1844,6 +2345,11 @@
         "url": "dvr.biz.ua",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d416033402": {
+        "url": "e-buyeasy.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2993969583": {
         "url": "e-buyeasy.com",
@@ -1860,6 +2366,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2614496150": {
+        "url": "e-kwiaciarz.pl",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1197693893": {
         "url": "e-kwiaciarz.pl",
         "source": "piwik",
@@ -1874,6 +2385,11 @@
         "url": "e-kwiaciarz.pl",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d736903632": {
+        "url": "ecomp3.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2507617069": {
         "url": "ecomp3.ru",
@@ -1895,6 +2411,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1199378471": {
+        "url": "econom.co",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d193303838": {
         "url": "econom.co",
         "source": "piwik",
@@ -1909,6 +2430,11 @@
         "url": "econom.co",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1795495069": {
+        "url": "edakgfvwql.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3323576148": {
         "url": "edakgfvwql.ru",
@@ -1935,6 +2461,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1456990232": {
+        "url": "egovaleo.it",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3620358217": {
         "url": "egovaleo.it",
         "source": "piwik",
@@ -1949,6 +2480,11 @@
         "url": "egovaleo.it",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3893429806": {
+        "url": "ekto.ee",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d468080044": {
         "url": "ekto.ee",
@@ -1975,6 +2511,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d528595012": {
+        "url": "elmifarhangi.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1864845545": {
         "url": "elmifarhangi.com",
         "source": "piwik",
@@ -1989,6 +2530,17 @@
         "url": "elmifarhangi.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1258913859": {
+        "url": "else\r",
+        "blocked": "else",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:50:35+01:00"
+    },
+    "d1528532886": {
+        "url": "embedle.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d775410131": {
         "url": "embedle.com",
@@ -2005,6 +2557,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1669766013": {
+        "url": "erot.co",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3134320024": {
         "url": "erot.co",
         "source": "piwik",
@@ -2019,6 +2576,11 @@
         "url": "erot.co",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3183311272": {
+        "url": "escort-russian.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3453386972": {
         "url": "escort-russian.com",
@@ -2035,6 +2597,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3539473833": {
+        "url": "este-line.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1688081080": {
         "url": "este-line.com.ua",
         "source": "piwik",
@@ -2049,6 +2616,11 @@
         "url": "este-line.com.ua",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1067237074": {
+        "url": "euromasterclass.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2499724372": {
         "url": "euromasterclass.ru",
@@ -2065,6 +2637,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3078765054": {
+        "url": "europages.com.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3892070165": {
         "url": "europages.com.ru",
         "source": "piwik",
@@ -2079,6 +2656,11 @@
         "url": "europages.com.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2379172133": {
+        "url": "eurosamodelki.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d207333728": {
         "url": "eurosamodelki.ru",
@@ -2100,6 +2682,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1859398269": {
+        "url": "event-tracking.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4187201474": {
         "url": "event-tracking.com",
         "source": "piwik",
@@ -2115,6 +2702,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1032147756": {
+        "url": "extener.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1432102744": {
         "url": "extener.com",
         "source": "sahava",
@@ -2124,6 +2716,11 @@
         "url": "extener.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d554493981": {
+        "url": "extener.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3749829809": {
         "url": "extremez.net",
@@ -2150,6 +2747,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1602489506": {
+        "url": "fbdownloader.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3784616651": {
         "url": "fbdownloader.com",
         "source": "piwik",
@@ -2165,6 +2767,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d565242471": {
+        "url": "fbfreegifts.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3295028683": {
         "url": "fbfreegifts.com",
         "source": "sahava",
@@ -2174,6 +2781,11 @@
         "url": "fbfreegifts.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d598005125": {
+        "url": "feedouble.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1820650784": {
         "url": "feedouble.com",
@@ -2185,6 +2797,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d291593535": {
+        "url": "feedouble.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1872807438": {
         "url": "feedouble.net",
         "source": "sahava",
@@ -2194,6 +2811,11 @@
         "url": "feedouble.net",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d139171782": {
+        "url": "femmesdenudees.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d489672327": {
         "url": "filmetricsasia.com",
@@ -2235,6 +2857,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2633542137": {
+        "url": "floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2936446455": {
         "url": "floating-share-buttons.com",
         "source": "piwik",
@@ -2249,6 +2876,11 @@
         "url": "floating-share-buttons.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3549662263": {
+        "url": "forex-procto.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d539858095": {
         "url": "forex-procto.ru",
@@ -2265,6 +2897,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2109626826": {
+        "url": "forsex.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2654438602": {
         "url": "forsex.info",
         "source": "piwik",
@@ -2280,6 +2917,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d526680845": {
+        "url": "forum20.smailik.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3068406051": {
         "url": "forum20.smailik.org",
         "source": "piwik",
@@ -2294,6 +2936,11 @@
         "url": "forum69.info",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3114414678": {
+        "url": "forum69.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2114056227": {
         "url": "forum69.info",
@@ -2340,10 +2987,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2854413236": {
+        "url": "free-share-buttons.co",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1684036670": {
         "url": "free-share-buttons.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3932615587": {
+        "url": "free-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3280294070": {
         "url": "free-share-buttons.com",
@@ -2366,6 +3023,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3942093219": {
+        "url": "free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1902880478": {
         "url": "free-social-buttons.com",
         "source": "piwik",
@@ -2376,6 +3038,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d4135463570": {
+        "url": "free-social-buttons.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3043074297": {
         "url": "freeseedsonline.com",
         "source": "sahava",
@@ -2385,6 +3052,11 @@
         "url": "freeseedsonline.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2136052767": {
+        "url": "freewhatsappload.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2579375007": {
         "url": "freewhatsappload.com",
@@ -2400,6 +3072,11 @@
         "url": "freewhatsappload.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2877803890": {
+        "url": "fsalas.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d739856377": {
         "url": "fsalas.com",
@@ -2456,6 +3133,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3120530576": {
+        "url": "generalporn.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3553910766": {
         "url": "generalporn.org",
         "source": "piwik",
@@ -2470,6 +3152,11 @@
         "url": "generalporn.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4071225103": {
+        "url": "germes-trans.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d217250326": {
         "url": "germes-trans.com",
@@ -2511,6 +3198,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2743552327": {
+        "url": "get-free-traffic-now.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1758781192": {
         "url": "get-free-traffic-now.com",
         "source": "piwik",
@@ -2541,6 +3233,16 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d157659264": {
+        "url": "getyourprofit.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2102901888": {
+        "url": "ghazel.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1729168606": {
         "url": "ghazel.ru",
         "source": "piwik",
@@ -2550,6 +3252,11 @@
         "url": "ghazel.ru",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d569792745": {
+        "url": "girlporn.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3728413825": {
         "url": "girlporn.ru",
@@ -2566,6 +3273,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3214624839": {
+        "url": "gkvector.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1359397005": {
         "url": "gkvector.ru",
         "source": "piwik",
@@ -2580,6 +3292,11 @@
         "url": "gkvector.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1844403452": {
+        "url": "glavprofit.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1854906751": {
         "url": "glavprofit.ru",
@@ -2596,6 +3313,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2183093610": {
+        "url": "gobongo.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d790802118": {
         "url": "gobongo.info",
         "source": "piwik",
@@ -2610,6 +3332,11 @@
         "url": "gobongo.info",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d537164101": {
+        "url": "goodprotein.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1545127826": {
         "url": "goodprotein.ru",
@@ -2630,6 +3357,11 @@
         "url": "googlsucks.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3551932742": {
+        "url": "googlsucks.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d755873327": {
         "url": "googlsucks.com",
@@ -2656,11 +3388,21 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d860658075": {
+        "url": "gratuitbaise.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3129486718": {
         "url": "guardlink.org\t",
         "blocked": "guardlink.org",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1282798725": {
+        "url": "guardlink.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1714595341": {
         "url": "guardlink.org",
@@ -2687,6 +3429,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1936541382": {
+        "url": "handicapvantoday.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d217797214": {
         "url": "handicapvantoday.com",
         "source": "piwik",
@@ -2701,6 +3448,11 @@
         "url": "handicapvantoday.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1480324565": {
+        "url": "hardcore.anzwers.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1284295636": {
         "url": "hazardky.net",
@@ -2726,6 +3478,11 @@
         "url": "hongfanji.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1892743639": {
+        "url": "hongfanji.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3756569733": {
         "url": "hongfanji.com",
@@ -2757,6 +3514,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3116086723": {
+        "url": "hotspot.ipb.co.id",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d156923858": {
         "url": "houseofrose.com",
         "source": "sahava",
@@ -2771,6 +3533,16 @@
         "url": "how-to-earn-quick-money.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1621456633": {
+        "url": "how-to-earn-quick-money.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d918456474": {
+        "url": "howopen.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4255133269": {
         "url": "howopen.ru",
@@ -2787,10 +3559,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d649149610": {
+        "url": "howtostopreferralspam.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1726921923": {
         "url": "howtostopreferralspam.eu",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2616115883": {
+        "url": "howtostopreferralspam.eu",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3845030444": {
         "url": "howtostopreferralspam.eu",
@@ -2812,6 +3594,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3657124705": {
+        "url": "hulfingtonpost.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d358205911": {
         "url": "hulfingtonpost.com",
         "source": "piwik",
@@ -2832,6 +3619,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2999561656": {
+        "url": "humanorightswatch.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2683826076": {
         "url": "humanorightswatch.org",
         "source": "piwik",
@@ -2846,6 +3638,11 @@
         "url": "humanorightswatch.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1796833584": {
+        "url": "hundejo.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1030954025": {
         "url": "hundejo.com",
@@ -2862,6 +3659,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d824744956": {
+        "url": "hvd-store.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2848309370": {
         "url": "hvd-store.com",
         "source": "piwik",
@@ -2876,6 +3678,11 @@
         "url": "hvd-store.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1482166794": {
+        "url": "ico.re",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1628687337": {
         "url": "ico.re",
@@ -2892,6 +3699,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2106411138": {
+        "url": "igru-xbox.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3755383245": {
         "url": "igru-xbox.net",
         "source": "piwik",
@@ -2907,6 +3719,16 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d683524193": {
+        "url": "illagedusexe.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d687059648": {
+        "url": "iloveitaly.ro",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2246606270": {
         "url": "iloveitaly.ro",
         "source": "piwik",
@@ -2916,6 +3738,11 @@
         "url": "iloveitaly.ro",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1185190590": {
+        "url": "iloveitaly.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1179041342": {
         "url": "iloveitaly.ru",
@@ -2932,10 +3759,20 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1323508569": {
+        "url": "ilovevitaly.co",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1907959102": {
         "url": "ilovevitaly.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d876194982": {
+        "url": "ilovevitaly.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3501115007": {
         "url": "ilovevitaly.com",
@@ -2967,6 +3804,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1464756275": {
+        "url": "ilovevitaly.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d252136244": {
         "url": "ilovevitaly.info",
         "source": "piwik",
@@ -2981,6 +3823,11 @@
         "url": "ilovevitaly.info",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d682629015": {
+        "url": "ilovevitaly.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1968459487": {
         "url": "ilovevitaly.org",
@@ -3012,6 +3859,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2769654596": {
+        "url": "ilovevitaly.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2084094743": {
         "url": "ilovevitaly.ru",
         "source": "piwik",
@@ -3026,6 +3878,11 @@
         "url": "ilovevitaly.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2456822641": {
+        "url": "iminent.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3892763594": {
         "url": "iminent.com",
@@ -3042,6 +3899,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2667365997": {
+        "url": "imperiafilm.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4088576308": {
         "url": "imperiafilm.ru",
         "source": "piwik",
@@ -3057,6 +3919,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2027829637": {
+        "url": "inbabes.sexushost.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3488240934": {
         "url": "inboxdollars.com",
         "source": "sahava",
@@ -3071,6 +3938,11 @@
         "url": "intermesh.net",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d699456171": {
+        "url": "investpamm.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1647890751": {
         "url": "investpamm.ru",
@@ -3097,6 +3969,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1723397206": {
+        "url": "iskalko.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1347995867": {
         "url": "iskalko.ru",
         "source": "piwik",
@@ -3111,6 +3988,11 @@
         "url": "iskalko.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1708030687": {
+        "url": "ispaniya-costa-blanca.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3481681738": {
         "url": "ispaniya-costa-blanca.ru",
@@ -3136,6 +4018,11 @@
         "url": "istanbulit.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2551259618": {
+        "url": "it-max.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3404606940": {
         "url": "it-max.com.ua",
@@ -3172,6 +4059,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3476232797": {
+        "url": "japfm.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1031063586": {
         "url": "jasonpartington.com",
         "source": "sahava",
@@ -3181,6 +4073,11 @@
         "url": "jasonpartington.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3354345284": {
+        "url": "jjbabskoe.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1882073661": {
         "url": "jjbabskoe.ru",
@@ -3197,6 +4094,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d166416659": {
+        "url": "joinandplay.me",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2176831609": {
         "url": "joinandplay.me",
         "source": "sahava",
@@ -3206,6 +4108,11 @@
         "url": "joinandplay.me",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3687006036": {
+        "url": "joingames.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3039340525": {
         "url": "joingames.org",
@@ -3221,6 +4128,11 @@
         "url": "justprofit.xyz",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3810144984": {
+        "url": "justprofit.xyz",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d569825553": {
         "url": "justprofit.xyz",
@@ -3242,6 +4154,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2814971355": {
+        "url": "kabbalah-red-bracelets.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1436810627": {
         "url": "kabbalah-red-bracelets.com",
         "source": "piwik",
@@ -3256,6 +4173,11 @@
         "url": "kabbalah-red-bracelets.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2567904451": {
+        "url": "kambasoft.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3983756324": {
         "url": "kambasoft.com",
@@ -3272,6 +4194,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1728637737": {
+        "url": "kazrent.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2185281714": {
         "url": "kazrent.com",
         "source": "piwik",
@@ -3286,6 +4213,11 @@
         "url": "kazrent.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1664233498": {
+        "url": "kino-fun.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3437303741": {
         "url": "kino-fun.ru",
@@ -3302,6 +4234,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2993512013": {
+        "url": "kino-key.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2704042929": {
         "url": "kino-key.info",
         "source": "piwik",
@@ -3316,6 +4253,11 @@
         "url": "kino-key.info",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3030208480": {
+        "url": "kinopolet.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1236373167": {
         "url": "kinopolet.net",
@@ -3332,6 +4274,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1668405719": {
+        "url": "knigonosha.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2773361661": {
         "url": "knigonosha.net",
         "source": "piwik",
@@ -3346,6 +4293,11 @@
         "url": "knigonosha.net",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1524345860": {
+        "url": "konkursov.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1344253534": {
         "url": "konkursov.net",
@@ -3372,6 +4324,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1226234683": {
+        "url": "laxdrills.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2290047383": {
         "url": "laxdrills.com",
         "source": "piwik",
@@ -3397,6 +4354,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2858809152": {
+        "url": "littleberry.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1203457688": {
         "url": "littleberry.ru",
         "source": "piwik",
@@ -3411,6 +4373,11 @@
         "url": "littleberry.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d464270292": {
+        "url": "livefixer.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2531610029": {
         "url": "livefixer.com",
@@ -3477,6 +4444,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d423404913": {
+        "url": "luxup.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2852867170": {
         "url": "luxup.ru",
         "source": "piwik",
@@ -3517,6 +4489,11 @@
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d3095479531": {
+        "url": "makemoneyonline.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3957548546": {
         "url": "makemoneyonline.com",
         "source": "piwik",
@@ -3542,6 +4519,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d929890412": {
+        "url": "manualterap.roleforum.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1010420203": {
         "url": "manualterap.roleforum.ru",
         "source": "piwik",
@@ -3562,6 +4544,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2192922335": {
+        "url": "maridan.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3976074161": {
         "url": "maridan.com.ua",
         "source": "piwik",
@@ -3571,6 +4558,11 @@
         "url": "maridan.com.ua",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d2528731140": {
+        "url": "masterseek.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1498894497": {
         "url": "masterseek.com",
@@ -3587,6 +4579,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3598550297": {
+        "url": "mature.free-websites.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2782826102": {
         "url": "maxthon.com",
         "source": "sahava",
@@ -3596,6 +4593,11 @@
         "url": "maxthon.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d945407337": {
+        "url": "mebelcomplekt.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4154153166": {
         "url": "mebelcomplekt.ru",
@@ -3617,6 +4619,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3628389528": {
+        "url": "mebeldekor.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3010364014": {
         "url": "mebeldekor.com.ua",
         "source": "piwik",
@@ -3631,6 +4638,11 @@
         "url": "med-zdorovie.com.au",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2722085825": {
+        "url": "med-zdorovie.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4260216936": {
         "url": "med-zdorovie.com.ua",
@@ -3677,6 +4689,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d947327811": {
+        "url": "meendo-free-traffic.ga",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d411495379": {
         "url": "meendo-free-traffic.ga",
         "source": "sahava",
@@ -3717,6 +4734,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1604923708": {
+        "url": "minegam.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1551193089": {
         "url": "minegam.com",
         "source": "piwik",
@@ -3731,6 +4753,11 @@
         "url": "minegam.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1183798556": {
+        "url": "mini.7zap.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3316700876": {
         "url": "mini.7zap.com",
@@ -3762,6 +4789,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2513346530": {
+        "url": "mirobuvi.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d223211332": {
         "url": "mirobuvi.com.ua",
         "source": "piwik",
@@ -3771,6 +4803,11 @@
         "url": "mirobuvi.com.ua",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d4221251881": {
+        "url": "mirtorrent.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d139269662": {
         "url": "mirtorrent.net",
@@ -3786,6 +4823,11 @@
         "url": "mirtorrent.net",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3856895707": {
+        "url": "mobilemedia.md",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4062015163": {
         "url": "mobilemedia.md",
@@ -3822,6 +4864,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2105463367": {
+        "url": "moyakuhnia.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1444994586": {
         "url": "moyakuhnia.ru",
         "source": "piwik",
@@ -3852,6 +4899,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3691362818": {
+        "url": "msk.afora.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d506046748": {
         "url": "msk.afora.ru",
         "source": "piwik",
@@ -3871,6 +4923,11 @@
         "url": "muscle-factory.com.au",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3693477921": {
+        "url": "muscle-factory.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d724684153": {
         "url": "muscle-factory.com.ua",
@@ -3892,6 +4949,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1057112896": {
+        "url": "musicprojectfoundation.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1038203179": {
         "url": "musicprojectfoundation.com",
         "source": "sahava",
@@ -3902,6 +4964,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d696738109": {
+        "url": "myftpupload.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2120982603": {
         "url": "myftpupload.com",
         "source": "piwik",
@@ -3911,6 +4978,11 @@
         "url": "myftpupload.com",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d3587197864": {
+        "url": "myprintscreen.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d398457177": {
         "url": "myprintscreen.com",
@@ -3926,6 +4998,11 @@
         "url": "nate.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1225210291": {
+        "url": "niki-mlt.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1739538797": {
         "url": "niki-mlt.ru",
@@ -3962,6 +5039,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2818340733": {
+        "url": "novosti-hi-tech.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3894692597": {
         "url": "novosti-hi-tech.ru",
         "source": "piwik",
@@ -3982,6 +5064,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d552479928": {
+        "url": "o-o-6-o-o.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3823725807": {
         "url": "o-o-6-o-o.com",
         "source": "piwik",
@@ -3996,6 +5083,11 @@
         "url": "o-o-6-o-o.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1942602328": {
+        "url": "o-o-6-o-o.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d948942458": {
         "url": "o-o-6-o-o.ru",
@@ -4012,6 +5104,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1580574709": {
+        "url": "o-o-8-o-o.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3078757743": {
         "url": "o-o-8-o-o.com",
         "source": "sahava",
@@ -4021,6 +5118,11 @@
         "url": "o-o-8-o-o.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d423506517": {
+        "url": "o-o-8-o-o.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4078232570": {
         "url": "o-o-8-o-o.ru",
@@ -4047,10 +5149,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1293806471": {
+        "url": "ok.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1246685989": {
         "url": "ok.ru",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d674858645": {
+        "url": "online-hit.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3843659649": {
         "url": "online-hit.info",
@@ -4067,6 +5179,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1048921493": {
+        "url": "onlywoman.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d512136473": {
         "url": "onlywoman.org",
         "source": "piwik",
@@ -4081,6 +5198,11 @@
         "url": "onlywoman.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3161908362": {
+        "url": "ooo-olni.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2914592085": {
         "url": "ooo-olni.ru",
@@ -4097,6 +5219,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3912818151": {
+        "url": "openfrost.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2123811550": {
         "url": "openfrost.com",
         "source": "sahava",
@@ -4106,6 +5233,16 @@
         "url": "openfrost.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3690812765": {
+        "url": "openfrost.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d393765034": {
+        "url": "openmediasoft.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2475825422": {
         "url": "openmediasoft.com",
@@ -4127,6 +5264,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1110681169": {
+        "url": "ozas.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d559425496": {
         "url": "ozas.net",
         "source": "piwik",
@@ -4146,6 +5288,11 @@
         "url": "palvira.com.au",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2378500934": {
+        "url": "palvira.com.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1458919833": {
         "url": "palvira.com.ua",
@@ -4172,6 +5319,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2377769612": {
+        "url": "petrovka-online.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3809507810": {
         "url": "petrovka-online.com",
         "source": "piwik",
@@ -4186,6 +5338,11 @@
         "url": "petrovka-online.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d435423703": {
+        "url": "photokitchendesign.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d214928534": {
         "url": "photokitchendesign.com",
@@ -4227,6 +5384,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1004464209": {
+        "url": "plusnetwork.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d238931879": {
         "url": "pochemychka.net",
         "source": "sahava",
@@ -4257,6 +5419,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1457841731": {
+        "url": "pornhub-forum.ga",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2216093184": {
         "url": "pornhub-forum.ga",
         "source": "piwik",
@@ -4278,6 +5445,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1839583112": {
+        "url": "pornhub-forum.uni.me",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2856450285": {
         "url": "pornhub-forum.uni.me",
         "source": "piwik",
@@ -4293,6 +5465,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3417548108": {
+        "url": "pornhub-ru.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1542070875": {
         "url": "pornhub-ru.com",
         "source": "piwik",
@@ -4307,6 +5484,16 @@
         "url": "pornhub-ru.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1983708349": {
+        "url": "pornhubforum.tk",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d915087076": {
+        "url": "pornoforadult.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2054507651": {
         "url": "pornoforadult.com",
@@ -4327,6 +5514,11 @@
         "url": "portnoff.od.au",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2972915456": {
+        "url": "portnoff.od.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3023434173": {
         "url": "portnoff.od.ua",
@@ -4353,6 +5545,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d578299194": {
+        "url": "pozdravleniya-c.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4131920180": {
         "url": "pozdravleniya-c.ru",
         "source": "piwik",
@@ -4373,6 +5570,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d78836366": {
+        "url": "priceg.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d693404766": {
         "url": "priceg.com",
         "source": "piwik",
@@ -4387,6 +5589,11 @@
         "url": "priceg.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1964977663": {
+        "url": "pricheski-video.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4219413056": {
         "url": "pricheski-video.com",
@@ -4423,6 +5630,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1769589531": {
+        "url": "producm.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4194040174": {
         "url": "producm.ru",
         "source": "piwik",
@@ -4442,6 +5654,11 @@
         "url": "prodvigator.au",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d349703195": {
+        "url": "prodvigator.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4048257481": {
         "url": "prodvigator.ua",
@@ -4468,6 +5685,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d396840645": {
+        "url": "prointer.net.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4136086569": {
         "url": "prointer.net.ua",
         "source": "piwik",
@@ -4477,6 +5699,11 @@
         "url": "prointer.net.ua",
         "source": "sahava",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d2683204393": {
+        "url": "promoforum.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3793254162": {
         "url": "promoforum.ru",
@@ -4492,6 +5719,11 @@
         "url": "promoforum.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1728051530": {
+        "url": "psa48.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1303603432": {
         "url": "psa48.ru",
@@ -4528,6 +5760,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2844545033": {
+        "url": "qitt.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1587720183": {
         "url": "qitt.ru",
         "source": "sahava",
@@ -4538,6 +5775,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3688395430": {
+        "url": "qualitymarketzone.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2433118581": {
         "url": "qualitymarketzone.com",
         "source": "piwik",
@@ -4547,6 +5789,16 @@
         "url": "qualitymarketzone.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1547941322": {
+        "url": "quick-seeker.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2918719905": {
+        "url": "qwesa.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2842786201": {
         "url": "qwesa.ru",
@@ -4568,6 +5820,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3149622904": {
+        "url": "rankings-analytics.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3481743822": {
         "url": "rankings-analytics.com",
         "source": "piwik",
@@ -4577,6 +5834,16 @@
         "url": "rankings-analytics.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3228416507": {
+        "url": "ranksonic.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d1113592175": {
+        "url": "ranksonic.info",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3257277642": {
         "url": "ranksonic.info",
@@ -4603,6 +5870,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3705930442": {
+        "url": "ranksonic.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2198151978": {
         "url": "ranksonic.org",
         "source": "piwik",
@@ -4623,6 +5895,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d986036469": {
+        "url": "rapidgator-porn.ga",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1087385747": {
         "url": "rapidgator-porn.ga",
         "source": "piwik",
@@ -4637,6 +5914,11 @@
         "url": "rapidgator-porn.ga",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d475402904": {
+        "url": "rcb101.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3874757977": {
         "url": "rcb101.ru",
@@ -4668,6 +5950,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3615376371": {
+        "url": "rednise.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2729833740": {
         "url": "rednise.com",
         "source": "piwik",
@@ -4688,6 +5975,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d591317658": {
+        "url": "research.ifmo.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1098130840": {
         "url": "research.ifmo.ru",
         "source": "piwik",
@@ -4702,6 +5994,11 @@
         "url": "research.ifmo.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3046622338": {
+        "url": "resellerclub.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2054062539": {
         "url": "resellerclub.com",
@@ -4728,6 +6025,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1651739616": {
+        "url": "reversing.cc",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3436825033": {
         "url": "reversing.cc",
         "source": "piwik",
@@ -4742,6 +6044,11 @@
         "url": "reversing.cc",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d683158813": {
+        "url": "rightenergysolutions.com.au",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2358814136": {
         "url": "rightenergysolutions.com.au",
@@ -4758,6 +6065,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2182170135": {
+        "url": "rospromtest.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1663084267": {
         "url": "rospromtest.ru",
         "source": "piwik",
@@ -4772,6 +6084,16 @@
         "url": "rospromtest.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2900168139": {
+        "url": "s.click.aliexpress.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d4218212794": {
+        "url": "sady-urala.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1030956785": {
         "url": "sady-urala.ru",
@@ -4803,6 +6125,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1686256673": {
+        "url": "sanjosestartups.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d85618555": {
         "url": "sanjosestartups.com",
         "source": "piwik",
@@ -4823,6 +6150,16 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3456092677": {
+        "url": "satellite.maps.ilovevitaly.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2662032178": {
+        "url": "savetubevideo.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2184131607": {
         "url": "savetubevideo.com",
         "source": "piwik",
@@ -4838,6 +6175,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3894921336": {
+        "url": "screentoolkit.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4103783463": {
         "url": "screentoolkit.com",
         "source": "piwik",
@@ -4852,6 +6194,11 @@
         "url": "screentoolkit.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1672239788": {
+        "url": "search-error.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3838723202": {
         "url": "search-error.com",
@@ -4878,6 +6225,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d343952913": {
+        "url": "semalt.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d212992754": {
         "url": "semalt.com",
         "source": "piwik",
@@ -4892,6 +6244,11 @@
         "url": "semalt.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d445910887": {
+        "url": "semalt.semalt.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2561616691": {
         "url": "semalt.semalt.com",
@@ -4923,6 +6280,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3659449884": {
+        "url": "seo-platform.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d8855781": {
         "url": "seo-platform.com",
         "source": "piwik",
@@ -4932,6 +6294,11 @@
         "url": "seo-platform.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3539995324": {
+        "url": "seo-smm.kz",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d499094149": {
         "url": "seo-smm.kz",
@@ -4963,6 +6330,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3374899075": {
+        "url": "seoexperimenty.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4281505484": {
         "url": "seoexperimenty.ru",
         "source": "piwik",
@@ -4983,6 +6355,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d241756214": {
+        "url": "seopub.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3245752935": {
         "url": "seopub.net",
         "source": "piwik",
@@ -4997,6 +6374,11 @@
         "url": "seopub.net",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4151275475": {
+        "url": "serw.clicksor.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3931193781": {
         "url": "setioweb.com",
@@ -5013,6 +6395,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2345642469": {
+        "url": "sexyali.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d158248303": {
         "url": "sexyali.com",
         "source": "piwik",
@@ -5028,6 +6415,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1459100573": {
+        "url": "sexyteens.hol.es",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d77554803": {
         "url": "sexyteens.hol.es",
         "source": "piwik",
@@ -5042,6 +6434,11 @@
         "url": "sharebutton.net",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3332005018": {
+        "url": "sharebutton.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1937212944": {
         "url": "sharebutton.net",
@@ -5063,6 +6460,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2473919888": {
+        "url": "sharebutton.to",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d118819774": {
         "url": "sharebutton.to",
         "source": "piwik",
@@ -5078,6 +6480,16 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1179230284": {
+        "url": "shodanhq.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d3985587155": {
+        "url": "shop.xz618.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3907383579": {
         "url": "shop.xz618.com",
         "source": "piwik",
@@ -5092,6 +6504,11 @@
         "url": "shop.xz618.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1342288872": {
+        "url": "sibecoprom.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3340393364": {
         "url": "sibecoprom.ru",
@@ -5113,6 +6530,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2438056061": {
+        "url": "simple-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2205344449": {
         "url": "simple-share-buttons.com",
         "source": "piwik",
@@ -5127,6 +6549,66 @@
         "url": "simple-share-buttons.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2896540949": {
+        "url": "site1.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d1645112858": {
+        "url": "site10.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d754915744": {
+        "url": "site2.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d1396081203": {
+        "url": "site3.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d4147857035": {
+        "url": "site4.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d3655755023": {
+        "url": "site4.free-floating-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2297617688": {
+        "url": "site5.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d145256877": {
+        "url": "site6.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2002905662": {
+        "url": "site7.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2613247644": {
+        "url": "site8.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d3825952015": {
+        "url": "site9.floating-share-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d541501244": {
+        "url": "siteripz.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3906868840": {
         "url": "siteripz.net",
@@ -5158,6 +6640,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d4107086598": {
+        "url": "sitevaluation.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3998243728": {
         "url": "sitevaluation.org",
         "source": "piwik",
@@ -5178,6 +6665,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1781989820": {
+        "url": "sledstvie-veli.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1227090935": {
         "url": "sledstvie-veli.net",
         "source": "piwik",
@@ -5192,6 +6684,11 @@
         "url": "sledstvie-veli.net",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3540148904": {
+        "url": "slftsdybbg.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1153838283": {
         "url": "slftsdybbg.ru",
@@ -5208,6 +6705,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3856816510": {
+        "url": "slkrm.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d693258269": {
         "url": "slkrm.ru",
         "source": "piwik",
@@ -5222,6 +6724,11 @@
         "url": "slkrm.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3041502729": {
+        "url": "smailik.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1944128259": {
         "url": "smailik.org",
@@ -5248,6 +6755,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3376200225": {
+        "url": "soaksoak.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3050740065": {
         "url": "soaksoak.ru",
         "source": "piwik",
@@ -5268,6 +6780,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d4257598695": {
+        "url": "social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d4264098089": {
         "url": "social-buttons.com",
         "source": "piwik",
@@ -5282,6 +6799,11 @@
         "url": "social-buttons.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d257851725": {
+        "url": "socialseet.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3244028363": {
         "url": "socialseet.ru",
@@ -5298,6 +6820,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2746523098": {
+        "url": "softomix.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d482651094": {
         "url": "softomix.com",
         "source": "sahava",
@@ -5307,6 +6834,11 @@
         "url": "softomix.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2440107360": {
+        "url": "softomix.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d534806776": {
         "url": "softomix.net",
@@ -5328,6 +6860,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d4210911055": {
+        "url": "softomix.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1833308815": {
         "url": "softomix.ru",
         "source": "sahava",
@@ -5337,6 +6874,11 @@
         "url": "softomix.ru",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d767894149": {
+        "url": "sohoindia.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3584900254": {
         "url": "sohoindia.net",
@@ -5352,6 +6894,11 @@
         "url": "sohoindia.net",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d772985279": {
+        "url": "solnplast.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3023464679": {
         "url": "solnplast.ru",
@@ -5378,6 +6925,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1969094729": {
+        "url": "sosdepotdebilan.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1407132934": {
         "url": "sosdepotdebilan.com",
         "source": "piwik",
@@ -5393,6 +6945,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3603975391": {
+        "url": "soundfrost.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1150686227": {
         "url": "soundfrost.org",
         "source": "sahava",
@@ -5402,6 +6959,11 @@
         "url": "soundfrost.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3033509032": {
+        "url": "spb.afora.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2806428375": {
         "url": "spb.afora.ru",
@@ -5418,6 +6980,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3384371055": {
+        "url": "spravka130.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2897296384": {
         "url": "spravka130.ru",
         "source": "piwik",
@@ -5433,6 +7000,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2929599890": {
+        "url": "srecorder.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1123029031": {
         "url": "srecorder.com",
         "source": "sahava",
@@ -5443,10 +7015,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3507073993": {
+        "url": "star61.de",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1849577575": {
         "url": "startwp.org",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d932855100": {
+        "url": "steame.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d514701912": {
         "url": "steame.ru",
@@ -5478,6 +7060,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d4280008450": {
+        "url": "success-seo.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3075382219": {
         "url": "success-seo.com",
         "source": "piwik",
@@ -5492,6 +7079,11 @@
         "url": "success-seo.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1963833381": {
+        "url": "superiends.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4071218997": {
         "url": "superiends.org",
@@ -5523,6 +7115,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3744872131": {
+        "url": "taihouse.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d653241816": {
         "url": "taihouse.ru",
         "source": "piwik",
@@ -5553,6 +7150,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3135530743": {
+        "url": "tattooha.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1994292944": {
         "url": "tattooha.com",
         "source": "piwik",
@@ -5577,6 +7179,11 @@
         "url": "teastory.co",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2188424317": {
+        "url": "tedxrj.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1965455578": {
         "url": "tedxrj.com",
@@ -5608,6 +7215,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d414161788": {
+        "url": "theguardlan.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1870113415": {
         "url": "theguardlan.com",
         "source": "piwik",
@@ -5632,6 +7244,11 @@
         "url": "thepokertimer.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2863148390": {
+        "url": "tomck.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d144956198": {
         "url": "tomck.com",
@@ -5658,6 +7275,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3832177692": {
+        "url": "torture.ml",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1928144822": {
         "url": "torture.ml",
         "source": "sahava",
@@ -5678,6 +7300,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1167308516": {
+        "url": "toyota.7zap.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2502653804": {
         "url": "toyota.7zap.com",
         "source": "piwik",
@@ -5692,6 +7319,11 @@
         "url": "traffic-paradise.org",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1188560506": {
+        "url": "traffic-paradise.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4099385404": {
         "url": "traffic2cash.net",
@@ -5708,6 +7340,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1580507043": {
+        "url": "traffic2money.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d273771476": {
         "url": "traffic2money.com",
         "source": "piwik",
@@ -5723,6 +7360,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1994228651": {
+        "url": "trafficmonetize.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d202761311": {
         "url": "trafficmonetize.org",
         "source": "piwik",
@@ -5737,6 +7379,11 @@
         "url": "trafficmonetizer.org",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3957704457": {
+        "url": "trafficmonetizer.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d811712369": {
         "url": "trafficmonetizer.org",
@@ -5758,6 +7405,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1703578432": {
+        "url": "trion.od.ua",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3469223429": {
         "url": "trion.od.ua",
         "source": "piwik",
@@ -5777,6 +7429,11 @@
         "url": "twincitiescarservice.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d763604515": {
+        "url": "uasb.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2293440984": {
         "url": "uasb.ru",
@@ -5813,6 +7470,16 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3467835779": {
+        "url": "urlopener.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2942232926": {
+        "url": "uzungil.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1895277548": {
         "url": "uzungil.com",
         "source": "piwik",
@@ -5828,6 +7495,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d4070682412": {
+        "url": "vapmedia.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1052845707": {
         "url": "vapmedia.org",
         "source": "sahava",
@@ -5838,10 +7510,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2355852377": {
+        "url": "viandpet.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2789086235": {
         "url": "video--production.com",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d4155686978": {
+        "url": "video--production.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d24185263": {
         "url": "video--production.com",
@@ -5858,6 +7540,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2006061196": {
+        "url": "video-woman.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d837436562": {
         "url": "video-woman.com",
         "source": "piwik",
@@ -5872,6 +7559,11 @@
         "url": "video-woman.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d611320963": {
+        "url": "videofrost.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d387484581": {
         "url": "videofrost.com",
@@ -5898,6 +7590,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d3129345416": {
+        "url": "videos-for-your-business.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2753845411": {
         "url": "videos-for-your-business.com",
         "source": "piwik",
@@ -5912,6 +7609,11 @@
         "url": "videos-for-your-business.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2282657598": {
+        "url": "viel.su",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2807366989": {
         "url": "viel.su",
@@ -5928,6 +7630,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1935113968": {
+        "url": "viktoria-center.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d14412988": {
         "url": "viktoria-center.ru",
         "source": "piwik",
@@ -5943,6 +7650,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d4013633857": {
+        "url": "vodaodessa.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d719305267": {
         "url": "vodaodessa.com",
         "source": "piwik",
@@ -5957,6 +7669,11 @@
         "url": "vodaodessa.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2377912453": {
+        "url": "vodkoved.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2350983973": {
         "url": "vodkoved.ru",
@@ -5988,6 +7705,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2251354827": {
+        "url": "webmaster-traffic.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d1543339368": {
         "url": "webmaster-traffic.com",
         "source": "piwik",
@@ -6007,6 +7729,11 @@
         "url": "webmonetizer.net",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2569300704": {
+        "url": "webmonetizer.net",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1465240211": {
         "url": "webmonetizer.net",
@@ -6033,6 +7760,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1799211198": {
+        "url": "websites-reviews.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d674747752": {
         "url": "websites-reviews.com",
         "source": "piwik",
@@ -6047,6 +7779,11 @@
         "url": "websites-reviews.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d1221543585": {
+        "url": "websocial.me",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d77615966": {
         "url": "websocial.me",
@@ -6072,6 +7809,11 @@
         "url": "williamrobsonproperty.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d760132885": {
+        "url": "wmasterlead.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d4134843673": {
         "url": "wmasterlead.com",
@@ -6103,6 +7845,66 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d417361250": {
+        "url": "www.event-tracking.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d1787245951": {
+        "url": "www.kabbalah-red-bracelets.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d4193028081": {
+        "url": "www1.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d216995271": {
+        "url": "www10.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d819502332": {
+        "url": "www2.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2009819655": {
+        "url": "www3.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2042735783": {
+        "url": "www4.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d1053973084": {
+        "url": "www5.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d4159062353": {
+        "url": "www6.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2968893354": {
+        "url": "www7.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d3958623249": {
+        "url": "www8.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
+    "d2900376298": {
+        "url": "www9.free-social-buttons.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2747635783": {
         "url": "xn--80adgcaax6acohn6r.xn--p1ai",
         "source": "antispam",
@@ -6123,6 +7925,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2769697198": {
+        "url": "ykecwqlixx.ru",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d3130155067": {
         "url": "ykecwqlixx.ru",
         "source": "piwik",
@@ -6138,10 +7945,20 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d782074906": {
+        "url": "yougetsignal.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2336000097": {
         "url": "youporn-forum.ga",
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3334287222": {
+        "url": "youporn-forum.ga",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d714639912": {
         "url": "youporn-forum.ga",
@@ -6158,6 +7975,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d2941788045": {
+        "url": "youporn-forum.uni.me",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d442791506": {
         "url": "youporn-forum.uni.me",
         "source": "piwik",
@@ -6172,6 +7994,11 @@
         "url": "youporn-forum.uni.me",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2085333763": {
+        "url": "youporn-ru.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1476444770": {
         "url": "youporn-ru.com",
@@ -6193,6 +8020,11 @@
         "source": "antispam",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1168364398": {
+        "url": "yourserverisdown.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d801221168": {
         "url": "yourserverisdown.com",
         "source": "piwik",
@@ -6202,6 +8034,11 @@
         "url": "yourserverisdown.com",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d3315775729": {
+        "url": "youtubedownload.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d401634359": {
         "url": "youtubedownload.org",
@@ -6223,6 +8060,11 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d1765384730": {
+        "url": "zastroyka.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d593363280": {
         "url": "zastroyka.org",
         "source": "piwik",
@@ -6237,6 +8079,11 @@
         "url": "zastroyka.org",
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
+    },
+    "d2934905767": {
+        "url": "zazagames.org",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d3275008241": {
         "url": "zazagames.org",
@@ -6258,11 +8105,23 @@
         "source": "stevie-ray",
         "added": "2015-11-30T16:47:24+01:00"
     },
+    "d453564405": {
+        "url": "\u0433\u0440\u0443\u0437\u043e\u043f\u043e\u0434\u044a\u0435\u043c\u043d\u044b\u0435-\u043c\u0430\u0448\u0438\u043d\u044b.\u0440\u0444",
+        "blocked": "xn----8sbhefaln6acifdaon5c6f4axh.xn--p1ai",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d2971665821": {
         "url": "\u0433\u0440\u0443\u0437\u043e\u043f\u043e\u0434\u044a\u0435\u043c\u043d\u044b\u0435-\u043c\u0430\u0448\u0438\u043d\u044b.\u0440\u0444",
         "blocked": "xn----8sbhefaln6acifdaon5c6f4axh.xn--p1ai",
         "source": "piwik",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d3662772554": {
+        "url": "\u043d\u0430\u0440\u043a\u043e\u043c\u0430\u043d\u0438\u044f.\u043b\u0435\u0447\u0435\u043d\u0438\u0435\u043d\u0430\u0440\u043a\u043e\u043c\u0430\u043d\u0438\u0438.com",
+        "blocked": "xn--80aaygkdefq0n.xn--80aanaardaperhcem4a6i.com",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d1904275709": {
         "url": "\u043d\u0430\u0440\u043a\u043e\u043c\u0430\u043d\u0438\u044f.\u043b\u0435\u0447\u0435\u043d\u0438\u0435\u043d\u0430\u0440\u043a\u043e\u043c\u0430\u043d\u0438\u0438.com",
@@ -6270,11 +8129,23 @@
         "source": "piwik",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d1374952741": {
+        "url": "\u043d\u0435\u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0438\u043c\u0430\u044f.\u0440\u0444",
+        "blocked": "xn--80adgcaax6acohn6r.xn--p1ai",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d36332262": {
         "url": "\u043d\u0435\u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0438\u043c\u0430\u044f.\u0440\u0444",
         "blocked": "xn--80adgcaax6acohn6r.xn--p1ai",
         "source": "piwik",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d3832306243": {
+        "url": "\u043f\u0440\u043e\u0444\u043c\u043e\u043d\u0442\u0430\u0436-\u0432\u0440\u043d.\u0440\u0444",
+        "blocked": "xn----7sbho2agebbhlivy.xn--p1ai",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2662566586": {
         "url": "\u043f\u0440\u043e\u0444\u043c\u043e\u043d\u0442\u0430\u0436-\u0432\u0440\u043d.\u0440\u0444",
@@ -6282,11 +8153,23 @@
         "source": "piwik",
         "added": "2015-11-30T16:47:23+01:00"
     },
+    "d3610703664": {
+        "url": "\u0441\u043d\u044f\u0442\u044c\u0434\u043e\u043c\u0432\u0441\u0435\u0432\u0430\u0441\u0442\u043e\u043f\u043e\u043b\u0435.\u0440\u0444",
+        "blocked": "xn--80adaggc5bdhlfamsfdij4p7b.xn--p1ai",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
+    },
     "d814267186": {
         "url": "\u0441\u043d\u044f\u0442\u044c\u0434\u043e\u043c\u0432\u0441\u0435\u0432\u0430\u0441\u0442\u043e\u043f\u043e\u043b\u0435.\u0440\u0444",
         "blocked": "xn--80adaggc5bdhlfamsfdij4p7b.xn--p1ai",
         "source": "piwik",
         "added": "2015-11-30T16:47:23+01:00"
+    },
+    "d1816205328": {
+        "url": "\u0445\u043e\u043b\u043e\u0434\u043d\u044b\u0439\u043e\u0431\u0437\u0432\u043e\u043d.\u0440\u0444",
+        "blocked": "xn--90acenikpebbdd4f6d.xn--p1ai",
+        "source": "ar-communications",
+        "added": "2015-11-30T16:53:26+01:00"
     },
     "d2799711643": {
         "url": "\u0445\u043e\u043b\u043e\u0434\u043d\u044b\u0439\u043e\u0431\u0437\u0432\u043e\u043d.\u0440\u0444",

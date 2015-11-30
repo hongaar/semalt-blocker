@@ -26,6 +26,10 @@ $sources = [
     ],
     'antispam' => [
         'url' => 'https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt'
+    ],
+    'ar-communications' => [
+        'url' => 'https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php',
+        'method' => 'processor_ar_communications'
     ]
 ];
 $spammers = [];
@@ -63,6 +67,29 @@ function processor_sahava($raw) {
                     $domains[] = $regex;
                 }
             }
+        }
+
+    }
+    return $domains;
+}
+
+function processor_ar_communications($raw) {
+    $lines = explode(PHP_EOL, $raw);
+    $match = false;
+    $domains = [];
+    foreach($lines as $line) {
+        if (trim($line) == '$spams = array (') {
+            $match = true;
+        } else if (trim($line) == ');') {
+            break;
+        }
+
+        if ($match) {
+            $line = str_replace('",', '', $line);
+            $line = str_replace('"', '', $line);
+            $line = trim($line);
+
+            $domains[] = $line;
         }
 
     }
