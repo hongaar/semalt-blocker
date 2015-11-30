@@ -11,9 +11,9 @@ semalt-blocker
 
 ### Self-updating PHP library which blocks hundreds of spammy domains from ruining your website statistics
 
----
-
-#### Bad domains counter: `509` _updated November 30th, 2015_ 
+| Bad domains     | Last updated            |
+|:---------------:|:-----------------------:|
+| 509 | November 30th, 2015 |
 
 ---
 
@@ -34,11 +34,13 @@ Looking for the blocklist only? No problem:
 
 The blocklist is compiled from several sources. Currently:
 
- - [piwik/referrer-spam-blacklist](https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt)
- - [Stevie-Ray/htaccess-referral-spam-blacklist-block](https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess)
- - [antispam/false-referrals](https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt)
- - [sahava/spam-filter-tool](https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js)
- - [ARCommunications/Block-Referral-Spam](https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php)
+| Source            | Raw source file        | Number of domains         |
+|-------------------|------------------------|---------------------------|
+| sahava | https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js | 417 |
+| piwik | https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt | 299 |
+| stevie-ray | https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess | 441 |
+| antispam | https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt | 102 |
+| ar-communications | https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php | 376 |
 
 ## debug console
 

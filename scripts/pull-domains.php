@@ -122,6 +122,7 @@ function clean($url, $list = [])
 }
 
 // iterate all sources
+$sourcesReadme = '';
 foreach($sources as $source => $data) {
     $raw = file_get_contents($data['url']);
     if (isset($data['method']) && function_exists($data['method'])) {
@@ -135,6 +136,7 @@ foreach($sources as $source => $data) {
         $list = explode("\n", $raw);
     }
     echo $source . " contains " . count($list) . " source(s)\n";
+    $sourcesReadme .= '| ' . $source . ' | ' . $data['url'] . ' | ' . count($list) . ' |' . PHP_EOL;
     $spammers = array_merge($spammers, $list);
 
     foreach($list as $url) {
@@ -190,7 +192,8 @@ echo "Updated blocklist\n";
 
 // readme
 $readme = file_get_contents('../README.md');
-$readme = preg_replace('/#### Bad domains counter.*/', '#### Bad domains counter: `' . count($spammers) . '` _updated ' . date('F jS, Y') . '_ ', $readme);
+$readme = preg_replace('/\|:---------------:\|:-----------------------:\|(.*?)---/s', '|:---------------:|:-----------------------:|' . PHP_EOL . '| ' . count($spammers) . ' | ' . date('F jS, Y') . ' |' . PHP_EOL . PHP_EOL . '---', $readme);
+$readme = preg_replace('/\|-------------------\|------------------------\|---------------------------\|(.*?)##/s', '|-------------------|------------------------|---------------------------|' . PHP_EOL . $sourcesReadme . PHP_EOL . '##', $readme);
 file_put_contents('../README.md', $readme);
 echo "Updated README.md\n";
 
