@@ -75,13 +75,11 @@ require "/path/to/semaltblocker.php";
 It's as easy as:
 
 ```php
-<?php
 use Nabble\SemaltBlocker\Blocker;
 
 Blocker::protect();
 
 // ... your app
-
 ```
 
 Make sure you add it somewhere at the beginning of your code, it will save you!
@@ -94,13 +92,15 @@ In order for the self-update mechanism to work, make sure the `domains/blocked` 
 $ chmod a+w domains/blocked
 ```
 
-## options
+## options 
 
 ```php
 Blocker::protect(); // default, serve a 403 Forbidden response
 Blocker::protect('http://semalt.com'); // return them their own botnet traffic
 Blocker::protect('Hi, bot'); // displays a nice message when blocked
 ```
+
+_All calls to the `protect` function will trigger the auto-updater at a regular interval._
 
 If you want to stay in control even more, use this:
 
