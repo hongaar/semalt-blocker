@@ -13,7 +13,7 @@ semalt-blocker
 
 | Bad domains     | Last updated            |
 |:---------------:|:-----------------------:|
-| 550 | December 16th, 2015 |
+| 568 | December 30th, 2015 |
 
 ---
 
@@ -37,9 +37,9 @@ The blocklist is compiled from several sources. Currently:
 | Source            | Raw source file        | Number of domains         |
 |-------------------|------------------------|---------------------------|
 | sahava | https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js | 417 |
-| piwik | https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt | 314 |
-| stevie-ray | https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess | 489 |
-| antispam | https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt | 114 |
+| piwik | https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt | 325 |
+| stevie-ray | https://raw.githubusercontent.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/master/generator/domains.txt | 510 |
+| antispam | https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt | 120 |
 | ar-communications | https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php | 376 |
 
 ## debug console

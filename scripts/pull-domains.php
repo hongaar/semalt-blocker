@@ -21,8 +21,7 @@ $sources = [
         'url' => 'https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt'
     ],
     'stevie-ray' => [
-        'url' => 'https://raw.githubusercontent.com/Stevie-Ray/htaccess-referral-spam-blacklist-block/master/.htaccess',
-        'regex' => '/Referer (.*) spambot=yes/'
+        'url' => 'https://raw.githubusercontent.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/master/generator/domains.txt'
     ],
     'antispam' => [
         'url' => 'https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt'
