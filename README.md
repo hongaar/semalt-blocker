@@ -111,7 +111,7 @@ $blocked = Blocker::blocked(); // returns true when a blocked referrer is detect
 If you want an explanation for why a referer is blocked, use: 
 
 ```php
-echo Blocker::reason();
+echo Blocker::explain();
 ```
 
 The self-updater runs every 7 days by default. To force updating the domain list, use this:
