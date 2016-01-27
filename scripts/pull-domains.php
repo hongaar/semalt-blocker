@@ -29,6 +29,9 @@ $sources = [
     'ar-communications' => [
         'url' => 'https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php',
         'method' => 'processor_ar_communications'
+    ],
+    'flameeyes' => [
+        'url' => 'https://raw.githubusercontent.com/Flameeyes/modsec-flameeyes/master/rules/flameeyes_bad_referrers.data'
     ]
 ];
 $spammers = [];
