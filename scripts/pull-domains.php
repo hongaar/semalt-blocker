@@ -114,6 +114,9 @@ function clean($url, $list = [])
         $url = '';
     }
 
+    // trailing /
+    $url = trim($url, '/');
+
     // lower case
     $url = strtolower($url);
     $url = trim($url);

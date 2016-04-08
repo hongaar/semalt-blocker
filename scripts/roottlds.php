@@ -37,53 +37,58 @@ if ($method === METHOD_IANA) {
 
     preg_match_all($regex, $contents, $matches);
 
-    $tlds = $sep . '.' . implode($sep . '.', $matches[1]) . $sep;
+    $tlds = explode($sep, '.' . implode($sep . '.', $matches[1]));
 
-} else {
+} elseif ($method === METHOD_PUBLICSUFFIX) {
 
-    if ($method === METHOD_PUBLICSUFFIX) {
+    $publicSuffixList = with(new PublicSuffixListManager())->getList();
 
-        $publicSuffixList = with(new PublicSuffixListManager())->getList();
+    $tlds = [];
 
-        $tlds = [];
-
-        function glue($key, $value, $sep = ',')
-        {
-            if (is_array($value) && !empty($value)) {
-                // Ignore exceptions and just return key
-                if (key($value) === '*') {
-                    return '.' . $key . $sep;
-                }
-
-                $slds = (empty($key) ? '' : '.' . $key . $sep);
-                foreach ($value as $k => $v) {
-                    $glued = glue($k . (empty($key) ? '' : '.' . $key), $v, $sep);
-                    if ($glued === false) {
-                        $slds .= 'HAI';
-                    } else {
-                        $slds .= !empty($glued) ? $glued : '';
-                    }
-                }
-                return $slds;
-            } else {
+    function glue($key, $value, $sep = ',')
+    {
+        if (is_array($value) && !empty($value)) {
+            // Ignore exceptions and just return key
+            if (key($value) === '*') {
                 return '.' . $key . $sep;
             }
-        }
 
-        $tlds = $sep . glue('', (array) $publicSuffixList, $sep);
+            $slds = (empty($key) ? '' : '.' . $key . $sep);
+            foreach ($value as $k => $v) {
+                $glued = glue($k . (empty($key) ? '' : '.' . $key), $v, $sep);
+                if ($glued === false) {
+                    $slds .= 'HAI';
+                } else {
+                    $slds .= !empty($glued) ? $glued : '';
+                }
+            }
+            return $slds;
+        } else {
+            return '.' . $key . $sep;
+        }
+    }
+
+    $tlds = explode($sep, glue('', (array) $publicSuffixList, $sep));
+}
+
+// Edge case where a roottld is also on blocklist
+foreach($tlds as $k => $tld) {
+    if (Nabble\SemaltBlocker\Blocker::isUrlOnBlocklist('http://www.' . $tld)) {
+        unset($tlds[$k]);
     }
 }
 
-$tlds = $punycode->encode(html_entity_decode($tlds));
+$tldsString = trim(implode($sep, $tlds), $sep);
+$tldsString = $punycode->encode(html_entity_decode($tldsString));
 
 $domainParserContents = file_get_contents($domainParserFile);
 
-$regex = '/private static \$rootTlds = .*;/';
+$regex = '/private static \$suffixList = .*;/';
 
-$domainParserContents = preg_replace($regex, 'private static $rootTlds = \'' . $tlds . '\';',
+$domainParserContents = preg_replace($regex, 'private static $suffixList = \'' . $tldsString . '\';',
     $domainParserContents);
 
 file_put_contents($domainParserFile, $domainParserContents);
 
-echo "Got " . substr_count($tlds, ',') . " root tld's, done.\n";
+echo "Got " . count($tlds) . " root tld's, done.\n";
 exit;
