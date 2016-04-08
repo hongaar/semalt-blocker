@@ -91,6 +91,11 @@ class Blocker
     // PRIVATE FUNCTIONS                    //
     //////////////////////////////////////////
 
+    /**
+     * Responsible for sending action output
+     *
+     * @param string $action
+     */
     private static function doBlock($action = '')
     {
         // Clear buffered output
@@ -119,12 +124,17 @@ class Blocker
         }
     }
 
+
+    /**
+     * Clear output buffer
+     */
     private static function cls()
     {
         while (ob_get_level()) ob_end_clean();
     }
 
     /**
+     * Redirect to a url by sending the appropriate header.
      * @param string $url
      */
     private static function redirect($url)
@@ -132,8 +142,9 @@ class Blocker
         header("Location: " . $url);
     }
 
+
     /**
-     * The public use of this function is deprecated. Please use the blocked() method instead.
+     * The public use of this function is undocumented.
      *
      * @return bool
      */
@@ -146,7 +157,20 @@ class Blocker
             return false;
         }
 
-        $rootDomain = Domainparser::getRootDomain($referer);
+        return self::isUrlOnBlocklist($referer, "referer");
+    }
+
+
+    /**
+     * The public use of this function is undocumented.
+     *
+     * @param string $url
+     * @param string $entity
+     * @return bool
+     */
+    public static function isUrlOnBlocklist($url, $entity = 'url')
+    {
+        $rootDomain = Domainparser::getRootDomain($url);
         if ($rootDomain === false) {
             self::$reason = "Not blocking because we couldn't parse root domain";
 
@@ -155,33 +179,33 @@ class Blocker
 
         $blocklist = self::getConcatenateBlocklist();
         if (substr_count($blocklist, self::SEPERATOR . $rootDomain . self::SEPERATOR)) {
-            self::$reason = "Blocking because referer root domain (" . $rootDomain . ") is found on blocklist";
+            self::$reason = "Blocking because " . $entity . " root domain (" . $rootDomain . ") is found on blocklist";
 
             return true;
         }
 
-        $hostname = Domainparser::getHostname($referer);
+        $hostname = Domainparser::getHostname($url);
         if (substr_count($blocklist, self::SEPERATOR . $hostname . self::SEPERATOR)) {
-            self::$reason = "Blocking because referer hostname (" . $hostname . ") is found on blocklist";
+            self::$reason = "Blocking because " . $entity . " hostname (" . $hostname . ") is found on blocklist";
 
             return true;
         }
 
-        $path = Domainparser::getPath($referer);
+        $path = Domainparser::getPath($url);
         if (trim($path, '/')) {
             if (substr_count($blocklist, self::SEPERATOR . $rootDomain . $path . self::SEPERATOR)) {
-                self::$reason = "Blocking because referer root domain/path (" . $rootDomain . $path . ") is found on blocklist";
+                self::$reason = "Blocking because " . $entity . " root domain/path (" . $rootDomain . $path . ") is found on blocklist";
 
                 return true;
             }
             if (substr_count($blocklist, self::SEPERATOR . $hostname . $path . self::SEPERATOR)) {
-                self::$reason = "Blocking because referer hostname/path (" . $hostname . $path . ") is found on blocklist";
+                self::$reason = "Blocking because " . $entity . " hostname/path (" . $hostname . $path . ") is found on blocklist";
 
                 return true;
             }
         }
 
-        self::$reason = "Not blocking because referer (" . $referer . ") is not matched against blocklist";
+        self::$reason = "Not blocking because " . $entity . " (" . $url . ") is not matched against blocklist";
         return false;
     }
 
