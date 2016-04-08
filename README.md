@@ -90,7 +90,7 @@ Make sure you add it somewhere at the beginning of your code, it will save you!
 In order for the self-update mechanism to work, make sure the `domains/blocked` file is writable by the webserver:
 
 ```bash
-$ chmod a+w domains/blocked
+$ chmod a+w vendor/nabble/semalt-blocker/domains/blocked
 ```
 
 ## options 
