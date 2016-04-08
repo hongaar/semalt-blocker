@@ -12,10 +12,10 @@
     ],
     "require": {
         "php": ">=5.0.0",
-        "true/punycode": "~2.0",
-        "jeremykendall/php-domain-parser": "~2.0"
+        "true/punycode": "~2.0"
     },
     "require-dev": {
+        "jeremykendall/php-domain-parser": "~2.0",
         "phpunit/phpunit": "~4",
         "satooshi/php-coveralls": "dev-master",
         "technosophos/PHPCompressor": "dev-master",
