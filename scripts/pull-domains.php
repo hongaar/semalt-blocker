@@ -32,6 +32,9 @@ $sources = [
     ],
     'flameeyes' => [
         'url' => 'https://raw.githubusercontent.com/Flameeyes/modsec-flameeyes/master/rules/flameeyes_bad_referrers.data'
+    ],
+    'semalt-blocker' => [
+        'url' => '../domains/additional'
     ]
 ];
 $spammers = [];

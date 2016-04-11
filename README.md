@@ -13,7 +13,7 @@ semalt-blocker
 
 | Bad domains     | Last updated            |
 |:---------------:|:-----------------------:|
-| 815 | April 8th, 2016 |
+| 816 | April 11th, 2016 |
 
 ---
 
@@ -42,6 +42,7 @@ The blocklist is compiled from several sources. Currently:
 | antispam | https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt | 142 |
 | ar-communications | https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php | 376 |
 | flameeyes | https://raw.githubusercontent.com/Flameeyes/modsec-flameeyes/master/rules/flameeyes_bad_referrers.data | 937 |
+| semalt-blocker | ../domains/additional | 1 |
 
 ## debug console
 
