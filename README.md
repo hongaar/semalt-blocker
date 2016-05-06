@@ -2,6 +2,7 @@
 [![Build Status](https://img.shields.io/travis/nabble/semalt-blocker.svg)](https://travis-ci.org/nabble/semalt-blocker)
 [![Coverage Status](https://img.shields.io/coveralls/nabble/semalt-blocker.svg)](https://coveralls.io/r/nabble/semalt-blocker?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/nabble/semalt-blocker.svg)](https://scrutinizer-ci.com/g/nabble/semalt-blocker/?branch=master)
+[![StyleCI Status](https://styleci.io/repos/22722171/shield)](https://styleci.io/repos/22722171)
 [![Dependency Status](https://www.versioneye.com/php/nabble:semalt-blocker/badge.svg)](https://www.versioneye.com/php/nabble:semalt-blocker)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/nabble/semalt-blocker.svg)](https://packagist.org/packages/nabble/semalt-blocker)
 [![License](https://img.shields.io/packagist/l/nabble/semalt-blocker.svg)](https://packagist.org/packages/nabble/semalt-blocker)

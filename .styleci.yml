@@ -1,0 +1,5 @@
+preset: recommended
+
+finder:
+  path:
+    - "src"
