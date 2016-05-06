@@ -1,10 +1,9 @@
 <?php
+
 namespace Nabble\SemaltBlocker;
 
 /**
- * The `update` method is called from the Blocker class every week to grab latest domain list from GitHub
- *
- * @package Nabble\SemaltBlocker
+ * The `update` method is called from the Blocker class every week to grab latest domain list from GitHub.
  */
 class Updater
 {
@@ -18,15 +17,19 @@ class Updater
     //////////////////////////////////////////
 
     /**
-     * Try to update the blocked domains list
+     * Try to update the blocked domains list.
      *
      * @param bool $force
      */
     public static function update($force = false)
     {
-        if (!defined('SEMALT_UNIT_TESTING') && !self::isWritable()) return;
+        if (!defined('SEMALT_UNIT_TESTING') && !self::isWritable()) {
+            return;
+        }
 
-        if (!$force && !self::isOutdated()) return;
+        if (!$force && !self::isOutdated()) {
+            return;
+        }
 
         self::doUpdate();
     }
@@ -38,15 +41,16 @@ class Updater
     {
         if (function_exists('curl_init')) {
             $curl = curl_init();
-            curl_setopt_array($curl, array(
+            curl_setopt_array($curl, [
                 CURLOPT_RETURNTRANSFER => 1,
-                CURLOPT_URL => self::$updateUrl
-            ));
+                CURLOPT_URL            => self::$updateUrl,
+            ]);
             $domains = curl_exec($curl);
             curl_close($curl);
         } else {
             $domains = @file_get_contents(self::$updateUrl);
         }
+
         return $domains;
     }
 
@@ -67,8 +71,9 @@ class Updater
         $domains = self::getNewDomainList();
 
         // Don't panic if updating the file throws an error of some kind
-        if (trim($domains) !== '')
+        if (trim($domains) !== '') {
             @file_put_contents(self::getBlocklistFilename(), $domains);
+        }
     }
 
     /**
