@@ -35,6 +35,9 @@ $sources = [
     ],
     'semalt-blocker' => [
         'url' => '../domains/additional'
+    ],
+    'desbma' => [
+        'url' => 'https://raw.githubusercontent.com/desbma/referer-spam-domains-blacklist/master/spammers.txt'
     ]
 ];
 $spammers = [];
