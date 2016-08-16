@@ -14,7 +14,7 @@ semalt-blocker
 
 | Bad domains     | Last updated            |
 |:---------------:|:-----------------------:|
-| 2269 | July 8th, 2016 |
+| 2328 | August 16th, 2016 |
 
 ---
 
@@ -38,13 +38,13 @@ The blocklist is compiled from several sources. Currently:
 | Source            | Raw source file        | Number of domains         |
 |-------------------|------------------------|---------------------------|
 | sahava | https://raw.githubusercontent.com/sahava/spam-filter-tool/master/js/spamfilter.js | 417 |
-| piwik | https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt | 431 |
-| stevie-ray | https://raw.githubusercontent.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/master/generator/domains.txt | 870 |
-| antispam | https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt | 199 |
+| piwik | https://raw.githubusercontent.com/piwik/referrer-spam-blacklist/master/spammers.txt | 445 |
+| stevie-ray | https://raw.githubusercontent.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/master/generator/domains.txt | 940 |
+| antispam | https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt | 205 |
 | ar-communications | https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php | 376 |
 | flameeyes | https://raw.githubusercontent.com/Flameeyes/modsec-flameeyes/master/rules/flameeyes_bad_referrers.data | 936 |
 | semalt-blocker | ../domains/additional | 1 |
-| desbma | https://raw.githubusercontent.com/desbma/referer-spam-domains-blacklist/master/spammers.txt | 1699 |
+| desbma | https://raw.githubusercontent.com/desbma/referer-spam-domains-blacklist/master/spammers.txt | 1695 |
 
 ## debug console
 
