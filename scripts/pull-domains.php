@@ -23,9 +23,6 @@ $sources = [
     'stevie-ray' => [
         'url' => 'https://raw.githubusercontent.com/Stevie-Ray/apache-nginx-referral-spam-blacklist/master/generator/domains.txt'
     ],
-    'antispam' => [
-        'url' => 'https://raw.githubusercontent.com/antispam/false-referrals/master/false-referrals.txt'
-    ],
     'ar-communications' => [
         'url' => 'https://raw.githubusercontent.com/ARCommunications/Block-Referral-Spam/master/blocker.php',
         'method' => 'processor_ar_communications'
