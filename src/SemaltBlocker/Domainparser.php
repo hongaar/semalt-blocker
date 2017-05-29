@@ -3,6 +3,7 @@
 namespace Nabble\SemaltBlocker;
 
 use TrueBV\Punycode;
+use TrueBV\Exception\LabelOutOfBoundsException;
 
 /**
  * Adapted from http://forums.devshed.com/php-development-5/root-domain-url-551863.html.
@@ -89,7 +90,13 @@ class Domainparser
             // Punycode encode domain
             $host = parse_url('http://' . $url, PHP_URL_HOST);
             $punycode = new Punycode();
-            $url = str_replace($host, $punycode->encode($host), $url);
+            try {
+                $url = str_replace($host, $punycode->encode($host), $url);
+            }
+            catch (LabelOutOfBoundsException $e)
+            {
+                
+            }
 
             // Add back normalized protocol
             $url = 'http://' . $url;
