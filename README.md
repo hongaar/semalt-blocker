@@ -1,3 +1,8 @@
+> # Don't use this project  
+> ## (it hasn't been updated since 2016)
+
+---
+
 [![Latest Stable Version](https://img.shields.io/packagist/v/nabble/semalt-blocker.svg?style=flat-square)](https://packagist.org/packages/nabble/semalt-blocker)
 [![Build Status](https://img.shields.io/travis/nabble/semalt-blocker.svg?style=flat-square)](https://travis-ci.org/nabble/semalt-blocker)
 [![Coverage Status](https://img.shields.io/coveralls/nabble/semalt-blocker.svg?style=flat-square)](https://coveralls.io/r/nabble/semalt-blocker?branch=master)
