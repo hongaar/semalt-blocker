@@ -1,6 +1,6 @@
-> # Don't use this project  
-> ## (it hasn't been updated since 2016)
-
+> # Don't use this project
+> ## The list of spammy domains is stale and without any update since 2016
+> Read original blogpost which inspired this project: [Semalt infecting computers to spam the web](https://blog.nabble.nl/post/93306955157/semalt-infecting-computers-to-spam-the-web).
 ---
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/nabble/semalt-blocker.svg?style=flat-square)](https://packagist.org/packages/nabble/semalt-blocker)
